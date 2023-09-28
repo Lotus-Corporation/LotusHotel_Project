@@ -11,36 +11,31 @@
     <link rel="stylesheet" href="./css/diadiemnb.css">   
     <link rel="stylesheet" href="./css/danhgia.css"> 
     <link rel="stylesheet" href="./css/mota-uudai.css"> 
-    <?php 
-$link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from loaiphong";
-$result=$link->query($sql);
-?>
-     
+         
   </head>
   <body>
    <div class="container"> 
-     <div style="float: center; width: 100%; position: fixed; z-index: 1;">
-      <div align="center" class="logo1" style="background-color: rgb(109, 194, 230);" ;="">
-        <p><font face="Courier New" size="5" color="WHITE">ROOMS</font></p>
-        <div class="menu">
-          
-        <?php
-while ($row=$result->fetch_assoc())
-{
- ?>   
-    <a> <?php echo $row["LOAIPHONG"];?></a>
-<?php
- }
-?>
-           </div>
-      </div>
-        <div align="center" class="logo1" style="background-color: rgb(28, 107, 225)" ;=""></div>
-        <div align="center" class="logo1" style="background-color: rgb(106, 160, 193)";=""></div>
-        <div align="center" style="float: left; width: 40%; height: 50px; background-color: rgb(237, 240, 241); ";=""> LOGO</div>
-        <div align="center" class="logo1" style="background-color: rgb(14, 157, 197)";=""></div>
-        <div align="center" class="logo1" style="background-color: rgb(23, 53, 151)" ;=""></div>
-        <div align="center" class="logo1" style="background-color: rgb(53, 91, 101)";=""></div>
+      <div style="display: flex;width: 100%; position: fixed; z-index: 1;background-color:gray">
+        <div class="logo1"style="margin-left: 12%">
+          <p style="justify-content: center";><font face="Courier New" size="5" color="WHITE">ROOMS</font></p>
+          <div class="menu">
+            
+             
+              <a> Deluxe</a>
+             
+              <a> Standard</a>
+             
+              <a> Superior</a>
+             
+              <a> Suite</a>
+                    </div>
+        </div>
+        <div class="logo1"></div>
+        <div class="logo1"></div>
+        <div style="float: left; width: 15%; height: 50px; background-color: rgb(237, 240, 241); text-align: center; line-height: 3";=""> LOGO</div>
+        <div class="logo1"></div>
+        <div class="logo1"></div>
+        <div class="logo1"></div>
       </div>
         <div
           align="center" style="width: 100%; height: 600px; background-color: rgb(194, 233, 255); position:relative; top:50px">ẢNH
@@ -159,64 +154,77 @@ while ($row=$result->fetch_assoc())
   </div>
     
 
-      <div class="layout_danh_gia_noi_bat">
+  <div class="layout_danh_gia_noi_bat">
         <h1 style="text-align: center"><b>ĐÁNH GIÁ NỔI BẬT</b></h1>
         <div class="danh_gia">
-          <div class="anh_dai_dien"></div>
+          <img class="anh_dai_dien" src="https://i.pinimg.com/736x/63/a2/e2/63a2e222c202f9035cb38a7151ad8f19.jpg">
           <div class="comment">
             klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
             knjn lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
             jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEkjdc nc wjj
-            ammwlkcnln cnken jkachuiwh lcneuh akehc H[ OISH;I uhiy yguy guyg it7i 
+            ammwlkcnln cnken jkachuiwh lcneuh akehc H[ OISH;I uhiy yguy guyg it7
+            <div style="margin:2%">⭐⭐⭐⭐⭐</div>
+            <div><b>- Lalisa -</b></div>
           </div>
         </div>
 
         <div class="danh_gia">
-          <div class="anh_dai_dien"></div>
+        <img class="anh_dai_dien" src="https://i.pinimg.com/originals/cd/b2/3f/cdb23fa36c904fb5efdcff3962fb86a5.jpg">
           <div class="comment">
             klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
             knjn lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
             jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
+            <div style="margin:2%">⭐⭐⭐⭐⭐</div>
+            <div><b>- Jennie -</b></div>
           </div>
         </div>
-
       </div>
+
       <div class="loi_goi">
         <h3>HÃY BẮT ĐẦU TRẢI NGHIỆM </h3>
-        <h2>TÊN</h2>
+        <h2>LOTUS</h2>
       </div>
+
       <div class="dat_phong">
         <div class="dat_phong1" style="top: 10px;left: 2%;"></div>
-        <div class="dat_phong1" style="top: 10px;left: 38%;"></div>
+        <div class="dat_phong1" style="top: 10px;left: 27%;"></div>
+        <div class="dat_phong1" style="top: 10px;left: 52%;"></div>
         <div class="dat_phong2" style="top: 10px;left: 75%;"></div>
       </div>
+
       <div class="layout_thong_tin">
-        <div class="thong_tin">
-          <h1>Ten KS</h1>
+        <div class="thong_tin" style="margin: 7% 2% 0 8%">
+          <h1>LOTUS</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
-        <div class="thong_tin">
-          <h1>Lien He</h1>
-          0316546156 <br />
+        <div class="thong_tin" style="margin: 7% 2% 0 0">
+          <h1>Liên Hệ</h1>
+          0316546156 <br>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
-        <div class="thong_tin">
+        <div class="thong_tin" style="margin: 7% 2% 0 0">
           <h1>Quick Links</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
-        <div class="thong_tin">
-          <h1>Apps</h1>
-          klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
-          lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
-          jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
+        <div class="thong_tin" style="margin: 7% 0 0 0">
+          <h1>Get The Apps</h1>
+          <img src="https://laseta.bithemer.com/assets/img/icons/i1.svg">
+          <img src="https://laseta.bithemer.com/assets/img/icons/i2.svg">
+          <h1>Connect Social</h1>
+          <img src="https://img.icons8.com/?size=256&id=uLWV5A9vXIPu&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=13963&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=oWiuH0jFiU0R&format=png"style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=19318&format=png"style="width: 30px; height:30px">
         </div>
       </div>
     </div>
+
   </body>
 </html>
