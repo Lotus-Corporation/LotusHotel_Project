@@ -1,0 +1,33 @@
+.pnb_anh {
+    width: 23%;
+    float: left;
+    height: 70%;
+    margin: 20px 8px 0 8px;
+    border: 1px dashed #ff69b4;
+  }
+  .dv_anh1 {
+    width: 40%;
+    float: left;
+    height: 30%;
+    margin: 20px 15px 10px 50px;
+    border: 1px dashed #ff69b4;
+  }
+  .dv_anh2 {
+    width: 40%;
+    float: right;
+    height: 30%;
+    margin: 20px 69px 10px 8px;
+    border: 1px dashed #ff69b4;
+  }
+  .phong_noi_bat {
+    position: relative;
+    height: 240px;
+    width: 98%;
+    padding: 30px 15px 30px 15px;
+  }
+  .dich_vu {
+    position: relative;
+    height: 1140px;
+    width: 98%;
+    padding: 20px 30px 80px 30px;
+  }

@@ -1,0 +1,22 @@
+.diadiemnoibat {
+  width: 100%;
+  height: 420px;
+  background: rgb(186, 188, 184);
+  border: 2px solid black;  
+      }
+.circle {
+          width: 300px;   
+          height: 300px;
+          background: white;
+          border-radius: 50%;
+         
+        }
+
+.anhdiadiem {
+  width: 100%;
+  height: 320px;
+  background: rgb(186, 188, 184);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+       }  
