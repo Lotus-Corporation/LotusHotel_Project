@@ -17,13 +17,12 @@ $sql="select * from loaiphong";
 $result=$link->query($sql);
 ?>
         
-  </head>
+        </head>
   <body>
-   <div class="container"> 
-      <div style="display: flex;width: 100%; position: fixed; z-index: 1;background-color:gray">
-        <div class="logo1"style="margin-left: 12%">
-          <p style="justify-content: center";><font face="Courier New" size="5" color="WHITE">ROOMS</font></p>
-          <div class="menu">
+    <div class="container">
+      <div style="width: 100%; position: fixed; z-index: 1; background-color:white">
+        <div class="logo1";>Our rooms
+        <div class="menu" >
           
         <?php
 while ($row=$result->fetch_assoc())
@@ -35,19 +34,21 @@ while ($row=$result->fetch_assoc())
 ?>
            </div>
         </div>
-        <div class="logo1"></div>
-        <div class="logo1"></div>
-        <div style="float: left; width: 15%; height: 50px; background-color: rgb(237, 240, 241); text-align: center; line-height: 3";=""> LOGO</div>
-        <div class="logo1"></div>
-        <div class="logo1"></div>
-        <div class="logo1"></div>
-      </div>
-        <div
-          align="center" style="width: 100%; height: 600px; background-color: rgb(194, 233, 255); position:relative; top:50px">ẢNH
+        <div class="logo1">Services</div>
+        <div class="logo1";="">Restaurant</div>
+        <div class="logo">
+          <?php include 'view/logo.php';?>
         </div>
+        <div class="logo1";="">Spa&Wellness</div>
+        <div class="logo1";="">About Us</div>
+        <div class="logo1";="">Contacts</div>
+      
+      </div>
+      <div align="center" style="width: 100%; height: 600px; background-color: white; position:relative; top:50px">
+      <?php include 'view/anhchinh.php';?>
+      </div>
 
-
-        <div style="width: 100%; height: 620px; margin-top: 5%;">
+      <div style="width: 100%; height: 620px; margin-top: 5%;">
         <div class="mota2"> 
           <div class="mota3"> 
               <div align="center" class="mota4">
@@ -63,7 +64,6 @@ while ($row=$result->fetch_assoc())
           </div>
       </div>
       </div>
-      
       <div align="center" class="overlay">
         <div class="check">
           <div class="check1">ĐIỂM ĐẾN</div>
@@ -81,10 +81,10 @@ while ($row=$result->fetch_assoc())
           <div class="check1"> số phòng và khách</div>
           <div class="check2">1phòng, 2khach</div>
         </div>
-        <button class="timkiem" onclick="alert('kakak')">CHECK ROOM</button> 
-      </div>  
-
-            <div class="uudai1">
+        &gt;
+        <button class="timkiem" onclick="alert(kakak39)">CHECK ROOM</button>
+      </div>
+      <div class="uudai1">
         <div align="center" class="uudai2"> Ưu Đãi </div>
         <div class="uudai3">
             <div align="center" class="uudai3">
@@ -107,7 +107,7 @@ while ($row=$result->fetch_assoc())
             </div>
         </div>
     </div>
-    
+
       <br>
       <div class="phong_noi_bat">
         <h3 class="lable">PHONG NOI BAT</h3>
@@ -129,37 +129,63 @@ while ($row=$result->fetch_assoc())
         <div class="dv_anh2">. . . Ả N H</div>
       </div>
 
-
-
-    <div class="loaiphong" >
+      <div align="left" style="
+          width: 100%;
+          border: 1px solid black;
+          height: 300px;
+          background-color: rgb(21, 191, 21);
+        ">
         <b>LOẠI PHÒNG</b>
-      <div class="loaiphong3" style=" margin-top: 40px; margin-right: 30px">
-        <div class="loaiphong2">Ảnh</div>
-      </div>
-      <div class="loaiphong1">
-        <div class="loaiphong2">Ảnh</div>
-      </div>
-      <div class="loaiphong1">
-        <div class="loaiphong2">Ảnh</div>
-      </div>
-      <div class="loaiphong3" style=" margin-top: 22px; margin-right: 10px">
-        <div class="loaiphong2">Ảnh</div>
-      </div>
-    </div>
+        <div style="width: 23%; float: right; margin-top: 40px; margin-right: 30px">
+          <div align="center" style="
+              border: 1px solid black;
+              height: 200px;
+              background-color: white;
+            ">
+            Ảnh
+          </div>
+        </div>
+        <div style="width: 23%; float: right; margin-top: 40px; margin-right: 10px">
+          <div align="center" style="
+              border: 1px solid black;
+              height: 200px;
+              background-color: white;
+            ">
+            Ảnh
+          </div>
+        </div>
+        <div style="width: 23%; float: right; margin-top: 40px; margin-right: 10px">
+          <div align="center" style="
+              border: 1px solid black;
+              height: 200px;
+              background-color: white;
+            ">
+            Ảnh
+          </div>
+        </div>
+        <div style="width: 23%; float: right; margin-top: 22px; margin-right: 10px">
+          <div align="center" style="
+              border: 1px solid black;
+              height: 200px;
+              background-color: white;
+            ">
+            Ảnh
+          </div>
+        </div>
+        </div>
 
-    
-  <div class="diadiemnoibat">
-        <h4  >ĐỊA ĐIỂM NỔI BẬT</h4>
-    <div class="anhdiadiem">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
-  </div>
-    
+      
+        <div class="diadiemnoibat">
+          <h2 style="text-align: center" >ĐỊA ĐIỂM NỔI BẬT</h2>
+            <div class="anhdiadiem">
+              <img class="circle" src="../Imgs/ba.jpg" alt="Bữa ăn view biển" width="320" height="320">
+              <img class="circle" src="../Imgs/nd.jpeg" alt="Trò chơi cảm giác mạnh " width="320" height="320">
+              <img class="circle" src="../Imgs/ptv.jpg" alt="Phòng vip" width="320" height="320">
+              <img class="circle" src="../Imgs/bad.jpg" alt="Nhà hàng" width="320" height="320">
+            </div>
+      </div>
 
-  <div class="layout_danh_gia_noi_bat">
+      <div class="layout_danh_gia_noi_bat">
         <h1 style="text-align: center"><b>ĐÁNH GIÁ NỔI BẬT</b></h1>
         <div class="danh_gia">
           <img class="anh_dai_dien" src="https://i.pinimg.com/736x/63/a2/e2/63a2e222c202f9035cb38a7151ad8f19.jpg">
@@ -171,6 +197,7 @@ while ($row=$result->fetch_assoc())
             <div style="margin:2%">⭐⭐⭐⭐⭐</div>
             <div><b>- Lalisa -</b></div>
           </div>
+          
         </div>
 
         <div class="danh_gia">
@@ -183,53 +210,44 @@ while ($row=$result->fetch_assoc())
             <div><b>- Jennie -</b></div>
           </div>
         </div>
-      </div>
 
+      </div>
       <div class="loi_goi">
         <h3>HÃY BẮT ĐẦU TRẢI NGHIỆM </h3>
         <h2>LOTUS</h2>
       </div>
-
       <div class="dat_phong">
         <div class="dat_phong1" style="top: 10px;left: 2%;"></div>
         <div class="dat_phong1" style="top: 10px;left: 27%;"></div>
         <div class="dat_phong1" style="top: 10px;left: 52%;"></div>
-        <div class="dat_phong2" style="top: 10px;left: 75%;"></div>
+        <div class="dat_phong2" style="top: 10px;left: 77%;"></div>
       </div>
-
       <div class="layout_thong_tin">
-        <div class="thong_tin" style="margin: 7% 2% 0 8%">
+        <div class="thong_tin" style="margin: 5% 2% 0 8%">
           <h1>LOTUS</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
-        <div class="thong_tin" style="margin: 7% 2% 0 0">
-          <h1>Liên Hệ</h1>
+        <div class="thong_tin" style="margin: 5% 2% 0 0">
+          <h1>Lien He</h1>
           0316546156 <br>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
-        <div class="thong_tin" style="margin: 7% 2% 0 0">
+        <div class="thong_tin" style="margin: 5% 2% 0 0">
           <h1>Quick Links</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
-        <div class="thong_tin" style="margin: 7% 0 0 0">
-          <h1>Get The Apps</h1>
+        <div class="thong_tin" style="margin: 5% 0 0 0">
+          <h1>Apps</h1>
           <img src="https://laseta.bithemer.com/assets/img/icons/i1.svg">
           <img src="https://laseta.bithemer.com/assets/img/icons/i2.svg">
-          <h1>Connect Social</h1>
-          <img src="https://img.icons8.com/?size=256&id=uLWV5A9vXIPu&format=png" style="width: 30px; height:30px">
-          <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" style="width: 30px; height:30px">
-          <img src="https://img.icons8.com/?size=256&id=13963&format=png" style="width: 30px; height:30px">
-          <img src="https://img.icons8.com/?size=256&id=oWiuH0jFiU0R&format=png"style="width: 30px; height:30px">
-          <img src="https://img.icons8.com/?size=256&id=19318&format=png"style="width: 30px; height:30px">
         </div>
       </div>
     </div>
 
-  </body>
-</html>
+</body></html>

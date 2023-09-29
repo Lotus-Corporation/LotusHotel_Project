@@ -1,10 +1,14 @@
 .menu{
-  width: 200px;
-  background-color: rgb(154, 197, 235);
+  width: 222px;
+  background-color: rgb(252, 252, 252);
   position: absolute;
   top: 50px;
   z-index: 1;
   display: none;
+  text-align: center;
+  font-family: 'Courier New';
+  font-size: 18px;
+  color: rgb(27, 93, 111);
 }
 .menu a{
   padding: 12px 16px;
@@ -12,14 +16,27 @@
   text-decoration: none;
 }
 .logo1:hover .menu{display: block;}
-.menu a:hover {background-color: lightblue;}
-.logo1:hover {background-color: darkgray;}
+.menu a:hover {background-color: rgb(206, 255, 255);}
+.logo1:hover {background-color: rgb(206, 236, 243);}
 
 .logo1 {
   float: left;
-  width: 10%;
-  height: 50px;
+  width: 14%;
+  height: 53px;
   cursor: pointer;
-  line-height: 3;
+  line-height: 2;
   text-align: center;
+  font-family: 'Serif';
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
 }
+
+.logo {
+  float: left;
+  width: 15%;
+  height: 53px;
+  background-color: rgb(237, 240, 241);
+}
+
