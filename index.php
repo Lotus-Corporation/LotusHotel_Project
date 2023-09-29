@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="./css/diadiemnb.css">   
     <link rel="stylesheet" href="./css/danhgia.css"> 
     <link rel="stylesheet" href="./css/mota-uudai.css"> 
-         
+    <?php 
+$link=new mysqli("localhost", "root","","khachsan");
+$sql="select * from loaiphong";
+$result=$link->query($sql);
+?>
+        
   </head>
   <body>
    <div class="container"> 
@@ -19,16 +24,16 @@
         <div class="logo1"style="margin-left: 12%">
           <p style="justify-content: center";><font face="Courier New" size="5" color="WHITE">ROOMS</font></p>
           <div class="menu">
-            
-             
-              <a> Deluxe</a>
-             
-              <a> Standard</a>
-             
-              <a> Superior</a>
-             
-              <a> Suite</a>
-                    </div>
+          
+        <?php
+while ($row=$result->fetch_assoc())
+{
+ ?>   
+    <a> <?php echo $row["LOAIPHONG"];?></a>
+<?php
+ }
+?>
+           </div>
         </div>
         <div class="logo1"></div>
         <div class="logo1"></div>
