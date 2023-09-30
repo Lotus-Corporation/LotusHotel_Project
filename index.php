@@ -35,13 +35,13 @@ while ($row=$result->fetch_assoc())
            </div>
         </div>
         <div class="logo1">Services</div>
-        <div class="logo1";="">Restaurant</div>
+        <div class="logo1">Restaurant</div>
         <div class="logo">
           <?php include 'view/logo.php';?>
         </div>
-        <div class="logo1";="">Spa&Wellness</div>
-        <div class="logo1";="">About Us</div>
-        <div class="logo1";="">Contacts</div>
+        <div class="logo1">Spa&Wellness</div>
+        <div class="logo1"><a href="http://localhost/khachsan/view/public_khuyenmai.php">Special Offers</a></div>
+        <div class="logo1">Contacts</div>
       
       </div>
       <div align="center" style="width: 100%; height: 600px; background-color: white; position:relative; top:50px">
