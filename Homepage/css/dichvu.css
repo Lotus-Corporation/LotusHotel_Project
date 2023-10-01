@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body {
+  font-family: 'PT Serif', serif;}
+div#phandichvu{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  padding: 50px 0;
+}
+.dichvu {
+  position: relative;
+  max-width: 945px;
+  height: auto;
+  margin: 0 auto;
+}
+p {
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+}
+h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-weight: 300;
+  display: block;
+}
+a {
+  color: #999;
+}
+#phandichvu div > p {
+  margin: 1em auto 3em auto;
+  text-align: center;
+}
+#phandichvu li div > p {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+#phandichvu ul {
+  list-style-type: none;
+}
+#phandichvu ul li {
+  width: calc(50% - 37px);
+  height: 590px;
+  float: left;
+  position: relative;
+  margin-bottom: 37px;
+}
+#phandichvu ul li:nth-child(2n + 1) {
+  margin-right: 37px;
+}
+#phandichvu ul li:nth-child(2n + 2) {
+  margin-left: 37px;
+}
+#phandichvu ul li > a > div > .tieude_phandichvu {
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: left;
+  width: 100%;
+  color: #000;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+#phandichvu li div {
+  position: absolute;
+  top: 375px;
+  left: 0;
+  float: left;
+  width: 100%;
+}
+#phandichvu li div.hinhanh {
+  height: 375px;
+  top: 0;
+}
+#phandichvu li div.hinhanh img {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  float: left;
+  width: 382px;
+                    height: 382px;
+                    margin: -191px 0px 0px -191px;
+}
+.docthem {
+    color: #a98524 !important;
+    font-size: 9px !important;
+    display: inline-block;
+    width: auto !important;
+    text-transform: uppercase;
+    height: 50px !important;
+    line-height: 50px !important;
+}
