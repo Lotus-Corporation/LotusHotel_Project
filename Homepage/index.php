@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./css/checkphong.css"> 
     <link rel="stylesheet" href="./css/menu-logo.css"> 
     <link rel="stylesheet" href="./css/loaiphong.css">  
-    <link rel="stylesheet" href="./css/phongnoibat_dv.css">
     <link rel="stylesheet" href="./css/diadiemnb.css">   
     <link rel="stylesheet" href="./css/danhgia.css"> 
     <link rel="stylesheet" href="./css/mota-uudai.css"> 
