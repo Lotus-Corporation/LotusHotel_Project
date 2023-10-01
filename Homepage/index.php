@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,10 +6,11 @@
     <link rel="stylesheet" href="./css/checkphong.css"> 
     <link rel="stylesheet" href="./css/menu-logo.css"> 
     <link rel="stylesheet" href="./css/loaiphong.css">  
+    <link rel="stylesheet" href="./css/phongnoibat_dv.css">
     <link rel="stylesheet" href="./css/diadiemnb.css">   
     <link rel="stylesheet" href="./css/danhgia.css"> 
     <link rel="stylesheet" href="./css/mota-uudai.css"> 
-     <link rel="stylesheet" href="css/dichvu.css">
+    <link rel="stylesheet" href="css/dichvu.css">
     <link rel="stylesheet" href="css/phongnoibat.css" />
     <script type='text/javascript' src='script.js'></script>
     <?php 
@@ -39,10 +39,9 @@ while ($row=$result->fetch_assoc())
         <div class="logo1">Services</div>
         <div class="logo1">Restaurant</div>
         <div class="logo">
-          <?php include 'view/logo.php';?>
-        </div>
+          <img src="img/LOGO.png" alt="" width=100% height=130px>        </div>
         <div class="logo1">Spa&Wellness</div>
-        <div class="logo1"><a href="http://localhost/khachsan/view/public_khuyenmai.php">Special Offers</a></div>
+        <div class="logo1" ><a style="text-decoration: none; color: black" href="view/public_khuyenmai.php" >Special Offers</a></div>
         <div class="logo1">Contacts</div>
       
       </div>
@@ -83,7 +82,6 @@ while ($row=$result->fetch_assoc())
           <div class="check1"> số phòng và khách</div>
           <div class="check2">1phòng, 2khach</div>
         </div>
-        &gt;
         <button class="timkiem" onclick="alert(kakak39)">CHECK ROOM</button>
       </div>
       <div class="uudai1">
