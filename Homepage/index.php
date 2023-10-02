@@ -17,7 +17,7 @@ $link=new mysqli("localhost", "root","","khachsan");
 $sql="select * from loaiphong";
 $result=$link->query($sql);
 ?>
-    hehe
+kkkk
         </head>
   <body>
     <div class="container">
