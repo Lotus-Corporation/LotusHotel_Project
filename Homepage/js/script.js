@@ -2,7 +2,7 @@
 		if (imagesPerPage == 1) {
 			$(this).addClass('first');
 		}
-	});
+	
 
 	var _current = 0;
 	$('#gallery-photo ul').css('left',0);
@@ -49,7 +49,7 @@
 		$('#gallery-photo > div').on('swipeleft', galleryMoveRight);
 		$('#gallery-photo > div').on('swiperight', galleryMoveLeft);
 	}
-}
+
 
 var galleryPopin = function(id, panel, category) {
 	if (typeof category === 'undefined') {

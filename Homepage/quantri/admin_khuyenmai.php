@@ -34,7 +34,7 @@
             <td><?php echo $row["NGAYKETTHUC"]; ?></td>
             <td><?php echo $row["DOITUONGAPDUNG"]; ?></td>
             <td><?php echo $row["MA_LOAIPHONG"];?></td>
-            <td><img src="../images/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
+            <td><img src="../img/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
         </tr>
     <?php 
         }

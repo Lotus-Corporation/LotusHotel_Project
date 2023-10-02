@@ -29,7 +29,7 @@
                 <td><?php echo $row["DIACHI"]; ?></td>
                 <td><?php echo $row["SDT"]; ?></td>
                 <td><?php echo $row["MA_NV"]; ?></td>
-                <td><img src="../images/<?php echo $row["HINHANH"]; ?>" style="width: 300px; height: 300px;"></td>
+                <td><img src="../img/<?php echo $row["HINHANH"]; ?>" style="width: 300px; height: 300px;"></td>
             </tr>
     <?php
         }

@@ -79,9 +79,11 @@ footer {
 
 <section>
   <nav>
-    <ul>
+    <ul >
       <li><a href="./loaiphong.php"><h1>Loại phòng</h1></a></li>
-      <li><a href="./chinhanh.php"><h1>Chi nhánh</h1></a></li>
+      <li><a href="./admin_chinhanh.php"><h1>Chi nhánh</h1></a></li>
+      <li><a href="./admin_khuyenmai.php"><h1>Khuyến mãi</h1></a></li>
+      <li><a href="./nhanvien.php"><h1>Nhân viên</h1></a></li>
     </ul>
   </nav>
   
