@@ -38,7 +38,7 @@ while ($row=$result->fetch_assoc())
         <div class="logo1">Services</div>
         <div class="logo1">Restaurant</div>
         <div class="logo">
-          <img src="img/LOGO.png" alt="" width=100% height=130px>        </div>
+          <img src="img/LOGO.png" alt="" width=100% height=130px></div>
         <div class="logo1">Spa&Wellness</div>
         <div class="logo1" ><a style="text-decoration: none; color: black" href="view/public_khuyenmai.php" >Special Offers</a></div>
         <div class="logo1">Contacts</div>
