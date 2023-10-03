@@ -47,14 +47,14 @@ while ($row=$result->fetch_assoc())
       <?php include 'view/anhchinh.php';?>
       </div>
 
-      <div style="width: 100%; height: 620px; ">
+      <div style="width: 100%; height: 720px; ">
             <div class="mota2" style="margin-top: 100px;"> 
               <div class="mota3"> 
-                  <div align="center" class="mota4" >
-                      <div align="center" class="mota6" >
+                  <div class="mota4" >
+                      <div class="mota6" >
                         <img class="mota6" src="img/mota/mota1.png"  alt="">
                       </div>
-                      <div align="center" class="mota5" style="background:white; border: 10px solid rgb(193, 233, 244)" > 
+                      <div class="mota5" style="background:white; border: 5px solid rgb(193, 233, 244); padding: 20px;" > 
                     <p> Sứ mệnh của khách sạn Lotus là mang đến cho người Việt Nam một trải nghiệm nghỉ dưỡng tinh khiết, cao quý và trường tồn,
                      giống như hình ảnh của hoa sen - biểu tượng của Việt Nam.Lotus cam kết cung cấp dịch vụ chất lượng cao,
                       tạo ra một không gian thoải mái và lịch sự cho khách hàng. Mỗi khách hàng khi đến với khách sạn Lotus sẽ được 
@@ -66,14 +66,14 @@ while ($row=$result->fetch_assoc())
                   </div>
               </div>
               <div class="mota7">
-                  <div align="center" class="mota4">
-                      <div align="center" class="mota6">
+                  <div class="mota4">
+                      <div class="mota6">
                         <img class="mota6" src="img/dichvu/dv17.jpg" alt="">
                       </div>
-                      <div align="center" class="mota5" style="background:white;background:white; border: 10px solid rgb(193, 233, 244)"> <p>Bên cạnh đó, khách sạn Lotus cũng hiểu rằng sự trường tồn
+                      <div class="mota5" style="background:white;background:white; border: 5px solid rgb(193, 233, 244);padding: 20px; "> <p>Bên cạnh đó, khách sạn Lotus cũng hiểu rằng sự trường tồn
                        và phát triển bền vững là một phần quan trọng của sứ mệnh của mình.Chúng tôi cam kết hoạt động một cách có trách nhiệm với môi trường và cộng đồng,
                        góp phần vào sự phát triển bền vững của ngành du lịch Việt Nam.Tại khách sạn Lotus, chúng tôi không chỉ mang đến cho bạn một nơi nghỉ dưỡng,
-                      mà còn mang đến cho bạn một trải nghiệm tinh túy của văn hóa và giá trị Việt Nam. Chúng tôi rất hân hạnh được phục vụ bạn </p> </div>
+                      mà còn mang đến cho bạn một trải nghiệm tinh túy của văn hóa và giá trị Việt Nam. Chúng tôi rất hân hạnh được phục vụ bạn. </p> </div>
                       
                   </div>
               </div>
@@ -98,16 +98,16 @@ while ($row=$result->fetch_assoc())
         </div>
         <button class="timkiem" onclick="alert(kakak39)">CHECK ROOM</button>
       </div>
-      <div style="  background:rgb(193, 233, 244);">
-        <h2 style="font-size:20px; "> Ưu Đãi </h2>
+      <div style="  background:rgb(193, 233, 244); height:400px">
+        <h2 style="font-size:20px; margin-top: 5%;"> Ưu Đãi </h2>
             <div align="center" class="uudai1">
                 <div class="uudai2">
-                <img src="img/khuyenmai/km01.png" alt="" width="100%" height="200px">
+                <img src="img/khuyenmai/km01.png" alt="" width="100%" height="300px">
                 </div>
             </div>
             <div align="center" class="uudai1">
                 <div class="uudai2">
-                <img src="img/khuyenmai/km02.png" alt="" width="100%" height="200px">
+                <img src="img/khuyenmai/km02.png" alt="" width="100%" height="300px">
                 </div>
             </div>
     </div>
@@ -436,9 +436,9 @@ while ($row=$result->fetch_assoc())
             </div>
       </div>
 
-      <div class="layout_danh_gia_noi_bat">
+      <div class="layout_danh_gia_noi_bat" style="background-color: rgb(193, 233, 244)">
         <h1 style="text-align: center"><b>ĐÁNH GIÁ NỔI BẬT</b></h1>
-        <div class="danh_gia">
+        <div class="danh_gia" style="background-color: rgb(132, 193, 219);">
           <img class="anh_dai_dien" src="https://i.pinimg.com/736x/63/a2/e2/63a2e222c202f9035cb38a7151ad8f19.jpg">
           <div class="comment">
             klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
@@ -451,7 +451,7 @@ while ($row=$result->fetch_assoc())
           
         </div>
 
-        <div class="danh_gia">
+        <div class="danh_gia" style="background-color: rgb(132, 193, 219);">
         <img class="anh_dai_dien" src="https://i.pinimg.com/originals/cd/b2/3f/cdb23fa36c904fb5efdcff3962fb86a5.jpg">
           <div class="comment">
             klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
@@ -467,13 +467,13 @@ while ($row=$result->fetch_assoc())
         <h3>HÃY BẮT ĐẦU TRẢI NGHIỆM </h3>
         <h2>LOTUS</h2>
       </div>
-      <div class="dat_phong">
-        <div class="dat_phong1" style="top: 10px;left: 2%;"></div>
-        <div class="dat_phong1" style="top: 10px;left: 27%;"></div>
-        <div class="dat_phong1" style="top: 10px;left: 52%;"></div>
-        <div class="dat_phong2" style="top: 10px;left: 77%;"></div>
+      <div class="dat_phong" style="background-color: rgb(55, 117, 140)">
+        <div class="dat_phong1" style="top: 10px;left: 2%;background-color: #eff4f8;"></div>
+        <div class="dat_phong1" style="top: 10px;left: 27%;background-color: #eff4f8;"></div>
+        <div class="dat_phong1" style="top: 10px;left: 52%;background-color: #eff4f8;"></div>
+        <div class="dat_phong2" style="top: 10px;left: 77%;background-color:rgb(27, 54, 73)              "></div>
       </div>
-      <div class="layout_thong_tin">
+      <div class="layout_thong_tin" style="background-color: rgb(193, 233, 244)">
         <div class="thong_tin" style="margin: 5% 2% 0 8%">
           <h1>LOTUS</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
