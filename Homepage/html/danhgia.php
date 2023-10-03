@@ -57,9 +57,15 @@
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
         <div class="thong_tin" style="margin: 5% 0 0 0">
-          <h1>Apps</h1>
+          <h1>Get The Apps</h1><br>
           <img src="https://laseta.bithemer.com/assets/img/icons/i1.svg">
           <img src="https://laseta.bithemer.com/assets/img/icons/i2.svg">
+          <br><br><h1>Connect Social</h1>
+          <img src="https://img.icons8.com/?size=256&id=uLWV5A9vXIPu&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=13963&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=oWiuH0jFiU0R&format=png"style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=19318&format=png"style="width: 30px; height:30px">
         </div>
       </div>
     </div>
