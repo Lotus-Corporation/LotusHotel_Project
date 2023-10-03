@@ -26,7 +26,7 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 500px; /* only for demonstration, should be removed */
   background: #ccc;
   padding: 20px;
 }
@@ -42,7 +42,7 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 500px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -80,10 +80,15 @@ footer {
 <section>
   <nav>
     <ul >
-      <li><a href="./loaiphong.php"><h1>Loại phòng</h1></a></li>
+      <li><a href="./admin_loaiphong.php"><h1>Loại phòng</h1></a></li>
       <li><a href="./admin_chinhanh.php"><h1>Chi nhánh</h1></a></li>
       <li><a href="./admin_khuyenmai.php"><h1>Khuyến mãi</h1></a></li>
-      <li><a href="./nhanvien.php"><h1>Nhân viên</h1></a></li>
+      <li><a href="./admin_nhanvien.php"><h1>Nhân viên</h1></a></li>
+      <li><a href="./admin_nkdp.php"><h1>Nhật ký đặt phòng</h1></a></li>
+      <li><a href="./admin_ctnkdp.php"><h1>Chi tiết nhật ký đặt phòng</h1></a></li>
+      <li><a href="./admin_dichvu.php"><h1>Dịch vụ</h1></a></li>
+      <li><a href="./admin_nksddv.php"><h1> NKSD Dịch vụ</h1></a></li>
+      <li><a href="./admin_ctnksddv.php"><h1> Chi tiết NKSD Dịch vụ</h1></a></li>
     </ul>
   </nav>
   

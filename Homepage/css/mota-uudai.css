@@ -1,13 +1,13 @@
 .mota1{
     width: 100% ; 
     height: 800px ; 
-    border: 2px solid black
+
 }
 
 .mota2{
     width: 100% ; 
     height: 620px ; 
-    border-bottom: 2px solid black
+    
 }
 
 .mota3{
@@ -18,18 +18,18 @@
 
 .mota4{
     margin: 50px 10% 50px 10% ; 
-    border: 2px solid black
+
 }
 
 .mota5{
     width: 100% ; 
-    height: 220px ; 
-    border-bottom: 2px solid black
+    height: 282px ; 
 }
 
 .mota6{
     width: 100% ; 
-    height: 299px
+    height: 299px;
+    
 }
 
 .mota7{
@@ -38,30 +38,15 @@
     height: 620px
 }
 
+
 .uudai1{
-    width: 100% ; 
-    height: 180px
-}
-
-.uudai2{
-    width: 100% ; 
-    height: 20px
-}
-
-.uudai3{
     float: left ; 
     width: 50% ; 
-    height: 160px
+    height: 230px;
+    background:rgb(193, 233, 244)
 }
-
-.uudai4{
-    float: right ; 
-    width: 50% ; 
-    height: 160px
-}
-
-.uudai5{
-    margin: 20px 20% 20px 20% ; 
-    height: 100px ; 
-    border: 2px solid black
+.uudai2{
+    margin: 10px 10% 10px 10% ; 
+    height: 180px ; 
+    background:rgb(193, 233, 244)
 }

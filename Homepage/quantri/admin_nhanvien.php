@@ -3,7 +3,15 @@ $link=new mysqli("localhost", "root","","khachsan");
 $sql="select * from chinhanh";
 $result=$link->query($sql);
 ?>
-<table  border="1" width= "650px" height= "650px"; align="center">
+<style>
+    table{width:100%}
+    th,td{
+        border: 1px solid gray;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+<table>
     <tr>
         <th> Mã chi nhánh </th>
         <th> Địa chỉ </th>

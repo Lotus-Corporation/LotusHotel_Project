@@ -5,13 +5,13 @@ create table KHUYENMAI(
     NGAYBATDAU date,
     NGAYKETTHUC date,
     DOITUONGAPDUNG nvarchar(100),
-    MA_LOAIPHONG nvarchar(3),
+    MA_LOAIPHONG varchar(3),
     foreign key (MA_LOAIPHONG) references LOAIPHONG(MA_LOAIPHONG),
     HINHANHKM char(50)
-) 
+);
 
 
-insert into KHUYENMAI(MA_KM,TENKM,MOTA,NGAYBATDAU,NGAYKETTHUC,DOITUONGAPDUNG,MA_LOAIPHONG,HINHANHKM) values
+insert into KHUYENMAI values
 ('km01','Hello Summer','Giảm 15% tất cả dịch vụ trong mùa hè.','2023-05-01','2023-07-31',null,null,'khuyenmai/km01.png'),
 ('km02','Honeymoon - Tuần Trang Mật','Giảm 200k cho 3 đêm trở lên.','2023-10-1','2023-12-31','ngày trả-ngày đặt>3 ',null,'khuyenmai/km02.png'),
 ('km03','Merry Christmas','Giảm 10%/phòng','2023-12-23','2023-12-26',null,null,'khuyenmai/km03.png'),

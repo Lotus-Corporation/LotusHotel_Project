@@ -2,10 +2,10 @@ create table CHINHANH(
     MA_CN nvarchar(10) PRIMARY KEY NOT NULL,
     DIACHI nvarchar(100) NOT NULL,
     SDT int(10),
-    MA_NV nvarchar(10) NOT NULL,
+    MA_NV varchar(10) NOT NULL,
     FOREIGN KEY (MA_NV) REFERENCES NHANVIEN(MA_NV),
     HINHANH char(50)
-) 
+);
 
 
 insert into CHINHANH(MA_CN,DIACHI,SDT,MA_NV,HINHANH) values

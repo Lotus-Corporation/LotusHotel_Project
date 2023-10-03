@@ -20,7 +20,7 @@ $result=$link->query($sql);
         </head>
   <body>
     <div class="container">
-      <div style="width: 100%; position: fixed; z-index: 1; background-color:white">
+      <div style="width: 100%; position: fixed; z-index: 1; background-color:white;border: 8px solid rgb(193, 233, 244);">
         <div class="logo1";>Our rooms
         <div class="menu" >
           
@@ -34,10 +34,10 @@ while ($row=$result->fetch_assoc())
 ?>
            </div>
         </div>
-        <div class="logo1">Services</div>
+        <div class="logo1"><a style="text-decoration: none; color: black" href="view/public_dichvu.php" >Services</a></div>
         <div class="logo1">Restaurant</div>
         <div class="logo">
-          <img src="img/LOGO.png" alt="" width=100% height=130px></div>
+          <img src="img/LOGO.png" alt="" width=100% height=130px style="border: 8px solid rgb(193, 233, 244);"></div>
         <div class="logo1">Spa&Wellness</div>
         <div class="logo1" ><a style="text-decoration: none; color: black" href="view/public_khuyenmai.php" >Special Offers</a></div>
         <div class="logo1">Contacts</div>
@@ -47,21 +47,37 @@ while ($row=$result->fetch_assoc())
       <?php include 'view/anhchinh.php';?>
       </div>
 
-      <div style="width: 100%; height: 620px; margin-top: 5%;">
-        <div class="mota2"> 
-          <div class="mota3"> 
-              <div align="center" class="mota4">
-                  <div align="center" class="mota5" style=" background-color: Aqua "> Ảnh </div>
-                  <div align="center" class="mota6" style=" background-color: CornflowerBlue "> Mô Tả </div>
+      <div style="width: 100%; height: 620px; ">
+            <div class="mota2" style="margin-top: 100px;"> 
+              <div class="mota3"> 
+                  <div align="center" class="mota4" >
+                      <div align="center" class="mota6" >
+                        <img class="mota6" src="img/mota/mota1.png"  alt="">
+                      </div>
+                      <div align="center" class="mota5" style="background:white; border: 10px solid rgb(193, 233, 244)" > 
+                    <p> Sứ mệnh của khách sạn Lotus là mang đến cho người Việt Nam một trải nghiệm nghỉ dưỡng tinh khiết, cao quý và trường tồn,
+                     giống như hình ảnh của hoa sen - biểu tượng của Việt Nam.Lotus cam kết cung cấp dịch vụ chất lượng cao,
+                      tạo ra một không gian thoải mái và lịch sự cho khách hàng. Mỗi khách hàng khi đến với khách sạn Lotus sẽ được 
+                      tận hưởng sự tinh tế trong từng chi tiết, từ thiết kế phòng ốc, dịch vụ tiện ích cho đến ẩm thực đặc sắc.
+                      Khách sạn Lotus không chỉ là nơi nghỉ ngơi lý tưởng, mà còn là nơi để khách hàng trải nghiệm và khám phá văn hóa Việt Nam
+                      phong phú qua các hoạt động văn hóa độc đáo do chúng tôi tổ chức.</p>
+                    </div>
+                      
+                  </div>
+              </div>
+              <div class="mota7">
+                  <div align="center" class="mota4">
+                      <div align="center" class="mota6">
+                        <img class="mota6" src="img/dichvu/dv17.jpg" alt="">
+                      </div>
+                      <div align="center" class="mota5" style="background:white;background:white; border: 10px solid rgb(193, 233, 244)"> <p>Bên cạnh đó, khách sạn Lotus cũng hiểu rằng sự trường tồn
+                       và phát triển bền vững là một phần quan trọng của sứ mệnh của mình.Chúng tôi cam kết hoạt động một cách có trách nhiệm với môi trường và cộng đồng,
+                       góp phần vào sự phát triển bền vững của ngành du lịch Việt Nam.Tại khách sạn Lotus, chúng tôi không chỉ mang đến cho bạn một nơi nghỉ dưỡng,
+                      mà còn mang đến cho bạn một trải nghiệm tinh túy của văn hóa và giá trị Việt Nam. Chúng tôi rất hân hạnh được phục vụ bạn </p> </div>
+                      
+                  </div>
               </div>
           </div>
-          <div class="mota7">
-              <div align="center" class="mota4">
-                  <div align="center" class="mota5" style=" background: CornflowerBlue "> Ảnh </div>
-                  <div align="center" class="mota6" style=" background: Aqua "> Mô Tả </div>
-              </div>
-          </div>
-      </div>
       </div>
       <div align="center" class="overlay">
         <div class="check">
@@ -82,28 +98,18 @@ while ($row=$result->fetch_assoc())
         </div>
         <button class="timkiem" onclick="alert(kakak39)">CHECK ROOM</button>
       </div>
-      <div class="uudai1">
-        <div align="center" class="uudai2"> Ưu Đãi </div>
-        <div class="uudai3">
-            <div align="center" class="uudai3">
-                <div align="center" class="uudai2"> Ưu Đãi 1 </div>
-                <div class="uudai5" style=" background-color: DeepskyBlue "> </div>
+      <div style="  background:rgb(193, 233, 244);">
+        <h2 style="font-size:20px; "> Ưu Đãi </h2>
+            <div align="center" class="uudai1">
+                <div class="uudai2">
+                <img src="img/khuyenmai/km01.png" alt="" width="100%" height="200px">
+                </div>
             </div>
-            <div align="center" class="uudai4">
-                <div align="center" class="uudai2"> Ưu Đãi 2 </div>
-                <div class="uudai5" style=" background-color: LightskyBlue "> </div>
+            <div align="center" class="uudai1">
+                <div class="uudai2">
+                <img src="img/khuyenmai/km02.png" alt="" width="100%" height="200px">
+                </div>
             </div>
-        </div>
-        <div class="uudai4">
-            <div align="center" class="uudai3">
-                <div align="center" class="uudai2"> Ưu Đãi 3 </div>
-                <div class="uudai5" style=" background-color: PaleTurquoise "> </div>
-            </div>
-            <div align="center" class="uudai4">
-                <div align="center" class="uudai2"> Ưu Đãi 4 </div>
-                <div class="uudai5" style=" background-color: DarkTurquoise  "> </div>
-            </div>
-        </div>
     </div>
 
       <div id="phongnoibat">
@@ -398,59 +404,35 @@ while ($row=$result->fetch_assoc())
       </div>
     </div>
 
-      <div align="left" style="
-          width: 100%;
-          border: 1px solid black;
-          height: 300px;
-          background-color: rgb(21, 191, 21);
-        ">
-        <b>LOẠI PHÒNG</b>
-        <div style="width: 23%; float: right; margin-top: 40px; margin-right: 30px">
-          <div align="center" style="
-              border: 1px solid black;
-              height: 200px;
-              background-color: white;
-            ">
-            Ảnh
-          </div>
-        </div>
-        <div style="width: 23%; float: right; margin-top: 40px; margin-right: 10px">
-          <div align="center" style="
-              border: 1px solid black;
-              height: 200px;
-              background-color: white;
-            ">
-            Ảnh
-          </div>
-        </div>
-        <div style="width: 23%; float: right; margin-top: 40px; margin-right: 10px">
-          <div align="center" style="
-              border: 1px solid black;
-              height: 200px;
-              background-color: white;
-            ">
-            Ảnh
-          </div>
-        </div>
-        <div style="width: 23%; float: right; margin-top: 22px; margin-right: 10px">
-          <div align="center" style="
-              border: 1px solid black;
-              height: 200px;
-              background-color: white;
-            ">
-            Ảnh
-          </div>
-        </div>
-        </div>
+    <div class="loaiphong" >
+        <h2  style="font-size:20px;">LOẠI PHÒNG</h2>
+      <div class="loaiphong1" style="margin-left: 15px;">
+        <div class="loaiphong2"><img src="img/loaiphong/phong4.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Suite</p>
+      </div>
+      <div class="loaiphong1">
+      <div class="loaiphong2"><img src="img/loaiphong/phong3.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Deluxe</p>
+      </div>
+      <div class="loaiphong1">
+      <div class="loaiphong2"><img src="img/loaiphong/phong2.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Superior</p>
+      </div>
+      <div class="loaiphong1" style="margin-left: 15px;">
+      <div class="loaiphong2"><img src="img/loaiphong/phong1.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Standard</p>
+      </div>
+    </div>
 
-      
-        <div class="diadiemnoibat">
-          <h2 style="text-align: center" >ĐỊA ĐIỂM NỔI BẬT</h2>
+        <div class="diadiemnoibat" style="border: 10px solid rgb(193, 233, 244)">
+        <h2  style="font-size:20px;">ĐỊA ĐIỂM NỔI BẬT</h2>
             <div class="anhdiadiem">
-              <img class="circle" src="../Imgs/ba.jpg" alt="Bữa ăn view biển" width="320" height="320">
-              <img class="circle" src="../Imgs/nd.jpeg" alt="Trò chơi cảm giác mạnh " width="320" height="320">
-              <img class="circle" src="../Imgs/ptv.jpg" alt="Phòng vip" width="320" height="320">
-              <img class="circle" src="../Imgs/bad.jpg" alt="Nhà hàng" width="320" height="320">
+              <div>
+              <img class="circle" src="img/diadiemnoibat/dnb1.jpg" alt="" width="320" height="320">
+              </div>
+              <img class="circle" src="img/diadiemnoibat/dnb2.jpg" alt="" width="320" height="320">
+              <img class="circle" src="img/diadiemnoibat/dnb3.jpg" alt="" width="320" height="320">
+              <img class="circle" src="img/diadiemnoibat/dnb4.jpg" alt="" width="320" height="320">
             </div>
       </div>
 

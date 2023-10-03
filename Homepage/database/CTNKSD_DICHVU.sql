@@ -1,19 +1,18 @@
 create table CHITIET_NKSDDV (
-    MA_CT_NKSDDV varchar(10) not null,
+    MA_CT_NKSDDV varchar(10) primary key not null ,
     MA_NKSD_DICHVU varchar(10) not null,
     foreign keY (MA_NKSD_DICHVU)  references NKSD_DICHVU(MA_NKSD_DICHVU),
     MA_DV varchar(10) not null,
-    foreign key (MA_DV) references DICHVU_KS(MA_DV),
     SOLUONG int not null
-)ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;;
+);
 
 insert into CHITIET_NKSDDV VALUES
 ('CTDV01','NKDV01','DV01',2),
 ('CTDV02','NKDV01','DV13',1),
 ('CTDV03','NKDV02','DV18',3),
 ('CTDV04','NKDV03','DV01',2),
-('CTDV04','NKDV03','DV12',5),
-('CTDV04','NKDV03','DV17',5),
+('CTDV22','NKDV03','DV12',5),
+('CTDV23','NKDV03','DV17',5),
 ('CTDV05','NKDV04','DV06',2),
 ('CTDV06','NKDV04','DV07',2),
 ('CTDV07','NKDV05','DV19',1),

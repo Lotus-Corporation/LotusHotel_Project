@@ -1,21 +1,57 @@
+/*
+.loaiphong1 {
+    width: 23%;
+    margin-top: 30px;
+}
+.loaiphong2 {
+    height: 200px;
+    background-color: white;
+}
+p.loaiphong {
+    color: rgb(251, 251, 252);
+    font-size: 30px;
+    font-family: 'Serif';
+    
+} */
+/*
+    <div style="background-color:rgb(193, 233, 244); width: 100%; height: 300px;" >
+      <div align="center" class="loaiphong1">
+        <div class="loaiphong2"><img src="img/loaiphong/phong4.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Suite</p>
+      </div>
+      <div align="center" class="loaiphong1">
+        <div class="loaiphong2"><img src="img/loaiphong/phong3.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Deluxe</p>
+      </div>
+      <div align="center" class="loaiphong1">
+        <div class="loaiphong2"><img src="img/loaiphong/phong2.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Superior</p>
+      </div>
+      <div align="center" class="loaiphong1">
+        <div class="loaiphong2"><img src="img/loaiphong/phong1.jpg" alt="" width=100% height=200px></div>
+        <p class="p.loaiphong">Standard</p>
+      </div>
+    </div>
+*/
 .loaiphong {
     width: 100%;
-    border: 1px solid black;
-    height: 300px;
-    background-color: rgb(21, 191, 21);
+    height: 320px;
+    border: 10px solid rgb(193, 233, 244)
 }
 .loaiphong1 {
     width: 23%;
     float: right;
-    margin-top: 40px; 
-    margin-right: 10px
+    margin-top: 30px; 
+    margin-right: 20px
+
 }
 .loaiphong2 {
-    border: 1px solid black;
     height: 200px;
     background-color: white;
 }
-.loaiphong3 {
-    width: 23%;
-    float: right;
+p.loaiphong {
+    color: rgb(251, 251, 252);
+    font-size: 30px;
+    font-family: 'Serif';
+    
 }

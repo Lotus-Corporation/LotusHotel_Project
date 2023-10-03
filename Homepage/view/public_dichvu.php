@@ -1,6 +1,6 @@
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from khuyenmai";
+    $sql="select * from dichvu";
     
     $result=$link->query($sql);
 ?>
@@ -32,8 +32,7 @@
 <div style="height: 600px; background-color:rgb(102, 163, 182); position:relative; top:50px; margin-bottom: 5%;">
     <img src=""style="height: 600px; width:100%">
     <div class="loigoi_km">
-        <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%">ENJOY THE VALUES</div>
-        <div style="font-size:45px">SPECIAL OFFERS</div>
+        <div style=" font-size:60px; margin-left:15%">SERVICES</div>
     </div>
 </div>
 <?php
@@ -43,10 +42,10 @@
 <div class="layout_khuyenmai">
     <a href="">
         <div class="khuyenmai">
-            <img src="../img/<?php echo $row["HINHANHKM"]; ?>" style="width: 100%; height: 280px;">
+            <img src="../img/dichvu/<?php echo $row["HINHANHDV"]; ?>" style="width: 100%; height: 310px;">
             <div class="mota_km">
-                <h2><?php echo $row["TENKM"] ?></h2>
-                <p><?php echo $row["MOTA"]?></p>
+                <h2><?php echo $row["TENDV"] ?></h2>
+                <p><?php echo $row["DONGIADV"]?> VND/<?php echo $row["DONVITINH"]?></p>
                 <h3>CHI TIẾT-></h3>
             </div>
         </div>
