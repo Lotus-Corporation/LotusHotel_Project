@@ -18,7 +18,7 @@
   clear: both;
   width: 100%;
   height: 430px;
-  background: #382e2c;
+  background: rgb(132, 193, 219);
 }
 #phongnoibat > div {
   overflow: hidden;
