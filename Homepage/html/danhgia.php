@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/danhgia.css"> 
-<div class="layout_danh_gia_noi_bat">
+<div class="layout_danh_gia_noi_bat" style="background: linear-gradient(white,rgb(193, 233, 244))">
         <h1 style="text-align: center"><b>ĐÁNH GIÁ NỔI BẬT</b></h1>
         <div class="danh_gia">
           <img class="anh_dai_dien" src="https://i.pinimg.com/736x/63/a2/e2/63a2e222c202f9035cb38a7151ad8f19.jpg">

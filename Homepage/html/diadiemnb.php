@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/diadiemnb.css">   
-<div class="diadiemnoibat" style="border: 10px solid rgb(193, 233, 244)">
+<div class="diadiemnoibat" style="background: linear-gradient(rgb(193, 233, 244),  rgb(220, 243, 245)); margin-top:-10px">
         <h2  style="font-size:20px;">ĐỊA ĐIỂM NỔI BẬT</h2>
             <div class="anhdiadiem">
               <div>

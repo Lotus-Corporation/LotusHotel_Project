@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/dichvu.css">
-<div id="phandichvu">
+<div id="phandichvu" style=" background: linear-gradient(rgb(148, 211, 239),rgb(193, 233, 244));">
       <div class="dichvu">
         <h2>Welcome to an oasis of luxury and tranquility</h2>
         <br>
@@ -27,12 +27,13 @@
               <div class="hinhanh">
                 <img
                   alt="phong-suites"
-                  data-src="img/1.jpg"
-                  src="img/anhdichvu/1.jpg"
+                  data-src="img/28.jpg"
+                  src="img/anhphongnoibat/28.jpg"
                   width="300"
                   height="188"
                   data-width="700"
                   data-height="700"
+                  style="border: 10px solid white;"
                 />
               </div>
             </a>
@@ -53,12 +54,12 @@
               <div class="hinhanh">
                 <img
                   alt="nha-hang-quay-bar"
-                  data-src="img/2.jpg"
-                  src="img/anhdichvu/2.jpg"
+                  src="img/dichvu/dv11.jpg"
                   width="300"
                   height="150"
                   data-width="700"
                   data-height="700"
+                  style="border: 10px solid white;"
                 />
               </div>
             </a>
@@ -85,6 +86,7 @@
                   height="200"
                   data-width="700"
                   data-height="700"
+                  style="border: 10px solid white;"
                 />
               </div>
             </a>
@@ -108,6 +110,7 @@
                   height="200"
                   data-width="700"
                   data-height="700"
+                  style="border: 10px solid white;"
                 />
               </div>
             </a>

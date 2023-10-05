@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/phongnoibat.css" />
-<div id="phongnoibat">
+<div id="phongnoibat" style="background: linear-gradient(rgb(193, 233, 244), rgb(148, 211, 239));">
       <div class="div_phongnoibat"  >
         <ul class= "ul">
               <li class=" dau">
