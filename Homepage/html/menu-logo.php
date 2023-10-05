@@ -6,7 +6,7 @@ $result=$link->query($sql);
 ?>
       
     <div class="container">
-      <div style="width: 100%; position: fixed; z-index: 1; background-color:white;">
+      <div style="width: 100%; position: fixed; z-index: 1; background-color:white;border: 5px solid rgb(193, 233, 244);">
         <div class="logo1";>Our rooms
         <div class="menu" >
           
