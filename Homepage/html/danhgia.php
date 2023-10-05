@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/danhgia.css"> 
-<div class="layout_danh_gia_noi_bat" style="background-color: rgb(193, 233, 244)">
+<div class="layout_danh_gia_noi_bat">
         <h1 style="text-align: center"><b>ĐÁNH GIÁ NỔI BẬT</b></h1>
-        <div class="danh_gia" style="background-color: rgb(132, 193, 219);">
+        <div class="danh_gia">
           <img class="anh_dai_dien" src="https://i.pinimg.com/736x/63/a2/e2/63a2e222c202f9035cb38a7151ad8f19.jpg">
           <div class="comment">
             klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
@@ -14,7 +14,7 @@
           
         </div>
 
-        <div class="danh_gia" style="background-color: rgb(132, 193, 219);">
+        <div class="danh_gia">
         <img class="anh_dai_dien" src="https://i.pinimg.com/originals/cd/b2/3f/cdb23fa36c904fb5efdcff3962fb86a5.jpg">
           <div class="comment">
             klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
@@ -30,13 +30,13 @@
         <h3>HÃY BẮT ĐẦU TRẢI NGHIỆM </h3>
         <h2>LOTUS</h2>
       </div>
-      <div class="dat_phong" style="background-color: rgb(55, 117, 140)">
-        <div class="dat_phong1" style="top: 10px;left: 2%;background-color: #eff4f8;"></div>
-        <div class="dat_phong1" style="top: 10px;left: 27%;background-color: #eff4f8;"></div>
-        <div class="dat_phong1" style="top: 10px;left: 52%;background-color: #eff4f8;"></div>
-        <div class="dat_phong2" style="top: 10px;left: 77%;background-color:rgb(27, 54, 73)              "></div>
+      <div class="dat_phong">
+        <div class="dat_phong1" style="top: 10px;left: 2%"></div>
+        <div class="dat_phong1" style="top: 10px;left: 27%"></div>
+        <div class="dat_phong1" style="top: 10px;left: 52%"></div>
+        <div class="dat_phong2" style="top: 10px;left: 77%"></div>
       </div>
-      <div class="layout_thong_tin" style="background-color: rgb(193, 233, 244)">
+      <div class="layout_thong_tin">
         <div class="thong_tin" style="margin: 5% 2% 0 8%">
           <h1>LOTUS</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
@@ -57,9 +57,15 @@
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
         <div class="thong_tin" style="margin: 5% 0 0 0">
-          <h1>Apps</h1>
+          <h1>Get The Apps</h1><br>
           <img src="https://laseta.bithemer.com/assets/img/icons/i1.svg">
           <img src="https://laseta.bithemer.com/assets/img/icons/i2.svg">
+          <br><br><h1>Connect Social</h1>
+          <img src="https://img.icons8.com/?size=256&id=uLWV5A9vXIPu&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=13963&format=png" style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=oWiuH0jFiU0R&format=png"style="width: 30px; height:30px">
+          <img src="https://img.icons8.com/?size=256&id=19318&format=png"style="width: 30px; height:30px">
         </div>
       </div>
     </div>
