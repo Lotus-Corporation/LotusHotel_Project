@@ -1,51 +1,40 @@
 .overlay {
-    position: absolute;
-    width: 80%;
-    height: 10%;
-    top: 610px;
-    left: 145px;
-    background-color: whitesmoke;
-  }
-  .check {
-    width: 22%;
-    margin-top: 1%;
-    display: inline-block;
-  }
-  .check1 {
-    height: 20px;
-    margin-right: 17%;
-    margin-left: -13%;
-    background-color: rgb(252, 195, 205);
-  }
-  .check2 {
-    height: 31px;
-    margin-right: 17%;
-    margin-left: -13%;
-    background-color: rgb(215, 234, 240);
-  }
-  .timkiem {
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  top: 610px;
+  left: 145px;
+  background-color: rgb(55, 117, 140);
+}
+.check {
+  margin-top: 1%;
+  display: inline-block;
+  height: 50px; 
+  width:20%;
+background-color: #eff4f8;
+}
+.timkiem {
 position: absolute;
 top: 12px;
 right: 13px;
 font-size: 14px;
-background-color:  lightskyblue;
-width: 90px;
+background-color: rgba(137, 217, 237, 0.648);
+width: 100px;
 height: 51px; 
 border: none;
 border-radius: 5px;
 transition: all 0.5s;
 -webkit-transition: all 0.5s;
-
 }
 
 .timkiem:hover {
-background-color: #6fc5ff;
-box-shadow: 0 0 20px #6fc5ff50;
+background-color: #a7f3ff;
+box-shadow: 0 0 20px rgba(137, 217, 237, 0.648);
 transform: scale(1.1);
 }
 
 .timkiem:active {
-background-color: #3d94cf;
+background-color: rgba(137, 217, 237, 0.648);
 transition: all 0.25s;
 -webkit-transition: all 0.25s;
 box-shadow: none;
