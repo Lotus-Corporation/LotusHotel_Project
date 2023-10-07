@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="./css/mota-uudai.css"> 
-
+<div style="width: 100%; height: 600px; background-color: white; position:relative; top:50px">
+      <?php include 'view/anhchinh.php';?>
+</div>
 <div class="layout_mota-uudai">
   <div class="layout_mota" > 
 
