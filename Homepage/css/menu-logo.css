@@ -18,10 +18,18 @@
 .logo1:hover .menu{display: block;}
 .menu a:hover {background-color: rgb(206, 236, 255);}
 .logo1:hover {background-color: rgb(206, 236, 243);}
+.icon{
+  float: left;
+  width: 6%;
+  height: 53px;
+  cursor: pointer;
+  line-height: 5;
+  text-align: center;
+}
 
 .logo1 {
   float: left;
-  width: 14%;
+  width: 12%;
   height: 53px;
   cursor: pointer;
   line-height: 2;
@@ -30,9 +38,8 @@
   font-size: 25px;
   color: rgb(0, 0, 0);
   font-weight: bold;
+  text-decoration: none; 
 }
-
-
 .logo {
   float: left;
   width: 15%;
@@ -40,3 +47,10 @@
   background-color: rgb(237, 240, 241);
 }
 
+.thanh_logo1{
+  width: 100%; 
+  position: fixed; 
+  z-index: 1; 
+  background-color:white;
+  border: 5px solid rgb(193, 233, 244);
+}
