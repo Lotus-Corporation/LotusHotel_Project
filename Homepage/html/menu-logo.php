@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/menu-logo.css"> 
 <?php 
   $link=new mysqli("localhost", "root","","khachsan");
-  $sql="select * from loaiphong";
+  $sql="select * from LOAIPHONG";
   $result=$link->query($sql);
 ?>
 <div class="thanh_logo1">
