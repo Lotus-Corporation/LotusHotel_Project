@@ -22,6 +22,8 @@
                   break;
                 case 9:
                   include("view/formcheckphong/kqtimkim.php");
+                case 8:
+                  include("view/public_loaiphong.php");
                   break;
             }
         }
