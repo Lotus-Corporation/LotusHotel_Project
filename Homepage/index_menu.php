@@ -17,6 +17,12 @@
                 case 2:
                     include("view/public_dichvu.php");
                     break;
+                case 3:
+                    include("view/public_nhahang.php");
+                    break;
+                case 4:
+                    include("view/public_spa.php");
+                    break; 
                 case 5:
                   include("view/public_khuyenmai.php");
                   break;
