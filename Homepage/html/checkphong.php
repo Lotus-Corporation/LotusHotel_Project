@@ -13,4 +13,4 @@
         <?php include ('view/formcheckphong/chondiadiem.php');?>
         </div>
         <button class="timkiem" onclick="alert(kakak39)"><font color="white">CHECK ROOM</font></button>
-      </div>
+</div>

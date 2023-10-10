@@ -31,10 +31,10 @@
         <h2>LOTUS</h2>
       </div>
       <div class="dat_phong">
-        <div class="dat_phong1" style="top: 10px;left: 2%"></div>
-        <div class="dat_phong1" style="top: 10px;left: 27%"></div>
-        <div class="dat_phong1" style="top: 10px;left: 52%"></div>
-        <div class="dat_phong2" style="top: 10px;left: 77%"></div>
+        <div class="dat_phong1" style="left: 2%;"> <?php include ('view/formcheckphong/chondiadiem.php');?></div>
+        <div class="dat_phong1" style="left: 27%"> <?php include ('view/formcheckphong/checkin.php');?></div>
+        <div class="dat_phong1" style="left: 52%"> <?php include ('view/formcheckphong/checkout.php');?></div>
+        <div class="dat_phong2" style="left: 77.3%">✔ Check room</div>
       </div>
       <div class="layout_thong_tin">
         <div class="thong_tin" style="margin: 5% 2% 0 8%">

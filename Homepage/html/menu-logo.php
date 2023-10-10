@@ -23,7 +23,7 @@
   <a class="logo1" href="index_menu.php?pid=2" >Services</a>
   <a class="logo1" href="index_menu.php?pid=3"> Restaurant </a>
   <a class="logo" href="index_menu.php?pid=1">
-    <img src="img/LOGO.png" alt="" width=100% height=130px style="border: 5px solid rgb(193, 233, 244); "></a> 
+    <img src="img/LOGO.png" alt="" width=100% height=130px style="border-style: solid; border-width:0 5px 5px 5px;border-color:rgb(193, 233, 244)"></a> 
   <a class="logo1" href="index_menu.php?pid=4">Spa&Wellness</a>
   <a class="logo1" href="index_menu.php?pid=5" >Special Offers</a>
   <a class="logo1" href="index_menu.php?pid=6">Contacts</a>

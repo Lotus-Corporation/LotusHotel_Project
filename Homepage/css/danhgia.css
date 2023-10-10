@@ -34,25 +34,34 @@
 }
 .dat_phong{
   width: 75%;
-  height: 80px;
+  height: 75px;
   position: relative;
   left: 13%;
   top: 575px;
   background-color: rgb(55, 117, 140);
+  border-radius: 5px;
 }
 .dat_phong1{
   float: left;
   position: absolute;
   width: 24%;
-  height: 60px;
-  background-color: #eff4f8;
+  height: 50px;
+  top:12.5px;
 }
 .dat_phong2{
   float: left;
   position: absolute;
   width: 21%;
-  height: 60px;
+  height: 50px;
   background-color: rgb(27, 54, 73);
+  top:12.5px;
+  padding: 13px 54px;
+  border-radius: 5px;
+  color: white;
+}
+.dat_phong2:hover{
+  background-color: #042940;
+  cursor: pointer;
 }
 .layout_thong_tin{
   float: left;

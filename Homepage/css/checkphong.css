@@ -1,7 +1,7 @@
 .overlay {
   position: absolute;
   width: 80%;
-  height: 10%;
+  height: 70px;
   top: 610px;
   left: 145px;
   background-color: rgb(55, 117, 140);
@@ -11,14 +11,13 @@
   display: inline-block;
   height: 50px; 
   width:20%;
-background-color: #eff4f8;
 }
 .timkiem {
 position: absolute;
 top: 12px;
 right: 13px;
 font-size: 14px;
-background-color: rgba(137, 217, 237, 0.648);
+background-color: rgba(27, 54, 73);
 width: 100px;
 height: 51px; 
 border: none;
@@ -34,7 +33,7 @@ transform: scale(1.1);
 }
 
 .timkiem:active {
-background-color: rgba(137, 217, 237, 0.648);
+background-color: rgba(27, 54, 73);
 transition: all 0.25s;
 -webkit-transition: all 0.25s;
 box-shadow: none;
