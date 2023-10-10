@@ -1,5 +1,5 @@
 create table LOAIPHONG(
-    MA_LOAIPHONG varchar(4) primary key not null,
+    MA_LOAIPHONG varchar(3) primary key not null,
     LOAIPHONG varchar(20) not null,
     Hinhanh varchar(10) 
 );

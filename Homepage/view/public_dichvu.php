@@ -25,7 +25,7 @@
 ?>
 <div class="layout">
     <a href="">
-        <div class="layout_con">
+        <div class="layout_con" style="height:470px">
             <img src="img/dichvu/<?php echo $row["HINHANHDV"]; ?>" style="width: 100%; height: 310px;">
             <div class="mota">
                 <h2><?php echo $row["TENDV"] ?></h2>

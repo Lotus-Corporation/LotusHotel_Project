@@ -20,6 +20,9 @@
                 case 5:
                   include("view/public_khuyenmai.php");
                   break;
+                case 8:
+                  include("view/public_loaiphong.php");
+                  break;
             }
         }
     ?> 

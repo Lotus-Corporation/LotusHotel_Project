@@ -8,13 +8,13 @@
   <a class="icon" href="index_menu.php?pid=1">
     <img src="https://img.icons8.com/?size=256&id=2797&format=png" height="35px">
   </a>
-  <div class="logo1";>Our rooms
+  <div class="logo1" >Our rooms
     <div class="menu" >
         <?php
           while ($row=$result->fetch_assoc())
           {
         ?>   
-            <a> <?php echo $row["LOAIPHONG"];?></a>
+            <a href="index_menu.php?pid=8&&malp=<?php echo $row["MA_LOAIPHONG"] ?>"> <?php echo $row["LOAIPHONG"];?></a>
         <?php
           }
         ?>
