@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/checkphong.css"> 
-<div align="center" class="overlay" style="background-color: rgb(55, 117, 140);">
+<div align="center" class="overlay" style="background-color: rgb(55, 117, 140); top: 655px;">
         <div class="check" style="margin-left:-90px;">
         <?php include ('view/formcheckphong/chondiadiem.php');?>
         </div>
