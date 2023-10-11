@@ -6,7 +6,7 @@
 ?>
 <div class="thanh_logo1">
   <a class="icon" href="index_menu.php?pid=1">
-    <img src="https://img.icons8.com/?size=256&id=2797&format=png" height="35px">
+    <img src="img/icon/home.png" height="35px">
   </a>
   <div class="logo1" >Our rooms
     <div class="menu" >
@@ -28,7 +28,7 @@
   <a class="logo1" href="index_menu.php?pid=5" >Special Offers</a>
   <a class="logo1" href="index_menu.php?pid=6">Contacts</a>
   <a class="icon" href="index_menu.php?pid=7">
-    <img src="https://img.icons8.com/?size=256&id=9720&format=png" height="35px">
+    <img src="img/icon/cart.png" height="35px">
   </a>
 </div>
       
