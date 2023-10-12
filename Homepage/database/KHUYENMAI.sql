@@ -1,14 +1,14 @@
 create table KHUYENMAI(
-    MA_KM nvarchar(10) primary key not null,
-    TENKM nvarchar(100),
-    MOTA nvarchar(200),
+    MA_KM varchar(10) primary key not null,
+    TENKM varchar(100),
+    MOTA varchar(200),
     NGAYBATDAU date,
     NGAYKETTHUC date,
-    DOITUONGAPDUNG nvarchar(100),
+    DOITUONGAPDUNG varchar(100),
     MA_LOAIPHONG varchar(3),
     foreign key (MA_LOAIPHONG) references LOAIPHONG(MA_LOAIPHONG),
     HINHANHKM char(50)
-);
+)ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 insert into KHUYENMAI values

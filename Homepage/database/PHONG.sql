@@ -3,11 +3,11 @@ create table PHONG(
     MA_LOAIPHONG varchar(3),
     foreign key (MA_LOAIPHONG) references LOAIPHONG(MA_LOAIPHONG),
     DONGIAPHONG int,
-    MA_CN nvarchar(10),
+    MA_CN varchar(10),
     foreign key (MA_CN) references CHINHANH(MA_CN),
     SONGUOITOIDA int,
     ANHPHONG char(50)
-) ;
+)ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 insert into PHONG(MA_PHONG,MA_LOAIPHONG,DONGIAPHONG,MA_CN,SONGUOITOIDA, ANHPHONG) values
 ('569','STD',357000,'CN01',2,'phong/STD1.jpg'),

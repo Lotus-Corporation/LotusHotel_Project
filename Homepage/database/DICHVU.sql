@@ -1,10 +1,10 @@
 create table DICHVU (
     MA_DV varchar(10) not null primary key ,
-    TENDV nvarchar(100) not null,
+    TENDV varchar(100) not null,
     DONGIADV int not null,
-    DONVITINH nvarchar(100) not null,
+    DONVITINH varchar(100) not null,
     HINHANHDV varchar(10) not null
-) ;
+)  ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 insert into DICHVU values
 ('DV01','Giặt ủi quần áo',55000,'kg','dv1.jpg'),
 ('DV02','Cho thuê xe tự lái',880000,'24 giờ','dv2.jpg'),
