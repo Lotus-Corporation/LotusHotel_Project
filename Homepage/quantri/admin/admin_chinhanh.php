@@ -10,7 +10,7 @@
         top: 10%;
         right: 2%; 
         background-color: rgb(253, 245, 233);
-        height: 1410px;;
+        height: 1410px;
     }
     .danhmuc{
         width: 100%;
@@ -61,7 +61,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh sách chi nhánh</h2>
-    <button>Thêm</button>
+    <button><a href="index_menu_admin.php?pid=19">Thêm</a></button>
         <table>
             <tr>
                 <th style="border-radius: 10px 0 0 0">Mã Chi Nhánh</th>
