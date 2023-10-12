@@ -1,6 +1,7 @@
 <?php 
+
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from chinhanh";   
+    $sql="select * from CHINHANH";   
     $result=$link->query($sql);
 ?>
 <form method="post" action="" >

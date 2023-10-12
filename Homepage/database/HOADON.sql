@@ -1,14 +1,14 @@
 create table HOADON(
-    MA_HD nvarchar(15) primary key not null,
-    MA_NV nvarchar(15) not null,
-    MA_PTTT nvarchar(15) not null,
-    MA_KH nvarchar(15) not null,
-    MA_KM nvarchar(15) ,
-    MA_NKDP nvarchar(15) ,
-    MA_NKSD_DICHVU nvarchar(15),
+    MA_HD varchar(15) primary key not null,
+    MA_NV varchar(15) not null,
+    MA_PTTT varchar(15) not null,
+    MA_KH varchar(15) not null,
+    MA_KM varchar(15) ,
+    MA_NKDP varchar(15) ,
+    MA_NKSD_DICHVU varchar(15),
     NGAYLAP_HD date not null,
     TONGTIEN float
-) ;
+) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 insert into HOADON(MA_HD, MA_NV, MA_PTTT, MA_KH, MA_KM, MA_NKDP, MA_NKSD_DICHVU, NGAYLAP_HD, TONGTIEN) values
 ('HD01','NV02','PTTT03','KH01',null,'NK01','NKDV07','2022/02/04',null),
 ('HD02','NV04','PTTT01','KH02',null,'NK02','NKDV03','2022/03/06',null),
