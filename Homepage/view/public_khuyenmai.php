@@ -1,6 +1,6 @@
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from khuyenmai";
+    $sql="select * from KHUYENMAI";
     
     $result=$link->query($sql);
 ?>

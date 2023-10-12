@@ -1,12 +1,12 @@
 create table CHINHANH(
-    MA_CN nvarchar(10) PRIMARY KEY NOT NULL,
-    DIACHI nvarchar(100) NOT NULL,
-    TINHTHANH nvarchar(50) not null,
+    MA_CN varchar(10) PRIMARY KEY NOT NULL,
+    DIACHI varchar(100) NOT NULL,
+    TINHTHANH varchar(50) not null,
     SDT int(10),
     MA_NV varchar(10) NOT NULL,
     FOREIGN KEY (MA_NV) REFERENCES NHANVIEN(MA_NV),
     HINHANH char(50)
-);
+) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 insert into CHINHANH values

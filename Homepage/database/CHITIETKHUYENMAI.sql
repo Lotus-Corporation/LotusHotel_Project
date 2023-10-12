@@ -5,7 +5,7 @@ create table CHITIETKHUYENMAI(
     MA_CTNKDP varchar(10),
     foreign key (MA_CTNKDP) references CHITIETNHATKIDATPHONG(MA_CTNKDP),
     MA_DV varchar(10),
-    foreign key (MA_DV) references DICHVU_KS(MA_DV)
+    foreign key (MA_DV) references DICHVU(MA_DV)
 ) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 insert into CHITIETKHUYENMAI(MA_KM,GIATRI,MA_CTNKDP,MA_DV) values

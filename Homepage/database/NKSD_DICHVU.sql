@@ -2,7 +2,7 @@ create table NKSD_DICHVU (
     MA_NKSD_DICHVU varchar(10) not null primary key ,
     MA_KH varchar(10) not null,
     foreign key (MA_KH) references KHACHHANG(MA_KH)
-    );
+    )ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 insert into NKSD_DICHVU values
 ('NKDV01','KH10'),
