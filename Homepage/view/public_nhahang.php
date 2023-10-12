@@ -11,7 +11,7 @@ chua xong
     }   
 </style>
 
-<div class="layout_anh">
+<div class="layout_anh" style="margin-top:-10px">
     <img src=""style="height: 600px; width:100%">
     <div class="loigoi">
     <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%; margin-left:-50px">ENJOY WITH UNIQUENESS</div>
