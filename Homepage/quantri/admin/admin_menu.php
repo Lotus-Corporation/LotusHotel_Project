@@ -51,7 +51,7 @@
   </style>
     <body>
       <div class= "menu_middle">
-        <a id="lotus" href="../home.php">LOTUS</a>
+        <a id="lotus" href="../index_menu.php">LOTUS</a>
         <a href=""> Đăng xuất <img src="../img/icon/log_out.png" height="25px"></a>
         <a href=""> Trang chủ <img src="../img/icon/home.png" height="25px"></a>
       </div>

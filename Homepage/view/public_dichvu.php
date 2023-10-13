@@ -5,7 +5,7 @@
 ?>
 <style>
     body{
-        background-color:aliceblue;
+        background:linear-gradient(rgb(231, 245, 249),rgb(193, 233, 244));
         margin: 0;
     }
     .layout_anh{
@@ -13,8 +13,16 @@
         background-color:rgb(40, 129, 143); 
         position:relative; 
         top:55px; 
-        margin-bottom: 5%;
+        margin-bottom: 7%;
     }   
+    .layout_anh_opacity{
+        width: 100%;
+        height: 600px; 
+        position:absolute; 
+        top:0;
+        background-color: black; 
+        opacity:0.5;
+    }
     .loigoi{
         text-align: center; 
         position:absolute; 
@@ -51,7 +59,6 @@
     }
     .mota{
         margin-left: 5%;
-        font-family:Verdana, Geneva, Tahoma, sans-serif; 
         color: black;
         position: absolute;
         top:250px;
@@ -74,7 +81,8 @@
 </style>
 
 <div class="layout_anh">
-    <img src=""style="height: 600px; width:100%">
+    <img src="https://coronapoolrepair.com/wp-content/uploads/2021/05/60a6080f1f01c.jpg"style="height: 600px; width:100%">
+    <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style=" font-size:60px; margin-left:15%">SERVICES</div>
     </div>

@@ -30,19 +30,21 @@
         <h3>HÃY BẮT ĐẦU TRẢI NGHIỆM </h3>
         <h2>LOTUS</h2>
       </div>
+      <div class="layout_thong_tin">
       <div class="dat_phong">
         <div class="dat_phong1" style="left: 2%;"> <?php include ('view/formcheckphong/chondiadiem.php');?></div>
         <div class="dat_phong1" style="left: 27%"> <?php include ('view/formcheckphong/checkin.php');?></div>
         <div class="dat_phong1" style="left: 52%"> <?php include ('view/formcheckphong/checkout.php');?></div>
         <div class="dat_phong2" style="left: 77.3%">✔ Check room</div>
       </div>
-      <div class="layout_thong_tin">
+      
         <div class="thong_tin" style="margin: 5% 2% 0 8%">
           <h1>LOTUS</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
           lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
           jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
         </div>
+      
         <div class="thong_tin" style="margin: 5% 2% 0 0">
           <h1>Lien He</h1>
           0316546156 <br>

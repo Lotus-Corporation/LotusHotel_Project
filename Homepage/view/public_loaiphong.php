@@ -15,6 +15,14 @@
         top:55px; 
         margin-bottom: 5%;
     }   
+    .layout_anh_opacity{
+        width: 100%;
+        height: 600px; 
+        position:absolute; 
+        top:0;
+        background-color: black; 
+        opacity:0.5;
+    }
     .loigoi{
         text-align: center; 
         position:absolute; 
@@ -73,6 +81,7 @@
 
 <div class="layout_anh">
     <img src="https://laseta.bithemer.com/assets/img/background/bg5.jpg"style="height: 600px; width:100%">
+    <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%">THE COLLECTION</div>
         <div style="font-size:55px">ROOM</div>
