@@ -1,5 +1,9 @@
 .layout_anh{
-    height: 600px; background-color:rgb(102, 163, 182); position:relative; top:50px; margin-bottom: 5%;
+    height: 600px; 
+    background-color:rgb(40, 129, 143); 
+    position:relative; 
+    top:55px; 
+    margin-bottom: 5%;
 }   
 .loigoi{
     text-align: center; 
@@ -17,7 +21,7 @@
     height:460px;
     margin: 3% 1%;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .mota{
