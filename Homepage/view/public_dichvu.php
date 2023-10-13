@@ -31,10 +31,23 @@
     .layout_con{
         float: left; 
         width:30%;
-        height: 320px;
-        margin: 3% 1%;
+        height: 380px;
+        margin: 1.5% 1%;
         text-decoration: none;
         position: relative;
+        overflow: hidden;
+        transition: 0.25s
+    }
+    .layout_con:hover{
+        transform: scale(1);
+        opacity: 0.9
+    }
+    .layout_con > img{
+        transition: 0.7s;
+    }
+    .layout_con > img:hover{
+        transform: scale(1.07);
+        opacity: 0.93
     }
     .mota{
         margin-left: 5%;
@@ -43,10 +56,21 @@
         position: absolute;
         top:250px;
         background-color: #fff;
-        width: 85%;
-        padding-left: 5%;
+        width: 83%;
+        padding-left: 7%;
         border-radius: 5px;
+        transition: 0.5s;
+        font-size: 18px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    .mota:hover{
+        background-color: gray;
+        color: #fff;
+    }
+    h3{
+        margin-bottom: -10px;
+    }
+
 </style>
 
 <div class="layout_anh">
