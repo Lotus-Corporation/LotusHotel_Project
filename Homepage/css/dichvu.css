@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 body {
-  font-family: 'PT Serif', serif;}
+  font-family: 'PT Serif', serif;
+  }
 div#phandichvu{
   display: flex;
   width: 100%;
@@ -10,16 +11,17 @@ div#phandichvu{
 }
 .dichvu {
   position: relative;
-  max-width: 945px;
+  max-width: 1170px;
   height: auto;
   margin: 0 auto;
 }
 p {
+  width: 500p;
   color: #000;
   font-size: 18px;
   line-height: 30px;
 }
-h2 {
+.hat2 {
   color: #000;
   font-size: 30px;
   line-height: 30px;
@@ -79,12 +81,12 @@ a {
 }
 #phandichvu li div.hinhanh img {
   position: absolute;
-  top: 50% !important;
-  left: 50% !important;
+  top: 48% !important;
+  left: 40% !important;
   float: left;
-  width: 382px;
-                    height: 382px;
-                    margin: -191px 0px 0px -191px;
+  width: 451px;
+  height: 382px;
+  margin: -191px 0px 0px -191px;
 }
 .docthem {
     color: #a98524 !important;

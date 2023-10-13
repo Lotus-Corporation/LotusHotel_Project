@@ -1,0 +1,210 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#phongnoibat > div > ul li:cuoi-child {
+  margin-right: 0 !important;
+}
+#phongnoibat:hover > div > span.hieuung > span,   
+#phongnoibat:active > div > span.hieuung > span {
+  opacity: 1;
+}
+#phongnoibat {
+  text-align: center;
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 430px;
+  background: linear-gradient(rgb(193, 233, 244), rgb(148, 211, 239));
+}
+#phongnoibat > div {
+  overflow: hidden;
+  margin: 50px auto 0 auto;
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 270px;
+}
+#phongnoibat > .mo_toanbo {
+  font-family: "ClanOT-ExtdBook", sans-serif;
+  text-transform: uppercase;
+  font-size: 9px;
+  margin-top: 45px;
+  display: inline-block;
+  color: #fff;
+  padding-right: 40px;
+  background: transparent
+}
+a {
+  text-decoration: none;
+}
+#phongnoibat > div > ul {
+  position: absolute;
+  float: left;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 270px;
+}
+#phongnoibat > div > span.hieuung {
+  float: left;
+  width: 135px;
+  height: 270px;
+  position: absolute;
+  top: 0;
+}
+#phongnoibat > div > span.left {
+  z-index: 100;
+  left: 0;
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+#phongnoibat > div > span.right {
+  z-index: 100;
+  right: 0;
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.01) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.01) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.01) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+ 
+}
+#phongnoibat > div > span.hieuung > span {
+  display: none;
+  margin: -13px 0 0 -16px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  background: transparent
+    url(../img/anhphongnoibat/gallery_arrows.png)
+    no-repeat left top;
+  float: left;
+  width: 16px;
+  height: 27px;
+  cursor: pointer;
+  z-index: 100;
+}
+#phongnoibat > div > span.right > span {
+  background-position: 0 -27px;
+  left: 75%;
+  margin-left: 0;
+  z-index: 100;
+}
+
+#phongnoibat > div > ul li.dau {
+  margin-left: 0px !important;
+}
+#phongnoibat > div > ul li:dau-child {
+  margin-left: 0 !important;
+}
+
+#phongnoibat > div > ul li {
+  overflow: hidden;
+  float: left;
+  width: 270px;
+  height: 270px;
+  margin: 0 25px;
+}
+#phongnoibat > div > ul li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+img.hinhanh {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  float: left;
+  opacity: 0;
+ width: 270px;
+  height: 270px;
+   margin: -135px 0px 0px -135px;
+    opacity: 1;
+
+}
+.div_phongnoibat {
+  width: 1100px  !important;
+}
+.ul {
+ width: 10560px  !important; 
+ left: -2805px  !important;
+}
+
+
+.thanh_hinhanh {
+  position: relative;
+  width: 100%;
+  display: block;
+ 
+}
+
+.thanh_hinhanh img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0%;
+  bottom:0%;
+  right:0%;
+  z-index: 0;
+  
+
+  
+}
+
+
+
+.overlayy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+}
+
+.thanh_hinhanh:hover .overlayy {
+  height: 100%;
+}
+
+.price {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
