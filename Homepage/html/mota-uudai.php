@@ -35,7 +35,7 @@
   </div>
 
   <div>
-    <h2 style="font-size:30px"> Ưu Đãi </h2><br>
+    <h2 style="font-size:30px ; text-align: center;"> Ưu Đãi </h2><br>
     <img class="uudai" src="img/khuyenmai/km12.png" alt="">
     <img class="uudai" src="img/khuyenmai/km02.png" alt="">
   </div>
