@@ -7,10 +7,11 @@ $result=$link->query($sql);
 
    <style>
     .layout_danhmuc{
+        margin: 7% 0 0 3%; 
+        border-radius: 7px;
         width: 60%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
-        top:30%;
         right:3%; 
         height: 400px;
         top:65px;
@@ -46,13 +47,17 @@ $result=$link->query($sql);
    
     th{
        background-color: gray;
-       padding: 10px
+       padding: 10px;
+       border-radius: 7px;
+
     }
 
     td{
         background-color:antiquewhite;
         border-style:outset;
-        padding: 10px
+        padding: 10px;
+        border-radius: 7px;
+
     }
    
     a{
