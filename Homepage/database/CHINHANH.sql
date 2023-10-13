@@ -6,7 +6,7 @@ create table CHINHANH(
     MA_NV varchar(10) NOT NULL,
     FOREIGN KEY (MA_NV) REFERENCES NHANVIEN(MA_NV),
     HINHANH char(50)
-) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ;
 
 
 insert into CHINHANH values
