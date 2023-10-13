@@ -33,6 +33,6 @@
             }
         }else {include("home.php");}
     ?> 
-    <?php include ('html/danhgia.php');?>
+    <?php include ('html/thongtin.php');?>
   </body>
 </html>
