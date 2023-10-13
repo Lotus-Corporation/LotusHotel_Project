@@ -29,7 +29,7 @@
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 73px;
+        top: 83px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
@@ -45,7 +45,6 @@
         border-spacing: 0;
         border-collapse: separate; 
         top:10px;
-
     }
    
     th{
