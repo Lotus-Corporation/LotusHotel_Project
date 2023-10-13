@@ -11,52 +11,50 @@ $result=$link->query($sql);
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right: 2%; 
+        right:1%; 
         height: 1100px;
         top:50px;
     }
     .danhmuc{
-        width: 80%;
+        width: 100%;
         height: 70px;
         background-color: gray;
         border-radius: 10px 10px 0 0;
         position: absolute;
-        margin-left:20%;
-        right:2%;
-        top:30px;
+        top:0px;
     }
     button{
-        padding: 15px 40px;
+        padding: 15px 35px;
         position: absolute;
-        right: 5%;
-        top: 78px;
+        right: 2%;
+        top: 73px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
         cursor: pointer;
     }
+    button:hover{
+        background-color: rgb(161, 110, 7);
+    }
     table{ 
-        width: 90%; 
-        margin: 7% 10% 0 5%; 
+        width: 95%; 
+        margin: 7% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
        
         top:10px;
     }
-    th, td{
-        text-align: center;
-        padding: 10px
-    }
+   
     th{
        background-color: gray;
-       padding:14.5px;
+       padding: 10px
     }
 
     td{
         background-color:antiquewhite;
         border-style:outset;
-
+        padding: 10px
     }
    
     a{
@@ -66,24 +64,23 @@ $result=$link->query($sql);
     a:hover{
         color: brown;
     }
-    button:hover{
-        background-color: rgb(161, 110, 7);
-    }
+   
 </style>
 
-  <div class="layout_danhmuc"> </div>
+  <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
       <button>Thêm</button>
+      
 <table>
          <tr>
     <th style="border-radius: 10px 0 0 0" >Mã nhật kí đặt phòng</th>
-    <th  > Mã khách hàng </th>
+    <th> Mã khách hàng </th>
     <th> Ngày đặt phòng </th>
     <th> Ngày trả phòng </th>
-    <th > Trạng thái phòng </th>
+    <th> Trạng thái phòng </th>
     <th>Sửa</th>
     <th style="border-radius: 0 10px 0 0">Xóa</th>
-        </tr>
+         </tr>
    <?php
 while ($row=$result->fetch_assoc())
 {
@@ -103,5 +100,8 @@ while ($row=$result->fetch_assoc())
       ?>
 </table>
 </div>
+</div>
+
+
 
 
