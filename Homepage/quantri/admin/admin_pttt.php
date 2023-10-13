@@ -7,7 +7,7 @@ $result=$link->query($sql);
 
    <style>
     .layout_danhmuc{
-        margin: 7% 0 0 3%; 
+        margin: 7% 6% 0 5%; 
         border-radius: 7px;
         width: 60%; 
         position: absolute; 
@@ -43,6 +43,8 @@ $result=$link->query($sql);
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
+        border-radius: 7px;
+
     }
    
     th{
@@ -76,10 +78,10 @@ $result=$link->query($sql);
       
 <table>
          <tr>
-    <th style="border-radius: 10px 0 0 0" >Mã phương thức thanh toán</th>
+    <th  >Mã phương thức thanh toán</th>
     <th> Phương thức</th>
     <th> Sửa </th>
-    <th style="border-radius: 0 10px 0 0">Xóa</th>
+    <th >Xóa</th>
          </tr>
    <?php
 while ($row=$result->fetch_assoc())

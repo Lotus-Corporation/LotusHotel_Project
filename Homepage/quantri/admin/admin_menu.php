@@ -25,7 +25,16 @@
       float: left;
       width:90%;
       padding: 5%;
+      
     }
+    .menu_left > div > a:hover {
+    color: brown;
+    font-weight: bold; 
+  }
+  .menu_left:hover {
+  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Đổ bóng khi hover */
+  }
     .menu_middle{
       width: 100%;
       height: 55px;
@@ -47,6 +56,7 @@
       color: white;
       font-size: 20px;
     }
+    
 
   </style>
     <body>
@@ -68,7 +78,6 @@
         <a href="index_menu_admin.php?pid=17">NKSD Dịch vụ</a>
         <a href="index_menu_admin.php?pid=18">Chi tiết NKSD Dịch vụ</a>
         <a href="index_menu_admin.php?pid=19">Phương thức thanh toán</a>
-
       </div>
     </div>
     </body>

@@ -37,6 +37,9 @@
                   include("admin/admin_ctnksddv.php");
                   break;
                 case 19:
+                    include("admin/admin_pttt.php");
+                    break;
+                case 20:
                   include("themsuaxoa/them_chinhanh.php");
                   break;
             }
