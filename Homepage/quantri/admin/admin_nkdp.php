@@ -11,9 +11,9 @@ $result=$link->query($sql);
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:1%; 
+        right:0%; 
         height: 1100px;
-        top:50px;
+        top:65px;
     }
     .danhmuc{
         width: 100%;
@@ -27,7 +27,7 @@ $result=$link->query($sql);
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 73px;
+        top: 82px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;

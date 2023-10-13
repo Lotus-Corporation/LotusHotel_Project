@@ -45,7 +45,6 @@
         border-spacing: 0;
         border-collapse: separate; 
         top:10px;
-
     }
    
     th{
