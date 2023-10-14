@@ -4,16 +4,74 @@
     $result= $link-> query($sql)
 ?>
 <style>
-    table{width:100%}
-    th,td{
-        border: 1px solid gray;
+  .layout_danhmuc{
+        width: 80%; 
+        position: absolute; 
+        background-color: rgb(253, 245, 233);
+        top:10%;
+        right:0; 
+        height:2750px;
+        top:100px;
+        border-radius: 10px;
+    }
+    .danhmuc{
+        width: 100%;
+        height: 70px;
+        background-color: gray;
+        border-radius: 10px;
+        position: absolute;
+        top:0px;
+    }
+    button{
+        padding: 15px 35px;
+        position: absolute;
+        right: 2%;
+        top: 83px;
+        border: none;
+        background-color: rgb(210, 168, 84);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(161, 110, 7);
+    }
+    table{ 
+        width: 95%; 
+        margin: 9% 10% 0 3%; 
+        border-radius: 10px;
+        border-spacing: 0;
+        border-collapse: separate; 
+        top:10px;
+    }
+   
+    th{
+       background-color: gray;
+       padding: 10px;
+
+    }
+
+    td{
+        background-color:antiquewhite;
+        border-style:outset;
         padding: 10px;
-        text-align: center;
+        border-radius: 7px;
+
+    }
+   
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: brown;
     }
 </style>
+<div class="layout_danhmuc"> 
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Khuyến Mãi </h2>
+      <button>Thêm</button>
 <table>
     <tr>
-        <th>Mã KM</th>
+        <th style="border-radius: 10px 0 0 0">Mã KM</th>
         <th>Tên</th>
         <th>Mô tả</th>
         <th>Ngày bắt đầu</th>
@@ -21,6 +79,8 @@
         <th>Đối tượng áp dụng</th>
         <th>Mã Loại Phòng</th>
         <th>Hình Ảnh</th>
+        <th> Sửa </th>
+        <th style="border-radius: 0 10px 0 0">Xóa</th>
     </tr>
     <?php
         while($row=$result->fetch_assoc())
@@ -35,6 +95,8 @@
             <td><?php echo $row["DOITUONGAPDUNG"]; ?></td>
             <td><?php echo $row["MA_LOAIPHONG"];?></td>
             <td><img src="../img/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
+            <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+            <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
         </tr>
     <?php 
         }

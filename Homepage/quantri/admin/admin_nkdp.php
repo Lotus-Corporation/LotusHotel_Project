@@ -19,7 +19,7 @@ $result=$link->query($sql);
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
         position: absolute;
         top:0px;
     }
@@ -27,7 +27,7 @@ $result=$link->query($sql);
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 82px;
+        top: 83px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
@@ -38,23 +38,25 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 7% 10% 0 3%; 
+        margin: 9% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
-       
         top:10px;
     }
    
     th{
        background-color: gray;
-       padding: 10px
+       padding: 10px;
+
     }
 
     td{
         background-color:antiquewhite;
         border-style:outset;
-        padding: 10px
+        padding: 10px;
+        border-radius: 7px;
+
     }
    
     a{
@@ -68,7 +70,7 @@ $result=$link->query($sql);
 </style>
 
   <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
       <button>Thêm</button>
       
 <table>

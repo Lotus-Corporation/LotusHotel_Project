@@ -10,9 +10,9 @@
         if (isset($_GET["pid"])){
             $id=$_GET["pid"];
             switch ($id){
-                case 1: 
-                    include("home.php");
-                    break;
+                // case 1: 
+                //     include("home.php");
+                //     break;
                 case 2:
                     include("view/public_dichvu.php");
                     break;
@@ -31,7 +31,8 @@
                   include("view/public_loaiphong.php");
                   break;
             }
-        }
+        }else {include("home.php");}
     ?> 
+    <?php include ('html/thongtin.php');?>
   </body>
 </html>

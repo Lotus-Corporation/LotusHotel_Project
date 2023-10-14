@@ -25,7 +25,16 @@
       float: left;
       width:90%;
       padding: 5%;
+      
     }
+    .menu_left > div > a:hover {
+    color: brown;
+    font-weight: bold; 
+  }
+  .menu_left:hover {
+  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Đổ bóng khi hover */
+  }
     .menu_middle{
       width: 100%;
       height: 55px;
@@ -47,11 +56,12 @@
       color: white;
       font-size: 20px;
     }
+    
 
   </style>
     <body>
       <div class= "menu_middle">
-        <a id="lotus" href="../home.php">LOTUS</a>
+        <a id="lotus" href="../index_menu.php">LOTUS</a>
         <a href=""> Đăng xuất <img src="../img/icon/log_out.png" height="25px"></a>
         <a href=""> Trang chủ <img src="../img/icon/home.png" height="25px"></a>
       </div>
@@ -67,6 +77,7 @@
         <a href="index_menu_admin.php?pid=16">Dịch vụ</a>
         <a href="index_menu_admin.php?pid=17">NKSD Dịch vụ</a>
         <a href="index_menu_admin.php?pid=18">Chi tiết NKSD Dịch vụ</a>
+        <a href="index_menu_admin.php?pid=19">Phương thức thanh toán</a>
       </div>
     </div>
     </body>

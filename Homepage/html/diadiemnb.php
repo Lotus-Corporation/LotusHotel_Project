@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./css/diadiemnb.css">   
 <div class="diadiemnoibat">
-        <h2  style="font-size:20px;">ĐỊA ĐIỂM NỔI BẬT</h2>
+        <h2  style="font-size:20px;text-align: center;">ĐỊA ĐIỂM NỔI BẬT</h2>
             <div class="anhdiadiem" >
               <div >
               <img class="circle" src="img/diadiemnoibat/dnb1.jpg" alt="" > 

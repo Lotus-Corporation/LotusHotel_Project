@@ -5,7 +5,7 @@
 <style>
 
 body {
-	background: linear-gradient(rgb(193, 233, 244),white) 	
+	background-image: url(https://coronapoolrepair.com/wp-content/uploads/2021/06/wesley-tingey-OxOmKMwJfBo-unsplash.jpg);
 }
 
 .container {

@@ -12,7 +12,7 @@
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:8%; 
+        right:5%; 
         height: 700px;
         top:100px;
         border-radius: 10px;
@@ -50,7 +50,6 @@
     th{
        background-color: gray;
        padding: 10px;
-       border-radius: 7px;
 
     }
 
@@ -80,10 +79,10 @@
 
 <table>
     <tr>
-        <th>Mã NKSD dịch vụ</th>
+        <th style="border-radius: 10px 0 0 0" >Mã NKSD dịch vụ</th>
         <th>Mã khách hàng</th>
         <th>Sửa</th>
-        <th>Xóa</th>
+        <th style="border-radius: 0 10px 0 0">Xóa</th>
     </tr>
     <?php
 while ($row=$result->fetch_assoc())
