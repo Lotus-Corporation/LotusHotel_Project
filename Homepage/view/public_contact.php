@@ -1,7 +1,7 @@
 <html>
     <style>
     body{
-        margin: 0;
+        margin: 0
     }   
     .layout_anh{
         width: 100%;
@@ -28,6 +28,9 @@
     .danhmuc{
         font-size: 20px;
         margin-left: 23%;
+        border: 1px solid gray;
+        border-radius: 7px;
+        background-color: rgb(245, 252, 255);
         width: 50%;
         height: 450px;
         padding: 40px;
@@ -42,6 +45,7 @@
         width:100%;
         height: 30px;
         border: solid 0.01px gray;
+        border-radius: 3px;
     }
     button{
         padding: 15px 40px;
@@ -90,7 +94,7 @@
             </div>
             <div style="width:100%">
                 <label>Lời nhắn</label><br>
-                <textarea placeholder="Lời nhắn của bạn.." style="height:100px;width:95%"></textarea>
+                <textarea placeholder="Lời nhắn của bạn.." style="height:100px;width:95%; border-radius:3px"></textarea>
             </div>
             <button type="submit">Gửi</button>
         </form>
