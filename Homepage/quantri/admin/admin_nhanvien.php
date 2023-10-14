@@ -9,7 +9,7 @@ $result=$link->query($sql);
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:8%; 
+        right:5%; 
         height: 700px;
         top:100px;
         border-radius: 10px;
