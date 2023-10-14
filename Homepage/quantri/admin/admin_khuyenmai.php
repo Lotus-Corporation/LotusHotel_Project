@@ -9,7 +9,7 @@
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:2%; 
+        right:0; 
         height:2750px;
         top:100px;
         border-radius: 10px;
