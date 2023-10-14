@@ -9,7 +9,7 @@ $result=$link->query($sql);
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:8%; 
+        right:5%; 
         height: 700px;
         top:100px;
         border-radius: 10px;
@@ -67,12 +67,18 @@ $result=$link->query($sql);
         color: brown;
     }
 </style>
+    <div class="layout_danhmuc"> 
+        <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi Tiết Nhật Kí Đặt Phòng </h2>
+        <button>Thêm</button>
 <table>
     <tr>
-<th>Mã chi tiết nhật kí đặt phòng</th>
+<th style="border-radius: 10px 0 0 0">Mã chi tiết nhật kí đặt phòng</th>
 <th> Mã nhật kí đặt phòng </th>
 <th> Mã phòng </th>
 <th> Đơn giá phòng </th>
+<th> Sửa </th>
+<th style="border-radius: 0 10px 0 0">Xóa</th>
+
 </tr>
 <?php
 while ($row=$result->fetch_assoc())
@@ -84,6 +90,8 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_NKDP"];?></td>
     <td><?php echo $row["MA_PHONG"];?></td>
     <td><?php echo $row["DONGIAPHONG"];?></td>
+    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
 <?php
  }

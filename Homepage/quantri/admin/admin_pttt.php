@@ -12,7 +12,7 @@ $result=$link->query($sql);
         width: 60%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
-        right:3%; 
+        right:5%; 
         height: 400px;
         top:65px;
     }
@@ -50,7 +50,6 @@ $result=$link->query($sql);
     th{
        background-color: gray;
        padding: 10px;
-       border-radius: 7px;
 
     }
 
@@ -78,10 +77,10 @@ $result=$link->query($sql);
       
 <table>
          <tr>
-    <th  >Mã phương thức thanh toán</th>
+    <th style="border-radius: 10px 0 0 0" >Mã phương thức thanh toán</th>
     <th> Phương thức</th>
     <th> Sửa </th>
-    <th >Xóa</th>
+    <th style="border-radius: 0 10px 0 0">Xóa</th>
          </tr>
    <?php
 while ($row=$result->fetch_assoc())

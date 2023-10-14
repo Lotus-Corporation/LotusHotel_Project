@@ -5,12 +5,12 @@ $result=$link->query($sql);
 ?>
 <style>
     .layout_danhmuc{
-        width: 60%; 
+        width: 70%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:8%; 
-        height: 700px;
+        right:2%; 
+        height: 1100px;
         top:100px;
         border-radius: 10px;
     }
@@ -47,7 +47,6 @@ $result=$link->query($sql);
     th{
        background-color: gray;
        padding: 10px;
-       border-radius: 7px;
 
     }
 
@@ -67,11 +66,16 @@ $result=$link->query($sql);
         color: brown;
     }
 </style>
+<div class="layout_danhmuc"> 
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Loại Phòng </h2>
+      <button>Thêm</button>
 <table>
     <tr>
-        <th> Mã loại phòng </th>
+        <th style="border-radius: 10px 0 0 0"> Mã loại phòng </th>
         <th> Loại phòng </th>
         <th> Ảnh </th>
+        <th> Sửa </th>
+        <th style="border-radius: 0 10px 0 0">Xóa</th>
 </tr>
 <?php
 while ($row=$result->fetch_assoc())
@@ -82,6 +86,8 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_LOAIPHONG"];?></td>
     <td> <?php echo $row["LOAIPHONG"];?></td>
     <td> <img src="../img/loaiphong/<?php echo $row["Hinhanh"];?>" alt="" width=400px height=200px></td>
+    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 <tr>
 <?php
  }

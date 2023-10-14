@@ -9,7 +9,7 @@
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:1%; 
+        right:5%; 
         height: 6330px;
         top:65px;
     }
