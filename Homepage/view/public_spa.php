@@ -1,7 +1,5 @@
-
-chua xong
-
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/menu-logo.css">
     <link rel="stylesheet" href="css/public.css"> 
 <style>
@@ -93,6 +91,28 @@ chua xong
     p {
         font-size:25px;
     }
+  
+
+   .thongtin {
+        float: left;
+        width: calc(50% - 50px);
+        margin-right:50px
+       
+   }
+
+   .booknow {
+        width:180px;
+        height:60px;
+        background-color:rgb(56, 187, 223);
+        border:none;
+        font-size:20px;
+        color:white; 
+        margin-top:50px
+   }
+   .booknow:hover {background-color: rgb(0, 121, 154);}
+
+
+
 </style>
 
 
@@ -104,7 +124,7 @@ chua xong
     </div>
 </div>
 
-<div style="margin-top:180px;height:560px">
+<div style="margin-top:180px;height:560px;">
     <div style="float:left; width:50%">
     <p >LOTUS SPA</p>
     <h1> Tổng quan </h1>
@@ -121,7 +141,37 @@ Lorem ipsum dolor sit amet, nisl scaevola has ne, veniam detracto et mel,
     </div>
 </div>
 
-<div align="center" style="height:400px;background-color:rgb(212, 227, 237);padding:80px;" >
+   <div align="center" style="height:400px;background-color:rgb(212, 227, 237);padding:80px;" >
         <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px">BOOK & EXPERIENCEA</p>
         <p style="font-size:45px;padding:30px;">BOOK SERVICE</p>
+        <div>
+           <div class="thongtin"  >
+                <p class="fa fa-phone" style="margin-left:470px;font-size:35px;color:rgb(56, 187, 223)"> </p>
+                <p style="text-align:right">+84 (0) 492 958 320</p>
+           </div>
+           <div class="thongtin" > 
+                <p class="fa fa-envelope-o" style="margin-left:-430px;font-size:35px;color:rgb(56, 187, 223)"> </p>
+                <p style="text-align:left">lotushotel@gmail.com</p>
+           </div>
+        </div>
+
+        <div>
+            <button class="booknow fa fa-check-square-o " > BOOK NOW</button>
+        </div>
+   </div>
+
+   <div style="height:600px;background-color:white" >
+        <div style="width:25%; height:100%; background-color:rgb(56, 187, 223);float:left">
+        </div>
+        <div  style="text-align:center; position:relative; left:-140px;padding:100px">
+        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px;">EXPLORE LOTUS SPA</p>
+        <p style="font-size:45px;padding:30px;">PHOTO GALLERY</p>
+        </div> 
     </div>
+       
+
+   
+   <div align="center" style="height:500px;background-color:rgb(212, 227, 237);padding:80px;" >
+        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px">LOTUS SPA</p>
+        <p style="font-size:45px;padding:30px;">SERVICES OFFERINGS</p>
+   </div>
