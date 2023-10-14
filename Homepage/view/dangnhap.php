@@ -99,7 +99,7 @@ a {
       </label>
       <input type="submit" value="SIGN UP" class="button_dangnhap" name="dangnhap">
 	  <div style="font-size:20px;margin-top:10px;margin-left:40px " >
-      <a href="../home.php"><br> Home  </a>
+      <a href="../index_menu.php"><br> Home  </a>
       <a href="dangki.php"> Sign up </a>
       </div>
 			</form>
