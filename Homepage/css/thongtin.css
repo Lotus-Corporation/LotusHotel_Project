@@ -31,7 +31,7 @@
     text-align: center;
     line-height: 3;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .dat_phong2:hover{
     background-color: #042940;
