@@ -27,6 +27,7 @@
                   break;
                 case 15:
                   include("admin/admin_ctnkdp.php");
+                  break;
                 case 16:
                   include("admin/admin_dichvu.php");
                   break;
