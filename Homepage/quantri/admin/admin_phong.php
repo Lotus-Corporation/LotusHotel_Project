@@ -1,33 +1,31 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from nhatkidatphong";
+$sql="select * from PHONG";
 $result=$link->query($sql);
 ?>
 
-
-   <style>
+<style>
     .layout_danhmuc{
         width: 76%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
-        top:10%;
-        right:1%; 
-        height: 1200px;
-        top:90px;
+        right:2%; 
+        height: 2000px;
+        top:65px;
     }
     .danhmuc{
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
-        top:0px;
+        top:2px;
     }
     button{
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 83px;
+        top: 82px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
@@ -38,11 +36,12 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 7% 10% 0 3%; 
+        margin: 10% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
-        top:10px;
+        border-radius: 7px;
+
     }
    
     th{
@@ -70,17 +69,18 @@ $result=$link->query($sql);
 </style>
 
   <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh Sách Phòng </h2>
       <button>Thêm</button>
-      
-<table>
+
+      <table>
          <tr>
-    <th style="border-radius: 10px 0 0 0" >Mã nhật kí đặt phòng</th>
-    <th> Mã khách hàng </th>
-    <th> Ngày đặt phòng </th>
-    <th> Ngày trả phòng </th>
-    <th> Trạng thái phòng </th>
-    <th>Sửa</th>
+    <th style="border-radius: 10px 0 0 0" >Mã Phòng</th>
+    <th> Mã Loại Phòng</th>
+    <th> Đơn Giá Phòng </th>
+    <th> Mã Chi Nhánh </th>
+    <th> Số Người Tối Đa </th>
+    <th> Hình ảnh </th>
+    <th> Sửa </th>
     <th style="border-radius: 0 10px 0 0">Xóa</th>
          </tr>
    <?php
@@ -89,11 +89,12 @@ while ($row=$result->fetch_assoc())
    ?>   
 
 <tr align="center" >
-    <td> <?php echo $row["MA_NKDP"];?> </td>
-    <td> <?php echo $row["MA_KH"];?></td>
-    <td><?php echo $row["NGAYDAT"];?></td>
-    <td><?php echo $row["NGAYTRAPHONG"];?></td>
-    <td><?php echo $row["TRANGTHAI"];?></td>
+    <td> <?php echo $row["MA_PHONG"];?> </td>
+    <td> <?php echo $row["MA_LOAIPHONG"];?></td>
+    <td> <?php echo $row["DONGIAPHONG"];?></td>
+    <td> <?php echo $row["MA_CN"];?></td>
+    <td> <?php echo $row["SONGUOITOIDA"];?></td>
+    <td> <?php echo $row["ANHPHONG"];?></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
@@ -103,7 +104,3 @@ while ($row=$result->fetch_assoc())
 </table>
 </div>
 </div>
-
-
-
-

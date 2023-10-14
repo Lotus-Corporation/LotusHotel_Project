@@ -27,6 +27,7 @@
                   break;
                 case 15:
                   include("admin/admin_ctnkdp.php");
+                  break;
                 case 16:
                   include("admin/admin_dichvu.php");
                   break;
@@ -40,6 +41,15 @@
                     include("admin/admin_pttt.php");
                     break;
                 case 20:
+                    include("admin/admin_phong.php");
+                    break;
+                case 21:
+                    include("admin/admin_ctkm.php");
+                    break;
+                case 22:
+                    include("admin/admin_nkdp.php");
+                    break;
+                case 23:
                   include("themsuaxoa/them_chinhanh.php");
                   break;
             }

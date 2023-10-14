@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/dichvu.css">
 <div id="phandichvu" style=" background: linear-gradient(rgb(148, 211, 239),rgb(193, 233, 244));">
       <div class="dichvu">
-        <h2>Welcome to an oasis of luxury and tranquility</h2>
+        <h2 class= "hat2">Welcome to an oasis of luxury and tranquility</h2>
         <br>
         <div>
           <p>
@@ -9,6 +9,9 @@
             các chi tiết thiết kế cho đến các triển lãm và sự kiện, hãy khám phá
             những gì độc đáo nhất của khách sạn chúng tôi.
           </p>
+          <br>
+          <br>
+          <br>
         </div>
         <ul>
           <li>

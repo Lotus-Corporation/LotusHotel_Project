@@ -1,11 +1,17 @@
 create table HOADON(
     MA_HD varchar(15) primary key not null,
-    MA_NV varchar(15) not null,
-    MA_PTTT varchar(15) not null,
-    MA_KH varchar(15) not null,
-    MA_KM varchar(15) ,
-    MA_NKDP varchar(15) ,
-    MA_NKSD_DICHVU varchar(15),
+    MA_NV varchar(10) not null ,
+    FOREIGN KEY (MA_NV) REFERENCES NHANVIEN(MA_NV),
+    MA_PTTT varchar(10) not null ,
+    FOREIGN KEY (MA_PTTT) REFERENCES PTTT(MA_PTTT),
+    MA_KH varchar(10) ,
+    FOREIGN KEY (MA_KH) REFERENCES KHACHHANG(MA_KH),
+    MA_KM varchar(10) ,
+    FOREIGN KEY (MA_KM) REFERENCES KHUYENMAI(MA_KM),
+    MA_NKDP varchar(10) ,
+    FOREIGN KEY (MA_NKDP) REFERENCES NKDP(MA_NKDP),
+    MA_NKSD_DICHVU varchar(10),
+    FOREIGN KEY (MA_NKSD_DICHVU) REFERENCES NKSD_DICHVU(MA_NKSD_DICHVU),
     NGAYLAP_HD date not null,
     TONGTIEN float
 ) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
