@@ -1,6 +1,6 @@
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from chinhanh";
+    $sql="select * from CHINHANH";
     $result=$link->query($sql);
 ?>
 <style>
@@ -68,7 +68,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh sách chi nhánh</h2>
-    <button><a href="index_menu_admin.php?pid=19">Thêm</a></button>
+    <button><a href="index_menu_admin.php?pid=23">Thêm</a></button>
         <table>
             <tr>
                 <th style="border-radius: 10px 0 0 0">Mã Chi Nhánh</th>
@@ -89,9 +89,9 @@
                         <td><?php echo $row["DIACHI"]; ?></td>
                         <td><?php echo $row["SDT"]; ?></td>
                         <td><?php echo $row["MA_NV"]; ?></td>
-                        <td><img src="../img/<?php echo $row["HINHANH"]; ?>" style="width: 100px; height: 100px;"></td>
-                        <td><a href=""><img src="../img/icon/edit.png" width="10px" height="10px"> Sửa</a></td>
-                        <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+                        <td><img src="../../img/<?php echo $row["HINHANH"]; ?>" style="width: 100px; height: 100px;"></td>
+                        <td><a href=""><img src="../../img/icon/edit.png" width="10px" height="10px"> Sửa</a></td>
+                        <td><a href=""><img src="../../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
                     </tr>
             <?php
                 }

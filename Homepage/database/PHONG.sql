@@ -5,12 +5,12 @@ create table PHONG(
     DONGIAPHONG int,
     MA_CN varchar(10),
     foreign key (MA_CN) references CHINHANH(MA_CN),
-    SONGUOITOIDA int,
+    SONGUOITOIDA int not null,
     ANHPHONG char(50),
     LINK_ANH char(50)
-)ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+);
 
-insert into PHONG(MA_PHONG,MA_LOAIPHONG,DONGIAPHONG,MA_CN,SONGUOITOIDA,ANHPHONG,LINK_ANH) values
+insert into PHONG values
 ('569','STD',357000,'CN01',2,'phong/STD1.jpg','img/anhphongnoibat/1.jpg'),
 ('397','SUP',459000,'CN01',4,'phong/SUP1.jpg','img/anhphongnoibat/2.jpg'),
 ('917','DLX',780000,'CN01',6,'phong/DLX1.jpg','img/anhphongnoibat/3.jpg'),

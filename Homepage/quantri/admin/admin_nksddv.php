@@ -1,7 +1,7 @@
 
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from nksd_dichvu";
+    $sql="select * from NKSD_DICHVU";
     $result=$link->query($sql);
 ?>
 
@@ -92,8 +92,8 @@ while ($row=$result->fetch_assoc())
         <tr>
             <td><?php echo $row["MA_NKSD_DICHVU"]; ?></td>
             <td><?php echo $row["MA_KH"]; ?></td>
-            <td><a href=""><img src="../img/icon/edit.png" width="10px" height="10px"> Sửa</a></td>
-            <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+            <td><a href=""><img src="../../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+            <td><a href=""><img src="../../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
         </tr>
     <?php
     }
