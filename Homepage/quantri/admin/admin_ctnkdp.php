@@ -47,7 +47,6 @@ $result=$link->query($sql);
     th{
        background-color: gray;
        padding: 10px;
-       border-radius: 7px;
 
     }
 

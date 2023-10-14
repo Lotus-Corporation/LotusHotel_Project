@@ -53,7 +53,6 @@
         background-color:antiquewhite;
         border-style:outset;
         padding: 10px;
-        border-radius: 7px;
 
     }
    

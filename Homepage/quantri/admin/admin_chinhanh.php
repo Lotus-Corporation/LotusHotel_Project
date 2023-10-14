@@ -5,58 +5,65 @@
 ?>
 <style>
     .layout_danhmuc{
-        width: 75%; 
+        width: 70%; 
         position: absolute; 
-        top: 10%;
-        right: 2%; 
         background-color: rgb(253, 245, 233);
-        height: 1410px;
+        top:10%;
+        right:5%; 
+        height: 1400px;
+        top:100px;
+        border-radius: 10px;
     }
     .danhmuc{
         width: 100%;
-        height: 50px;
-        background-color: darkgray;
-        border-radius: 10px 10px 0 0;
+        height: 70px;
+        background-color: gray;
+        border-radius: 10px;
         position: absolute;
-        top:0;
+        top:0px;
     }
     button{
-        padding: 15px 40px;
+        padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 60px;
+        top: 83px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
         cursor: pointer;
     }
+    button:hover{
+        background-color: rgb(161, 110, 7);
+    }
     table{ 
-        width: 98%; 
-        margin: 7% 1% 0 1%; 
+        width: 95%; 
+        margin: 9% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
+        top:10px;
     }
-    th, td{
-        text-align: center;
-        padding: 10px
-    }
+   
     th{
-       background-color: darkgray;
-       padding:14.5px
+       background-color: gray;
+       padding: 10px;
+
     }
+
     td{
         background-color:antiquewhite;
+        border-style:outset;
+        padding: 10px;
+        border-radius: 7px;
+
     }
+   
     a{
         text-decoration: none;
         color: black;
     }
     a:hover{
         color: brown;
-    }
-    button:hover{
-        background-color: rgb(161, 110, 7);
     }
 </style>
 <div class="layout_danhmuc">
