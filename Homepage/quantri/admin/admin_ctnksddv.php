@@ -5,14 +5,13 @@
 ?>
 <style>
     .layout_danhmuc{
-        width: 60%; 
+        width: 70%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:8%; 
-        height: 700px;
-        top:100px;
-        border-radius: 10px;
+        right:1%; 
+        height: 1200px;
+        top:65px;
     }
     .danhmuc{
         width: 100%;
@@ -47,7 +46,6 @@
     th{
        background-color: gray;
        padding: 10px;
-       border-radius: 7px;
 
     }
 
@@ -67,23 +65,30 @@
         color: brown;
     }
 </style>
+<div class="layout_danhmuc"> 
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi tiết Nhật Kí Sử Dụng Dịch Vụ </h2>
+      <button>Thêm</button>
 <table>
     <tr>
-        <th>Mã chi tiết NKSD dịch vụ</th>
-        <th>Mã NKSD dịch vụh</th>
+        <th style="border-radius: 10px 0 0 0">Mã chi tiết NKSD dịch vụ</th>
+        <th>Mã NKSD dịch vụ</th>
         <th>Mã dịch vụ</th>
         <th>Số lượng</th>
+        <th> Sửa </th>
+        <th style="border-radius: 0 10px 0 0">Xóa</th>
     </tr>
 
     <?php
         while($row=$result->fetch_assoc())
         {
     ?>
-            <tr>
+            <tr align="center" >
                 <td><?php echo $row["MA_CT_NKSDDV"]; ?></td>
                 <td><?php echo $row["MA_NKSD_DICHVU"]; ?></td>
                 <td><?php echo $row["MA_DV"]; ?></td>
                 <td><?php echo $row["SOLUONG"]; ?></td>
+                <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+                <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
             </tr>
     <?php
         }
