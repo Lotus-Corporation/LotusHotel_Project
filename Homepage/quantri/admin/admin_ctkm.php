@@ -6,10 +6,10 @@ $result=$link->query($sql);
 
 <style>
     .layout_danhmuc{
-        width: 80%; 
+        width: 78%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
-        right:2%; 
+        right:1%; 
         height: 1050px;
         top:65px;
     }
