@@ -1,6 +1,6 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from PHONG";
+$sql="select * from CHITIETKHUYENMAI";
 $result=$link->query($sql);
 ?>
 
@@ -69,17 +69,15 @@ $result=$link->query($sql);
 </style>
 
   <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh Sách Phòng </h2>
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Chi Tiết Khuyến Mãi </h2>
       <button>Thêm</button>
 
       <table>
          <tr>
-    <th style="border-radius: 10px 0 0 0" >Mã Phòng</th>
-    <th> Mã Loại Phòng</th>
-    <th> Đơn Giá Phòng </th>
-    <th> Mã Chi Nhánh </th>
-    <th> Số Người Tối Đa </th>
-    <th> Hình ảnh </th>
+    <th style="border-radius: 10px 0 0 0" >Mã Khuyến Mãi</th>
+    <th> Mã CTKM</th>
+    <th> Giá Trị </th>
+    <th> Mã Dịch Vụ </th>
     <th> Sửa </th>
     <th style="border-radius: 0 10px 0 0">Xóa</th>
          </tr>
@@ -89,12 +87,10 @@ while ($row=$result->fetch_assoc())
    ?>   
 
 <tr align="center" >
-    <td> <?php echo $row["MA_PHONG"];?> </td>
-    <td> <?php echo $row["MA_LOAIPHONG"];?></td>
-    <td> <?php echo $row["DONGIAPHONG"];?></td>
-    <td> <?php echo $row["MA_CN"];?></td>
-    <td> <?php echo $row["SONGUOITOIDA"];?></td>
-    <td> <?php echo $row["ANHPHONG"];?></td>
+    <td> <?php echo $row["MA_KM"];?> </td>
+    <td> <?php echo $row["MA_CTKM"];?></td>
+    <td> <?php echo $row["GIATRI"];?></td>
+    <td> <?php echo $row["MA_DV"];?></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
