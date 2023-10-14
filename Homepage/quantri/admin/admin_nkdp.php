@@ -1,6 +1,6 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from nhatkidatphong";
+$sql="select * from NHATKIDATPHONG";
 $result=$link->query($sql);
 ?>
 
@@ -94,8 +94,8 @@ while ($row=$result->fetch_assoc())
     <td><?php echo $row["NGAYDAT"];?></td>
     <td><?php echo $row["NGAYTRAPHONG"];?></td>
     <td><?php echo $row["TRANGTHAI"];?></td>
-    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
-    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+    <td><a href=""><img src="../../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a href=""><img src="../../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
      <?php
  }

@@ -1,16 +1,16 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from CHITIETNHATKIDATPHONG";
+$sql="select * from HOADON";
 $result=$link->query($sql);
 ?>
 <style>
     .layout_danhmuc{
-        width: 65%; 
+        width: 60%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:3%; 
-        height: 1400px;
+        right:8%; 
+        height: 700px;
         top:100px;
         border-radius: 10px;
     }
@@ -47,6 +47,7 @@ $result=$link->query($sql);
     th{
        background-color: gray;
        padding: 10px;
+       border-radius: 7px;
 
     }
 
@@ -66,32 +67,43 @@ $result=$link->query($sql);
         color: brown;
     }
 </style>
-    <div class="layout_danhmuc"> 
-        <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi Tiết Nhật Kí Đặt Phòng </h2>
-        <button>Thêm</button>
+<div class="layout_danhmuc"> 
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Khuyến Mãi </h2>
+      <button>Thêm</button>
 <table>
     <tr>
-<th style="border-radius: 10px 0 0 0">Mã chi tiết nhật kí đặt phòng</th>
-<th> Mã nhật kí đặt phòng </th>
-<th> Mã phòng </th>
-<th> Đơn giá phòng </th>
-<th> Sửa </th>
-<th style="border-radius: 0 10px 0 0">Xóa</th>
-
+        <th> Mã Hợp Đồng </th>
+        <th> Mã Nhân Viên </th>
+        <th> Mã PTTT </th>
+        <th> Mã Khách Hàng </th>
+        <th> Mã Khuyến Mãi </th>
+        <th> Mã NKDP </th>
+        <th> Mã Nhật Kí SDDV </th>
+        <th> Ngày Lập Hợp Đồng </th>
+        <th> Tổng Tiền </th>
+        <th> Sửa </th>
+        <th style="border-radius: 0 10px 0 0">Xóa</th>
+      
 </tr>
 <?php
 while ($row=$result->fetch_assoc())
 {
  ?>   
 
-<tr align="center" >
-    <td> <?php echo $row["MA_CTNKDP"];?> </td>
+<tr>
+    <td> <?php echo $row["MA_HD"];?></td>
+    <td> <?php echo $row["MA_NV"];?></td>
+    <td> <?php echo $row["MA_PTTT"];?></td>
+    <td> <?php echo $row["MA_KH"];?></td>
+    <td> <?php echo $row["MA_KM"];?></td>
     <td> <?php echo $row["MA_NKDP"];?></td>
-    <td><?php echo $row["MA_PHONG"];?></td>
-    <td><?php echo $row["DONGIAPHONG"];?></td>
+    <td> <?php echo $row["MA_NKSD_DICHVU"];?></td>
+    <td> <?php echo $row["NGAYLAP_HD"];?></td>
+    <td> <?php echo $row["TONGTIEN"];?></td>
     <td><a href=""><img src="../../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a href=""><img src="../../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
-</tr>
+<tr>
+<tr>
 <?php
  }
 ?>
