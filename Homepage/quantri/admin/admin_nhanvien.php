@@ -1,16 +1,16 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from chinhanh";
+$sql="select * from nhanvien";
 $result=$link->query($sql);
 ?>
 <style>
     .layout_danhmuc{
-        width: 60%; 
+        width: 70%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:5%; 
-        height: 750px;
+        right:3%; 
+        height: 1650px;
         top:100px;
         border-radius: 10px;
     }
@@ -20,13 +20,12 @@ $result=$link->query($sql);
         background-color: gray;
         border-radius: 10px;
         position: absolute;
-        top:0px;
     }
     button{
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 83px;
+        top: 90px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
@@ -41,7 +40,7 @@ $result=$link->query($sql);
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
-        top:10px;
+        
     }
    
     th{
@@ -55,6 +54,7 @@ $result=$link->query($sql);
         border-style:outset;
         padding: 10px;
         border-radius: 7px;
+        
 
     }
    
@@ -67,15 +67,18 @@ $result=$link->query($sql);
     }
 </style>
 <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi tiết Nhật Kí Sử Dụng Dịch Vụ </h2>
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhân viên  </h2>
       <button>Thêm</button>
 <table>
     <tr>
-        <th style="border-radius: 10px 0 0 0"> Mã chi nhánh </th>
-        <th> Địa chỉ </th>
+        <th style="border-radius: 10px 0 0 0"> Mã nhân viên</th>
+        <th> Họ tên  </th>
         <th> SDT </th>
-        <th> NV quản lý </th>
-        <th> Sửa </th>
+        <th> Chức vụ </th>
+        <th> Địa chỉ</th>
+        <th> CCCD</th>
+        <th> Lương</th>
+        <th >Sửa</th>
         <th style="border-radius: 0 10px 0 0">Xóa</th>
 </tr>
 <?php
@@ -84,10 +87,13 @@ while ($row=$result->fetch_assoc())
  ?>   
 
 <tr>
-    <td> <?php echo $row["MA_CN"];?></td>
-    <td> <?php echo $row["DIACHI"];?></td>
-    <td> <?php echo $row["SDT"];?></td>
     <td> <?php echo $row["MA_NV"];?></td>
+    <td> <?php echo $row["HOTEN"];?></td>
+    <td> <?php echo $row["SDT"];?></td>
+    <td> <?php echo $row["CHUCVU"];?></td>
+    <td> <?php echo $row["DIACHI"];?></td>
+    <td> <?php echo $row["CCCD"];?></td>
+    <td> <?php echo $row["LUONG"];?></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
                 <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 <tr>

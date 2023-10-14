@@ -7,13 +7,13 @@ $result=$link->query($sql);
 
    <style>
     .layout_danhmuc{
-        width: 80%; 
+        width: 76%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:0%; 
-        height: 1100px;
-        top:65px;
+        right:1%; 
+        height: 1200px;
+        top:90px;
     }
     .danhmuc{
         width: 100%;
@@ -38,7 +38,7 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 9% 10% 0 3%; 
+        margin: 7% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 

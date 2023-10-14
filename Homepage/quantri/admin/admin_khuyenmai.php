@@ -5,13 +5,12 @@
 ?>
 <style>
   .layout_danhmuc{
-        width: 80%; 
+        width: 75%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:0; 
-        height:2750px;
-        top:100px;
+        right:2%; 
+        height:2850px;
         border-radius: 10px;
     }
     .danhmuc{
@@ -26,7 +25,7 @@
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 83px;
+        top: 80px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
@@ -37,11 +36,11 @@
     }
     table{ 
         width: 95%; 
-        margin: 9% 10% 0 3%; 
+        margin: 7% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
-        top:10px;
+        
     }
    
     th{
