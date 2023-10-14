@@ -12,9 +12,11 @@ chua xong
 </style>
 
 <div class="layout_anh" style="margin-top:-10px">
-    <img src=""style="height: 600px; width:100%">
+    <img src="./img/dichvu/nhahang.jpg" style="height: 650px; width:100%">
     <div class="loigoi">
-    <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%; margin-left:-50px">ENJOY WITH UNIQUENESS</div>
-        <div style="font-size:45px;margin-left:-30px">RESTAURANT & BAR</div>
+    <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%; margin-left:-20px">ENJOY WITH UNIQUENESS</div>
+        <div style="font-size:45px;margin-left:-25px">RESTAURANT & BAR</div>
     </div>
 </div>
+
+
