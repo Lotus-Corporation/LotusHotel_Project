@@ -89,8 +89,8 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_NKDP"];?></td>
     <td><?php echo $row["MA_PHONG"];?></td>
     <td><?php echo $row["DONGIAPHONG"];?></td>
-    <td><a href=""><img src="../../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
-    <td><a href=""><img src="../../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
 <?php
  }
