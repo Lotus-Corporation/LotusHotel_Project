@@ -1,8 +1,8 @@
 create table CHITIETKHUYENMAI(
-    MA_KM varchar(10) ,
+    MA_KM varchar(10),
     foreign key (MA_KM) references KHUYENMAI(MA_KM),
     GIATRI float not null,
-    MA_CTNKDP varchar(10),
+    MA_CTNKDP varchar(6),
     foreign key (MA_CTNKDP) references CHITIETNHATKIDATPHONG(MA_CTNKDP),
     MA_DV varchar(10),
     foreign key (MA_DV) references DICHVU(MA_DV)

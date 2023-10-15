@@ -80,7 +80,6 @@
         <a href="index_menu_admin.php?pid=19">Phương thức thanh toán</a>
         <a href="index_menu_admin.php?pid=20">Phòng</a>
         <a href="index_menu_admin.php?pid=21">Chi Tiết Khuyến Mãi</a>
-        <a href="index_menu_admin.php?pid=22">Nhật Kí Đặt Phòng</a>
       </div>
     </div>
     </body>
