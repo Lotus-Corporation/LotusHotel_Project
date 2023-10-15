@@ -26,6 +26,8 @@
         color: #fff;
     }
     .danhmuc{
+        animation-name: chuyendong;
+        animation-duration: 5s;
         font-size: 20px;
         margin-left: 23%;
         border: 1px solid gray;
@@ -36,6 +38,13 @@
         padding: 40px;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    @keyframes chuyendong{
+        0%{
+            margin-top: 10%;
+        }
+        
+    }
+
     form > div{
         float: left;
         margin: 2%;
