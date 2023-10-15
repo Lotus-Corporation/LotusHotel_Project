@@ -30,7 +30,7 @@
                 <img src="img/<?php echo $row["ANHPHONG"]; ?>">
                 <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
                 <div  class="tenphong">
-                    <div><h2><?php echo $row["MA_LOAIPHONG"] ?></h2></div>
+                    <div><h2><?php echo $row["TENPHONG"] ?></h2></div>
                     <i class="fa fa-bed" aria-hidden="true">1 bed</i>
                     <i class="fa fa-users" aria-hidden="true">Max <?php echo $row["SONGUOITOIDA"]?></i>
                 </div>

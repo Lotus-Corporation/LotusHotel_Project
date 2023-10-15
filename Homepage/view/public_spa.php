@@ -3,7 +3,6 @@
 
 <style>
      body{
-        background:linear-gradient(rgb(231, 245, 249),rgb(193, 233, 244));
         margin: 0
     }
     .layout_anh{
@@ -110,8 +109,41 @@
    }
    .booknow:hover {background-color: rgb(0, 121, 154);}
 
-
-
+.chon {
+  display: none;
+}
+.khungtren {
+  width: 326.3px;
+  position: relative;
+  display: block;
+  line-height:20px;
+  height: 23px;
+  padding:14px;
+  color: rgb(56, 187, 223);
+  font-size:20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.khungtren:hover {
+  top: -4px;
+}
+.noidung {
+  height: 325px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: white;
+  text-align:left;
+}
+.chon:checked + .khungtren {
+  background: white;
+  color:black;
+  transition: all 0.35s;
+}
+.chon:checked + label + .noidung {
+  z-index: 2;
+  transition: all 0.35s;
+}
 </style>
 
 
@@ -163,14 +195,58 @@ Lorem ipsum dolor sit amet, nisl scaevola has ne, veniam detracto et mel,
         <div style="width:25%; height:100%; background-color:rgb(56, 187, 223);float:left">
         </div>
         <div  style="text-align:center; position:relative; left:-140px;padding:100px">
-        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px;">EXPLORE LOTUS SPA</p>
-        <p style="font-size:45px;padding:30px;">PHOTO GALLERY</p>
+           <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px;">EXPLORE LOTUS SPA</p>
+           <p style="font-size:45px;padding:30px;">PHOTO GALLERY</p>
         </div> 
     </div>
        
 
    
-   <div align="center" style="height:500px;background-color:rgb(212, 227, 237);padding:80px;" >
+   <div align="center" style="height:550px;background-color:rgb(212, 227, 237);padding:80px;" >
         <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px">LOTUS SPA</p>
         <p style="font-size:45px;padding:30px;">SERVICES OFFERINGS</p>
+        <div>
+        <div style="position: relative;margin-top:-15px;">
+          <div style="float: left;">
+            <input type="radio" name="spa" id="Facial" checked class="chon">
+            <label for="Facial" class="khungtren">FACIAL</label>
+            <div class="noidung"><h1> 1.Basic Facial Care - 45' </h1>
+              <p>A reviving facial which includes a deep cleanse, exfoliation,
+                 soothing facial massage and finally moisturizing treatment using
+                the finest of skin care products leaving your skin refreshed and nourished.</p>
+                <h1> 2.Basic Facial Care - 45' </h1>
+              <p>A reviving facial which includes a deep cleanse, exfoliation,
+                 soothing facial massage and finally moisturizing treatment using
+                the finest of skin care products leaving your skin refreshed and nourished.</p>  
+            </div>
+          </div>
+          <div style="float: left;">
+            <input type="radio" name="spa" id="Foots" class="chon">
+            <label for="Foots" class="khungtren">FOOTS</label>
+            <div class="noidung"><h1> 1.Basic Facial Care - 45' </h1>
+              <p>A reviving facial which includes a deep cleanse, exfoliation,
+                 soothing facial massage and finally moisturizing treatment using
+                the finest of skin care products leaving your skin refreshed and nourished.</p>
+            </div>
+          </div>
+          <div style="float: left;">
+            <input type="radio" name="spa" id="Body" class="chon">
+            <label for="Body" class="khungtren">BODY</label>
+            <div class="noidung"><h1> lllllllllll' </h1>
+              <p>A reviving facial which includes a deep cleanse, exfoliation,
+                 soothing facial massage and finally moisturizing treatment using
+                the finest of skin care products leaving your skin refreshed and nourished.</p>
+            </div>
+          </div>
+          <div style="float: left;">
+            <input type="radio" name="spa" id="SKIN" class="chon">
+            <label for="SKIN" class="khungtren">SKIN</label>
+            <div class="noidung"><h1> 1ghjjb 45' </h1>
+              <p>A reviving facial whjjbbggggggggggg.</p>
+            </div>
+          </div>
+        </div>
+        </div>
    </div>
+
+   

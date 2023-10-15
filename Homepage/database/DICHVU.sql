@@ -25,6 +25,6 @@ insert into DICHVU values
 ('DV17','Bể bơi 4 mùa',370000,'người','dv17.jpg'),
 ('DV18','Combo Spa-Fitness center',2000000,'người','dv18.jpg'),
 ('DV19','Trang trí phòng theo chủ đề',799000,'phòng','dv19.jpg'),
-('DV20','Tổ chức tiệc trong nhà hàng theo yêu cầu', 8000000,'bàn','dv19.jpg')
+('DV20','Tổ chức tiệc trong nhà hàng theo yêu cầu', 8000000,'bàn','dv20.jpg')
 
 

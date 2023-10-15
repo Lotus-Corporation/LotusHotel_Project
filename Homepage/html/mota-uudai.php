@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/mota-uudai.css"> 
 <div style="width: 100%; height: 680px; background-color: white; position:relative; top:46px">
 <video autoplay muted loop width="100%" height="100%">
-    <source src="./img/clip.mp4" type="video/mp4">
+    <source src="img/clip.mp4" type="video/mp4">
 </video>
 
 </div>
