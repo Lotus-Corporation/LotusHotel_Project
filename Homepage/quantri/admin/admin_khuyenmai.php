@@ -75,8 +75,6 @@
         <th>Mô tả</th>
         <th>Ngày bắt đầu</th>
         <th>Ngày kết thúc</th>
-        <th>Đối tượng áp dụng</th>
-        <th>Mã Loại Phòng</th>
         <th>Hình Ảnh</th>
         <th> Sửa </th>
         <th style="border-radius: 0 10px 0 0">Xóa</th>
@@ -91,8 +89,6 @@
             <td><?php echo $row["MOTA"]; ?></td>
             <td><?php echo $row["NGAYBATDAU"]; ?></td>
             <td><?php echo $row["NGAYKETTHUC"]; ?></td>
-            <td><?php echo $row["DOITUONGAPDUNG"]; ?></td>
-            <td><?php echo $row["MA_LOAIPHONG"];?></td>
             <td><img src="../img/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
             <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
             <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>

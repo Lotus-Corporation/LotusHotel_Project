@@ -75,7 +75,7 @@ $result=$link->query($sql);
       <table>
          <tr>
     <th style="border-radius: 10px 0 0 0" >Mã Khuyến Mãi</th>
-    <th> Mã Nhật Kí Đặt Phòng</th>
+    <th> Mã Loại Phòng</th>
     <th> Giá Trị </th>
     <th> Mã Dịch Vụ </th>
     <th> Sửa </th>
@@ -88,7 +88,7 @@ while ($row=$result->fetch_assoc())
 
 <tr align="center" >
     <td> <?php echo $row["MA_KM"];?> </td>
-    <td> <?php echo $row["MA_CTNKDP"];?></td>
+    <td> <?php echo $row["MA_LOAIPHONG"];?></td>
     <td> <?php echo $row["GIATRI"];?></td>
     <td> <?php echo $row["MA_DV"];?></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
