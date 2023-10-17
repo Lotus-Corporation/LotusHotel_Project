@@ -8,11 +8,11 @@ $result=$link->query($sql);
 .layout_danhmuc{
     width:70%;
     background-color:rgb(253, 245, 233);
-    height: 1000px;
+    height: 1100px;
     border-start-start-radius: 80px 80px;
     position: absolute; 
     top:20px;
-    right:15%;
+    right:8%;
 }
 
   
@@ -38,19 +38,26 @@ input {
  label{ 
        background-color: rgb(250, 204, 148);
        padding:15px;
-       border-radius: 10px;
-       
+       border-radius: 10px;   
    }
+   button{
+        padding: 15px 40px;
+        border: none;
+        background-color: rgb(234, 159, 85);
+        border-radius: 10px;
+        cursor: pointer;
+        float: right;
+        margin-right: 18%;
+    }
    form{
         width: 90%; 
         margin: 5% 0 0 10%;
     }
-    form >div{
+    form>div{
         margin: 0 10% 6% 20%;
         background-color:rgb(251, 231, 206);
         font-size: 18px;
         padding: 0 35px 25px 35px;
-        
         width: 40%;
         border-radius: 10px;
     }
@@ -101,7 +108,9 @@ input {
  <input type="text" name="ngaydat"
   placeholder="Status room">
 </div>
+
 <button type="submit">Lưu</button>
+
 </form>
            
 </div>
