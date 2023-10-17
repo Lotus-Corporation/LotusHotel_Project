@@ -71,7 +71,7 @@ $result=$link->query($sql);
 
   <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
-      <button>Thêm</button>
+    <a href="index_menu_admin.php?pid=24"><button> Thêm</button></a>
       
 <table>
          <tr>

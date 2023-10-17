@@ -68,14 +68,14 @@ input {
     <div>
     <div>
  <label>Mã nhật kí đặt phòng:</label></br>
- <input type="text" value="" name="ma_nkdp"  
+ <input type="text" value="" name="MA_NKDP"  
   placeholder="Please enter your booking log code"> 
 </div>
     </div>
 
 <div>
  <label >Mã khách hàng:</label></br>
- <input type="text" value="" name="ma_kh"  
+ <input type="text" value="" name="MA_KH"  
  placeholder="Please enter your customer code">
 </div>
 
@@ -84,21 +84,21 @@ input {
 
 <div >
  <label text-align:center style="width:40%">Ngày đặt phòng</label></br>
- <input type="date" name="ngaydat">
+ <input type="date" name="NGAYDAT">
 </div>
 
 
 
 <div >
  <label text-align:center>Ngày trả phòng</label></br>
- <input type="date" name="ngaytra">
+ <input type="date" name="NGAYTRAPHONG">
 </div>
 
  
 
 <div class="date-input">
  <label>Trạng thái phòng</label></br>
- <input type="text" name="ngaydat"
+ <input type="text" name="TRANGTHAI"
   placeholder="Status room">
 </div>
 <button type="submit">Lưu</button>

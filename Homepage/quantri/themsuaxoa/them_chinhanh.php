@@ -67,7 +67,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm chi nhánh</h2>
-        <form method="post" action="control/ctrl_them_chinhanh.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_chinhanh.php">
             <div>
                 <label>Mã chi nhánh</label><br>
                 <input type="text" name="ma_cn">

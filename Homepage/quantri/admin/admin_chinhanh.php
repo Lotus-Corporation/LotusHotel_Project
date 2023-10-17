@@ -68,7 +68,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh sách chi nhánh</h2>
-    <button><a href="index_menu_admin.php?pid=23">Thêm</a></button>
+    <a href="index_menu_admin.php?pid=23"><button>Thêm</button></a>
         <table>
             <tr>
                 <th style="border-radius: 10px 0 0 0">Mã Chi Nhánh</th>

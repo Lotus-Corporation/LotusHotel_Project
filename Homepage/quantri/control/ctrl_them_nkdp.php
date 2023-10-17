@@ -1,8 +1,8 @@
 <?php 
-$ma_nkdp=$_POST["MA_NKDP"];
+$MA_NKDP=$_POST["MA_NKDP"];
 $MA_KH=$_POST["MA_KH"];
 $NGAYDAT=$_POST["NGAYDAT"];
-$NGATRAPHONG=$_POST["NGAYTRAPHONG"];
+$NGAYTRAPHONG=$_POST["NGAYTRAPHONG"];
 $TRANGTHAI=$_POST["TRANGTHAI"];
 $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into NHATKIDATPHONG(MA_NKDP,MA_KH,NGAYDAT,NGAYTRAPHONG,TRANGTHAI)
