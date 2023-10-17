@@ -13,7 +13,7 @@
         background-color: rgb(253, 245, 233);
         top:10%;
         right:5%; 
-        height: 700px;
+        height: 600px;
         top:100px;
         border-radius: 10px;
     }
@@ -100,5 +100,4 @@ while ($row=$result->fetch_assoc())
     ?>
 </table>
 </div>
-
 
