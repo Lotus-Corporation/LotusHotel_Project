@@ -38,7 +38,7 @@
   <a  style="float:left; font-size: 35px; margin-right:20px;color: rgb(0, 0, 0);" href="index_menu.php?pid=7">
   <i class="fa fa-shopping-cart"></i>
   </a>
-  <a  style="float:left; font-size: 30px; margin-right:20px;color: rgb(0, 0, 0)" href="./view/dangki.php">
+  <a  style="float:left; font-size: 30px; margin-right:20px;color: rgb(0, 0, 0)" href="view/login.php">
   <i class="fa fa-user"></i>
   </a>
 </div>

@@ -79,7 +79,7 @@ body {
 <div class="container">
 <div style="font-family:Garamond; font-size:50px; margin-bottom:15%;padding: 50px">LOTUS HOTEL</div>
 	<div class="khung_ngoai">
-			<form action="index_menu_admin.php" method="post" class="login">
+			<form action="control/ctr_login_admin.php" method="post" class="login">
 				<div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-user"></i>
 					<input type="text" class="khung_dangnhap" placeholder="User name / Email" name="TEN_DN">

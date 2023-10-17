@@ -68,7 +68,7 @@ $result=$link->query($sql);
     }
 </style>
 <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Khuyến Mãi </h2>
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Hóa Đơn </h2>
       <button>Thêm</button>
 <table>
     <tr>
@@ -76,7 +76,6 @@ $result=$link->query($sql);
         <th> Mã Nhân Viên </th>
         <th> Mã PTTT </th>
         <th> Mã Khách Hàng </th>
-        <th> Mã Khuyến Mãi </th>
         <th> Mã NKDP </th>
         <th> Mã Nhật Kí SDDV </th>
         <th> Ngày Lập Hợp Đồng </th>
@@ -95,7 +94,6 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_NV"];?></td>
     <td> <?php echo $row["MA_PTTT"];?></td>
     <td> <?php echo $row["MA_KH"];?></td>
-    <td> <?php echo $row["MA_KM"];?></td>
     <td> <?php echo $row["MA_NKDP"];?></td>
     <td> <?php echo $row["MA_NKSD_DICHVU"];?></td>
     <td> <?php echo $row["NGAYLAP_HD"];?></td>

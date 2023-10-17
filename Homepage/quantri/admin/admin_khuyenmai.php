@@ -89,7 +89,7 @@
             <td><?php echo $row["MOTA"]; ?></td>
             <td><?php echo $row["NGAYBATDAU"]; ?></td>
             <td><?php echo $row["NGAYKETTHUC"]; ?></td>
-            <td><img src="../img/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
+            <td><img src="../img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
             <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
             <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
         </tr>
