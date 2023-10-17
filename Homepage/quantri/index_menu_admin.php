@@ -49,10 +49,19 @@
                 case 23:
                   include("themsuaxoa/them_chinhanh.php");
                   break;
+<<<<<<< HEAD
                 case 24:
                   include("themsuaxoa/them_nkdp.php");
                   break;
             }
+=======
+                  case 24:
+                    include("themsuaxoa/them_nkdp.php");
+                    break;
+           
+                }
+                
+>>>>>>> 7eb0a2e8bb0de5f45c6e3fba245697ab8bdeebf6
         }
     ?> 
   </body>

@@ -10,7 +10,7 @@
         background-color: rgb(253, 245, 233);
         top:10%;
         right:2%; 
-        height:2850px;
+        height:2700px;
         border-radius: 10px;
     }
     .danhmuc{

@@ -12,7 +12,7 @@ $result=$link->query($sql);
         background-color: rgb(253, 245, 233);
         top:10%;
         right:1%; 
-        height: 1200px;
+        height: 1030px;
         top:90px;
     }
     .danhmuc{
@@ -66,12 +66,14 @@ $result=$link->query($sql);
     a:hover{
         color: brown;
     }
+    
    
 </style>
 
   <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
-    <a href="index_menu_admin.php?pid=24"><button> Thêm</button></a>
+      <button><a href="index_menu_admin.php?pid=24">Thêm</a></button>
+
       
 <table>
          <tr>
