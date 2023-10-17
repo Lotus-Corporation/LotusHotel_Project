@@ -5,12 +5,12 @@ $result=$link->query($sql);
 ?>
 <style>
     .layout_danhmuc{
-        width: 60%; 
+        width: 80%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
         right:8%; 
-        height: 700px;
+        height: 2100px;
         top:100px;
         border-radius: 10px;
     }
