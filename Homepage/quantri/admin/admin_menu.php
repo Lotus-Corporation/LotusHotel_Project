@@ -33,7 +33,7 @@
   }
   .menu_left:hover {
   
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Đổ bóng khi hover */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
   }
     .menu_middle{
       width: 100%;
