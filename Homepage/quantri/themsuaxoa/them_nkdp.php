@@ -11,7 +11,7 @@ $result=$link->query($sql);
     height: 1100px;
     border-start-start-radius: 80px 80px;
     position: absolute; 
-    top:20px;
+    top:10%;
     right:8%;
 }
 
