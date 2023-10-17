@@ -9,7 +9,7 @@ create table PHONG(
     SONGUOITOIDA int not null,
     ANHPHONG char(50),
     LINK_ANH char(50)
-);
+) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 insert into PHONG values
 ('569','STD','STD Sa Pa',357000,'CN01',2,'phong/STD1.jpg','img/anhphongnoibat/1.jpg'),
