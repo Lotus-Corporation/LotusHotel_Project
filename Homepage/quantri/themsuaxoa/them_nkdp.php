@@ -40,6 +40,7 @@ input {
        padding:15px;
        border-radius: 10px;   
    }
+   
    button{
         padding: 15px 40px;
         border: none;
@@ -48,6 +49,9 @@ input {
         cursor: pointer;
         float: right;
         margin-right: 18%;
+    }
+    button:hover{
+        background-color: rgb(161, 110, 7);
     }
    form{
         width: 90%; 
@@ -98,14 +102,14 @@ input {
 
 <div >
  <label text-align:center>Ngày trả phòng</label></br>
- <input type="date" name="ngaytra">
+ <input type="date" name="ngaytraphong">
 </div>
 
  
 
 <div class="date-input">
  <label>Trạng thái phòng</label></br>
- <input type="text" name="ngaydat"
+ <input type="text" name="trangthai"
   placeholder="Status room">
 </div>
 
