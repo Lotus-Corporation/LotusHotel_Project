@@ -100,12 +100,10 @@ input {
  <label>Trạng thái phòng</label></br>
  <input type="text" name="ngaydat"
   placeholder="Status room">
-  
 </div>
+<button type="submit">Lưu</button>
+</form>
            
-
-
-
 </div>
     </div>
 
