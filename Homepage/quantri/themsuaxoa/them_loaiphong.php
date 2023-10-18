@@ -10,7 +10,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 80%
+        height: 50%
     }
     .danhmuc{
         width: 100%;
@@ -65,53 +65,22 @@
         background-color: rgb(161, 110, 7);
     }
 </style>
-
 <div class="layout_danhmuc">
-    <div class="danhmuc">
-        <h2 style="margin: 1% 0 0 2%">Thêm nhật kí đặt phòng</h2>
-        <form method="post" action="control/ctrl_them_nkdp.php">
-            </br>
-
-    <div>
-    <div>
- <label>Mã nhật kí đặt phòng:</label></br>
- <input type="text" value="" name="MA_NKDP"  
-  placeholder="Please enter your booking log code"> 
-</div>
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  loại phòng </h2>
+        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_loaiphong.php">
+            <div>
+                <label>Mã loại phòng</label><br>
+                <input type="text" name="ma_lp">
+            </div>
+            <div>
+                <label>Loại phòng</label><br>
+                <input type="text" name="loaiphong">
+            </div>
+            <div>
+                <label>Hình Ảnh</label><br> 
+                <input style="border:none" type="file" name="hinhanh">
+            </div>
+            <button type="submit">Lưu</button>
+        </form>
     </div>
-
-<div>
- <label >Mã khách hàng:</label></br>
- <input type="text" value="" name="MA_KH"  
- placeholder="Please enter your customer code">
 </div>
-
-
-
-
-<div >
- <label text-align:center style="width:40%">Ngày đặt phòng</label></br>
- <input type="date" name="NGAYDAT">
-</div>
-
-
-
-<div >
- <label text-align:center>Ngày trả phòng</label></br>
- <input type="date" name="NGAYTRAPHONG">
-</div>
-
- 
-
-<div class="date-input">
- <label>Trạng thái phòng</label></br>
- <input type="text" name="TRANGTHAI">
-</div>
-
-<button type="submit">Lưu</button>
-
-</form>
-           
-</div>
-    </div>
-

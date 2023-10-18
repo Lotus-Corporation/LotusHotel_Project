@@ -73,7 +73,7 @@ $result=$link->query($sql);
 
   <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Phương thức thanh toán</h2>
-      <button>Thêm</button>
+      <a href="themsuaxoa/them_pttt.php"><button>Thêm</button> </a>
       
 <table>
          <tr>
