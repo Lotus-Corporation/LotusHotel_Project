@@ -85,7 +85,7 @@ a {
     <div style="font-family:Garamond; font-size:50px;margin-top:-100px">LOTUS HOTEL</div>
     <div style="font-size:40px;font-style: italic;padding: 20px">Rất hân hạnh khi được phục vụ bạn</div>
 	<div class="khung_ngoai">
-			<form action="../quantri/control/ctr_logup_client.php" method="post" class="login">
+			<form action="../quantri/control/ctrl_logup_client.php" method="post" class="login">
             	<div style="padding: 20px 0px;position: relative;margin-top:-140px">
 					<i class="icon fa fa-user"></i>
 					<input type="text" class="khung_dangnhap" placeholder="Username" name="username">

@@ -1,8 +1,8 @@
 <?php 
-$thu_muc="../img/phong/";
+$thu_muc="../../img/phong/";
 $ten_files=$thu_muc . $_FILES["hinhanh"]["name"];
 move_uploaded_file($_FILES["hinhanh"]["tmp_name"],$ten_files);
-
+ 
 $ma_phong=$_POST["ma_phong"];
 $ma_lp=$_POST["ma_lp"];
 $tenphong=$_POST["tenphong"];

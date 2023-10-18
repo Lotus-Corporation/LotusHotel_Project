@@ -1,5 +1,5 @@
 <?php 
-$thu_muc="../img/chinhanh/";
+$thu_muc="../../img/chinhanh/";
 $ten_files=$thu_muc . $_FILES["hinhanh"]["name"];
 move_uploaded_file($_FILES["hinhanh"]["tmp_name"],$ten_files);
 

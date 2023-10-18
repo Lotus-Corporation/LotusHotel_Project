@@ -102,23 +102,14 @@ input {
 
 <div >
  <label text-align:center>Ngày trả phòng</label></br>
-<<<<<<< HEAD
  <input type="date" name="NGAYTRAPHONG">
-=======
- <input type="date" name="ngaytraphong">
->>>>>>> 7eb0a2e8bb0de5f45c6e3fba245697ab8bdeebf6
 </div>
 
  
 
 <div class="date-input">
  <label>Trạng thái phòng</label></br>
-<<<<<<< HEAD
- <input type="text" name="TRANGTHAI"
-=======
- <input type="text" name="trangthai"
->>>>>>> 7eb0a2e8bb0de5f45c6e3fba245697ab8bdeebf6
-  placeholder="Status room">
+ <input type="text" name="TRANGTHAI" placeholder="Status room">
 </div>
 
 <button type="submit">Lưu</button>

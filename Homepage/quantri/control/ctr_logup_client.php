@@ -1,1 +1,0 @@
-hehe them pass vs email zo khachhang đi
