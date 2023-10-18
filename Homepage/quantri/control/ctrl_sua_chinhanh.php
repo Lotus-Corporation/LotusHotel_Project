@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 $ma_cn=$_POST["ma_cn"];
 $tinhthanh=$_POST["tinhthanh"];
@@ -13,3 +14,6 @@ if ($link->query($sql) === TRUE) {
     echo "Sửa dữ liệu thất bại <br> Lỗi: " . $sql . "<br>" . $link->error;
   }
 ?>
+=======
+sai r tks
+>>>>>>> 3dd1fb2b61037199299144fa45eea73d85373633
