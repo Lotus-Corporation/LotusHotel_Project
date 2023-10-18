@@ -67,7 +67,7 @@
 </style>
 <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Khuyến Mãi </h2>
-      <button>Thêm</button>
+      <a href="themsuaxoa/them_khuyenmai.php"><button>Thêm</button> </a>
 <table>
     <tr>
         <th style="border-radius: 10px 0 0 0">Mã KM</th>
