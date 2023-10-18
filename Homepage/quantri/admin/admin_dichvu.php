@@ -66,7 +66,7 @@
 </style>
     <div class="layout_danhmuc"> 
         <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh Sách Dịch Vụ </h2>
-            <button>Thêm</button>
+            <a href="themsuaxoa/them_dichvu.php"><button>Thêm</button> </a>
 <table>
     <tr>
         <th style="border-radius: 10px 0 0 0">Mã dịch vụ</th>

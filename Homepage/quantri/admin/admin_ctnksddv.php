@@ -67,7 +67,7 @@
 </style>
 <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi tiết Nhật Kí Sử Dụng Dịch Vụ </h2>
-      <button>Thêm</button>
+      <a href="themsuaxoa/them_ctnksddv.php"><button>Thêm</button></a>
 <table>
     <tr>
         <th style="border-radius: 10px 0 0 0">Mã chi tiết NKSD dịch vụ</th>

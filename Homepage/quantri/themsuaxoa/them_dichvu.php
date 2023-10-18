@@ -1,8 +1,9 @@
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from loaiphong";
-    $sql_kh="select * from khachhang";
-    $result_kh=$link->query($sql_kh);
+    $sql="select * from nhatkidatphong";
+    $sql_phong="select * from phong";
+    $result=$link->query($sql);
+    $result_phong=$link->query($sql_phong);
 ?>
 <style>
     .layout_danhmuc{
@@ -66,59 +67,30 @@
         background-color: rgb(161, 110, 7);
     }
 </style>
-
 <div class="layout_danhmuc">
-    <div class="danhmuc">
-        <h2 style="margin: 1% 0 0 2%">Thêm nhật kí đặt phòng</h2>
-        <form method="post" action="control/ctrl_them_nkdp.php">
-            </br>
-
-    <div>
-    <div>
- <label>Mã nhật kí đặt phòng:</label></br>
- <input type="text" value="" name="MA_NKDP"  
-  placeholder="Please enter your booking log code"> 
-</div>
-    </div>
-
-    <div>
-                <label>Mã khách hàng</label><br>
-                <select name="MA_KH">
-                    <?php 
-                    while($row_kh=$result_kh->fetch_assoc()){
-                    ?>
-                    <option value=<?php echo $row_kh["MA_KH"]?>><?php echo $row_kh["HOTEN"]?></option>
-                    <?php 
-                    }
-                    ?>
-                </select>
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  dịch vụ </h2>
+        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_dichvu.php">
+            <div>
+                <label>Mã dịch vụ</label><br>
+                <input type="text" name="ma_dv">
             </div>
-
-
-
-<div >
- <label text-align:center style="width:40%">Ngày đặt phòng</label></br>
- <input type="date" name="NGAYDAT">
-</div>
-
-
-
-<div >
- <label text-align:center>Ngày trả phòng</label></br>
- <input type="date" name="NGAYTRAPHONG">
-</div>
-
- 
-
-<div class="date-input">
- <label>Trạng thái phòng</label></br>
- <input type="text" name="TRANGTHAI">
-</div>
-
-<button type="submit">Lưu</button>
-
-</form>
-           
-</div>
+            <div>
+                <label>Tên dịch vụ</label><br>
+                <input type="text" name="ten_dv">
+            </div>
+            <div>
+                <label>Đơn giá dịch vụ</label><br>
+                <input type="text" name="dongia">
+            </div>
+            <div>
+                <label>Đơn vị tính</label><br>
+                <input type="text" name="donvitinh">
+            </div>
+            <div>
+                <label>Hình Ảnh</label><br> 
+                <input style="border:none" type="file" name="hinhanh">
+            </div>
+            <button type="submit">Lưu</button>
+        </form>
     </div>
-
+</div>

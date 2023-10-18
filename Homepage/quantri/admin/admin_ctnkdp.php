@@ -68,7 +68,7 @@ $result=$link->query($sql);
 </style>
     <div class="layout_danhmuc"> 
         <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi Tiết Nhật Kí Đặt Phòng </h2>
-        <button>Thêm</button>
+        <a href="themsuaxoa/them_ctnkdp.php"><button>Thêm</button> </a>
 <table>
     <tr>
 <th style="border-radius: 10px 0 0 0">Mã chi tiết nhật kí đặt phòng</th>
