@@ -88,11 +88,11 @@ a {
 			<form action="" method="post" class="login">
             <div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-user"></i>
-					<input type="text" class="khung_dangnhap" placeholder="User name / Email" name="TEN_DN">
+					<input type="text" class="khung_dangnhap" placeholder="Username / Email" name="username">
 				</div>
 				<div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-lock"></i>
-					<input type="password" class="khung_dangnhap" placeholder="Password" name="PASS">
+					<input type="password" class="khung_dangnhap" placeholder="Password" name="password">
                 </div>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me

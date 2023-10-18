@@ -18,7 +18,7 @@ body {
 .khung_ngoai {		
 	background:linear-gradient(white,rgb(193, 233, 244)); 	
 	position: relative;	
-	height: 600px;
+	height: 650px;
 	width: 360px;	
 	box-shadow: 0px 0px 24px rgb(35, 95, 112);
     border-radius:45px
@@ -41,7 +41,7 @@ body {
 	border: none;
 	border-bottom: 2px solid #D1D1D4;
 	background: none;
-	padding: 10px;
+	padding: 15px;
 	padding-left: 24px;
 	font-weight: 600;
 	width: 85%;
@@ -86,22 +86,26 @@ a {
     <div style="font-size:40px;font-style: italic;padding: 20px">Rất hân hạnh khi được phục vụ bạn</div>
 	<div class="khung_ngoai">
 			<form action="../quantri/control/ctr_logup_client.php" method="post" class="login">
-            <div style="padding: 20px 0px;position: relative;margin-top:-70px">
+            	<div style="padding: 20px 0px;position: relative;margin-top:-140px">
+					<i class="icon fa fa-user"></i>
+					<input type="text" class="khung_dangnhap" placeholder="Username" name="username">
+				</div>
+				<div style="padding: 20px 0px;position: relative">
 					<i class="icon fa fa-user "> </i>
-					<input type="text" class="khung_dangnhap" placeholder="Your name" name="Hoten">
+					<input type="text" class="khung_dangnhap" placeholder="Your name" name="hoten">
 				</div>
       <div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-envelope "></i>
-					<input type="text" class="khung_dangnhap" placeholder=" Email"   name="Email">
+					<input type="text" class="khung_dangnhap" placeholder=" Email"   name="email">
 				</div>
       <div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-phone "> </i>
-					<input type="text" class="khung_dangnhap" placeholder="Your number"  name="Email">
+					<input type="text" class="khung_dangnhap" placeholder="Your number"  name="number">
 	  </div>
 
       <div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-key "></i>
-					<input type="password" class="khung_dangnhap" placeholder=" Password" name="Password">
+					<input type="password" class="khung_dangnhap" placeholder=" Password" name="pass">
 	  </div>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me

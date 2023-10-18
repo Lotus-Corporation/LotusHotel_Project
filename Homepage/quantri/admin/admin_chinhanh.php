@@ -91,8 +91,8 @@
                         <td><?php echo $row["MA_NV"]; ?></td>
                         <td><img src="../img/chinhanh/<?php echo $row["HINHANH"]; ?>" style="width: 100px; height: 100px;"></td>
                         <td><a href=""><img src="../img/icon/edit.png" width="10px" height="10px"> Sửa</a></td>
-                        <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
-                    </tr>
+                        <td><a href="control/ctrl_xoa_chinhanh?ma_cn=<?php echo $row['MA_CN'] ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+                    </tr>   
             <?php
                 }
             ?>
