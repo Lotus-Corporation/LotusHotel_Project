@@ -3,6 +3,7 @@ create table CHITIET_NKSDDV (
     MA_NKSD_DICHVU varchar(10) not null,
     foreign keY (MA_NKSD_DICHVU)  references NKSD_DICHVU(MA_NKSD_DICHVU),
     MA_DV varchar(10) not null,
+    foreign keY (MA_DV)  references DICHVU(MA_DV),
     SOLUONG int not null
 ) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 

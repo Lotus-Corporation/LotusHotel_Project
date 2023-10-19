@@ -1,11 +1,9 @@
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from khuyenmai";
-    $sql_lp="select * from loaiphong";
-    $sql_dv="select * from dichvu";
+    $sql="select * from nhatkidatphong";
+    $sql_phong="select * from phong";
     $result=$link->query($sql);
-    $result_lp=$link->query($sql_lp);
-    $result_dv=$link->query($sql_dv);
+    $result_phong=$link->query($sql_phong);
 ?>
 <style>
     .layout_danhmuc{
@@ -14,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 80%
+        height: 100%
     }
     .danhmuc{
         width: 100%;
@@ -70,51 +68,39 @@
     }
 </style>
 <div class="layout_danhmuc">
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm chi tiết khuyến mãi</h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_ctkm.php">
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  chi tiết nhật kí đặt phòng </h2>
+        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_ctnkdp.php">
             <div>
-                <label>Mã chi tiết khuyến mãi</label><br>
-                <input type="text" name="ma_ctkm">
+                <label>Mã chi tiết nhật kí đặt phòng</label><br>
+                <input type="text" name="ma_ctnkdp">
             </div>
             <div>
-                <label>Mã khuyến mãi</label><br>
-                <select name="ma_km">
+                <label>Mã nhật kí đặt phòng</label><br>
+                <select name="ma_nkdp">
                     <?php 
                     while($row=$result->fetch_assoc()){
                     ?>
-                    <option value=<?php echo $row["MA_KM"]?>><?php echo $row["TENKM"]?></option>
+                    <option value=<?php echo $row["MA_NKDP"]?>><?php echo $row["NGAYDAT"]?></option>
                     <?php 
                     }
                     ?>
                 </select>
             </div>
             <div>
-                <label>Giá trị</label><br>
-                <input type="text" name="giatri">
-            </div>
-            <div>
-                <label>Mã loại phòng</label><br>
-                <select name="ma_lp">
+                <label>Mã phòng</label><br>
+                <select name="ma_phong">
                     <?php 
-                    while($row_lp=$result_lp->fetch_assoc()){
+                    while($row_phong=$result_phong->fetch_assoc()){
                     ?>
-                    <option value=<?php echo $row_lp["MA_LOAIPHONG"]?>><?php echo $row_lp["LOAIPHONG"]?></option>
+                    <option value=<?php echo $row_phong["MA_PHONG"]?>><?php echo $row_phong["MA_PHONG"]?></option>
                     <?php 
                     }
                     ?>
                 </select>
             </div>
             <div>
-                <label>Mã dịch vụ</label><br>
-                <select name="ma_dv">
-                    <?php 
-                    while($row_dv=$result_dv->fetch_assoc()){
-                    ?>
-                    <option value=<?php echo $row_dv["MA_DV"]?>><?php echo $row_dv["TENDV"]?></option>
-                    <?php 
-                    }
-                    ?>
-                </select>
+                <label>Đơn giá phòng</label><br>
+                <input type="text" name="dongia">
             </div>
             <button type="submit">Lưu</button>
         </form>

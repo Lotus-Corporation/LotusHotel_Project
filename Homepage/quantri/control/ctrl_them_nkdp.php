@@ -8,8 +8,8 @@ $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into NHATKIDATPHONG(MA_NKDP,MA_KH,NGAYDAT,NGAYTRAPHONG,TRANGTHAI)
 values ('$MA_NKDP','$MA_KH','$NGAYDAT','$NGAYTRAPHONG','$TRANGTHAI')";
 if ($link->query($sql) === TRUE) {
-    echo "Thêm dữ liệu thành công";
-  } else {
-    echo "Thêm dữ liệu thất bại <br> Lỗi: " . $sql . "<br>" . $link->error;
-  }
+  header("location:../index_menu_admin.php?pid=14 ");
+} else {
+  echo "Thêm dữ liệu thất bại <br>Lỗi: " . $sql . "<br>" . $link->error;
+}
 ?>

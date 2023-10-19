@@ -75,7 +75,7 @@
 <div class="layout_danhmuc">
     <div class="danhmuc">
         <h2 style="margin: 2% 0 0 3%"> Danh sách nhật ký sử dụng dịch vụ</h2>
-        <button>Thêm</button>
+        <a href="themsuaxoa/them_nksddv.php"><button>Thêm</button> </a>
 
 <table>
     <tr>
