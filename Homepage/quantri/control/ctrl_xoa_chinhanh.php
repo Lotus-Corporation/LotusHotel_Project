@@ -6,7 +6,7 @@ if(isset($_REQUEST['ma_cn']) and $_REQUEST['ma_cn']!=""){
     $sql = "DELETE FROM chinhanh WHERE ma_cn='$ma'";
     if ($link->query($sql) === TRUE) {
         echo "Xoá thành công!";
-        header("location:../index_menu_admin.php?pid=11");
+        header("location:../index_menu_admin.php?pid=22");
     } else {
         echo "Xóa thất bại! " . $link->error;
     }
