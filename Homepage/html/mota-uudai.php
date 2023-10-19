@@ -6,8 +6,9 @@
 
 </div>
 <div class="layout_mota-uudai">
+<p class="pp">  LOUTUS HOTELL  </p>
+<img class='tamhinhanh' src="./img/anhphongnoibat/logo.png" />
   <div class="layout_mota" > 
-
     <div class="mota">
       <img class="mota_hinhanh"src="img/mota/mota1.png"  alt="">
       <div class="mota_mota"> 
@@ -33,11 +34,16 @@
     </div>
 
   </div>
-
+  <br/>
+    <br/>
+    <br/>
   <div>
-    <h2 style="font-size:30px ; text-align: center;"> Ưu Đãi </h2><br>
+    <h2 style="font-size:30px ; text-align: center;"> KHUYỄN MÃI ĐẶC BIỆT </h2><br>
+    <img class='hinhanh' src="./img/anhphongnoibat/logo.png" />
+    <br/>
+    <br/>
+    <br/>
     <img class="uudai" src="img/khuyenmai/km12.png" alt="">
     <img class="uudai" src="img/khuyenmai/km02.png" alt="">
   </div>
-
 </div>
