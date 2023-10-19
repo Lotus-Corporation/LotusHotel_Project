@@ -1,7 +1,8 @@
 .layout_danh_gia_noi_bat{
-  float: left;
-  width: 100%;
-  height: 400px;
+  /* float: left; */
+  width: 1380px;
+  height: auto;
+  margin: auto;
 }
 .danh_gia{
   float: left;

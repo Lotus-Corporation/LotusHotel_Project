@@ -8,7 +8,6 @@
       klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
       knjn lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
       jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEkjdc nc wjj
-      ammwlkcnln cnken jkachuiwh lcneuh akehc H[ OISH;I uhiy yguy guyg it7
       <div style="margin:2%">⭐⭐⭐⭐⭐</div>
       <div><b>- Lalisa -</b></div>
     </div>
