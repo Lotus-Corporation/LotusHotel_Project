@@ -24,7 +24,7 @@
     padding: 2em;
 ">
     <div class="loigoi">
-        <h3 style=" font-weight: 100; " >Một số phòng nổi bật của chúng tôi</h3>
+        <h3  >Một số phòng nổi bật của chúng tôi</h3>
     </div>
     
 
