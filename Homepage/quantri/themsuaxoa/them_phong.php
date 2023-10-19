@@ -12,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 100%
+        height: 1000px
     }
     .danhmuc{
         width: 100%;
@@ -24,16 +24,16 @@
     }
     form{
         width: 90%; 
-        margin: 5% 0 0 10%;
+        margin: 5% 0 0 10%; 
     }
     form >div{
-        margin: 0 7.5% 5% 0%;
+        margin: 0 5% 7.5% 0%;
         background-color:rgb(251, 231, 206);
         font-size: 17px;
         padding: 0 35px 25px 35px;
         float: left;
         width: 35%;
-        border-radius: 10px;
+        border-radius: 10px
     }
     input {
         width: 70%;
@@ -52,7 +52,7 @@
         height: 30px;
         font-size: 15px;
         margin-top: 25px;
-        border: solid 2px ;
+        border: solid 2px
     }
     button{
         padding: 15px 40px;
@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm phòng </h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_phong.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_phong.php">
             <div>
                 <label>Mã phòng</label><br>
                 <input type="text" name="ma_phong">
@@ -77,7 +77,6 @@
             <div>
                 <label>Mã loại phòng</label><br>
                 <select name="ma_lp">
-    
                     <?php 
                     while($row=$result->fetch_assoc()){
                     ?>

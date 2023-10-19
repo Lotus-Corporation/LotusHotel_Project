@@ -9,11 +9,11 @@ $result=$link->query($sql);
     .layout_danhmuc{
         margin: 7% 6% 0 5%; 
         border-radius: 7px;
-        width: 60%; 
+        width: 65%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
-        right:5%; 
-        height: 320px;
+        right:3%; 
+        height: 330px;
         top:65px;
     }
     .danhmuc{
@@ -39,7 +39,7 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 10% 10% 0 3%; 
+        margin: 9% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -72,8 +72,8 @@ $result=$link->query($sql);
 </style>
 
   <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Phương thức thanh toán</h2>
-      <a href="themsuaxoa/them_pttt.php"><button>Thêm</button> </a>
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Phương thức thanh toán</h2>
+      <a href="index_menu_admin.php?pid=39"><button>Thêm</button> </a>
       
 <table>
          <tr>

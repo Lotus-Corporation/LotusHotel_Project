@@ -2,11 +2,12 @@
 <style>
     .menu_left{
       width: 15%;
-      height: auto;
+      height: 600px;
       background-color:antiquewhite;
       position: fixed;
       border-radius: 10px;
       margin: 4.5% 3.5%;
+      overflow-y: scroll
     }
     .admin{
       height: 50px;
@@ -56,7 +57,7 @@
       color: white;
       font-size: 20px;
     }
-    
+
 
   </style>
     <body>
@@ -69,17 +70,21 @@
       <div class="admin"> Admin menu</div>
       <div>
         <a href="index_menu_admin.php?pid=10">Loại phòng</a>
-        <a href="index_menu_admin.php?pid=11">Chi nhánh</a>
-        <a href="index_menu_admin.php?pid=12">Khuyến mãi</a>
-        <a href="index_menu_admin.php?pid=13">Nhân viên</a>
-        <a href="index_menu_admin.php?pid=14">Nhật ký đặt phòng</a>
-        <a href="index_menu_admin.php?pid=15">Chi tiết nhật ký đặt phòng</a>
-        <a href="index_menu_admin.php?pid=16">Dịch vụ</a>
-        <a href="index_menu_admin.php?pid=17">NKSD Dịch vụ</a>
-        <a href="index_menu_admin.php?pid=18">Chi tiết NKSD Dịch vụ</a>
-        <a href="index_menu_admin.php?pid=19">Phương thức thanh toán</a>
-        <a href="index_menu_admin.php?pid=20">Phòng</a>
-        <a href="index_menu_admin.php?pid=21">Chi Tiết Khuyến Mãi</a>
+        <a href="index_menu_admin.php?pid=11">Phòng</a>
+        <a href="index_menu_admin.php?pid=12">Nhật ký đặt phòng</a>
+        <a href="index_menu_admin.php?pid=13">Chi tiết nhật ký đặt phòng</a>
+        <a href="index_menu_admin.php?pid=14">Dịch vụ</a>
+        <a href="index_menu_admin.php?pid=15">NKSD Dịch vụ</a>
+        <a href="index_menu_admin.php?pid=16">Chi tiết NKSD Dịch vụ</a>
+        <a href="index_menu_admin.php?pid=17">Khuyến mãi</a>
+        <a href="index_menu_admin.php?pid=18">Chi Tiết Khuyến Mãi</a>
+        <a href="index_menu_admin.php?pid=19">Nhân viên</a>
+        <a href="index_menu_admin.php?pid=20">Khách hàng</a>
+        <a href="index_menu_admin.php?pid=21">Khách hàng online</a>
+        <a href="index_menu_admin.php?pid=22">Chi nhánh</a>
+        <a href="index_menu_admin.php?pid=23">Phương thức thanh toán</a>
+        <a href="index_menu_admin.php?pid=24">Hóa đơn</a>
+        <a href="index_menu_admin.php?pid=25">Chi tiết hóa đơn</a>
       </div>
     </div>
     </body>

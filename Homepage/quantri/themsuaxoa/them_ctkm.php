@@ -71,7 +71,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm chi tiết khuyến mãi</h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_ctkm.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_ctkm.php">
             <div>
                 <label>Mã chi tiết khuyến mãi</label><br>
                 <input type="text" name="ma_ctkm">

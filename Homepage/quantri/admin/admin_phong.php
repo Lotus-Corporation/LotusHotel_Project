@@ -6,12 +6,12 @@ $result=$link->query($sql);
 
 <style>
      .layout_danhmuc{
-        width: 76%; 
+        width: 75%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         right:2%; 
         height: 5320px;
-        top:65px;
+        top: 10%
     }
     .danhmuc{
         width: 100%;
@@ -36,7 +36,7 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 10% 10% 0 3%; 
+        margin: 8% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -69,8 +69,8 @@ $result=$link->query($sql);
 </style>
 
   <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh Sách Phòng </h2>
-      <a href="index_menu_admin.php?pid=22"><button>Thêm</button></a>
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh Sách Phòng </h2>
+      <a href="index_menu_admin.php?pid=27"><button>Thêm</button></a>
 
       <table>
          <tr>

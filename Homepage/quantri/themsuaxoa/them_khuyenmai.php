@@ -1,8 +1,3 @@
-<?php 
-    $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from nhanvien";
-    $result=$link->query($sql);
-?>
 <style>
     .layout_danhmuc{
         width: 70%; 
@@ -67,7 +62,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  khuyến mãi </h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_khuyenmai.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_khuyenmai.php">
             <div>
                 <label>Mã khuyến mãi</label><br>
                 <input type="text" name="ma_km">
@@ -76,12 +71,15 @@
                 <label>Ngày bắt đầu</label><br>
                 <input type="date" name="ngaybatdau">
             </div>
+            <div>
             <label>Ngày kết thúc</label><br>
                 <input type="date" name="ngayketthuc">
             </div>
+            <div>
             <label>Tên khuyến mãi</label><br>
                 <input type="text" name="ten_km">
             </div>
+            <div>
             <label>Mô tả</label><br>
                 <input type="text" name="mota">
             </div>

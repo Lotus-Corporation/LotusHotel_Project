@@ -8,20 +8,19 @@
 
  <style>
     .layout_danhmuc{
-        width: 60%; 
+        width: 65%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:5%; 
-        height: 600px;
-        top:100px;
+        right:7%; 
+        height: 650px;
         border-radius: 10px;
     }
     .danhmuc{
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
         top:0px;
     }
@@ -40,7 +39,7 @@
     }
     table{ 
         width: 95%; 
-        margin: 9% 10% 0 3%; 
+        margin: 10% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -75,7 +74,7 @@
 <div class="layout_danhmuc">
     <div class="danhmuc">
         <h2 style="margin: 2% 0 0 3%"> Danh sách nhật ký sử dụng dịch vụ</h2>
-        <a href="themsuaxoa/them_nksddv.php"><button>Thêm</button> </a>
+        <a href="index_menu_admin.php?pid=31"><button>Thêm</button> </a>
 
 <table>
     <tr>

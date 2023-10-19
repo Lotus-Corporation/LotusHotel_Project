@@ -17,7 +17,7 @@
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
         top:0px;
     }
@@ -36,7 +36,7 @@
     }
     table{ 
         width: 95%; 
-        margin: 7% 10% 0 3%; 
+        margin: 8% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -67,7 +67,7 @@
 </style>
 <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Khuyến Mãi </h2>
-      <a href="themsuaxoa/them_khuyenmai.php"><button>Thêm</button> </a>
+      <a href="index_menu_admin.php?pid=33"><button>Thêm</button> </a>
 <table>
     <tr>
         <th style="border-radius: 10px 0 0 0">Mã KM</th>
@@ -89,7 +89,7 @@
             <td><?php echo $row["MOTA"]; ?></td>
             <td><?php echo $row["NGAYBATDAU"]; ?></td>
             <td><?php echo $row["NGAYKETTHUC"]; ?></td>
-            <td><img src="../img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 400px; height:180px"></td>
+            <td><img src="../img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 250px; height:10 0px"></td>
             <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
             <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
         </tr>

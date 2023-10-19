@@ -9,15 +9,14 @@
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:5%; 
+        right:2%; 
         height: 6330px;
-        top:65px;
     }
     .danhmuc{
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
         top:0px;
     }
@@ -28,15 +27,14 @@
         top: 83px;
         border: none;
         background-color: rgb(210, 168, 84);
-        border-radius: 10px;
-        cursor: pointer;
+        border-radius: 10px
     }
     button:hover{
         background-color: rgb(161, 110, 7);
     }
     table{ 
         width: 95%; 
-        margin: 9% 10% 0 3%; 
+        margin: 8% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -66,7 +64,7 @@
 </style>
     <div class="layout_danhmuc"> 
         <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh Sách Dịch Vụ </h2>
-            <a href="themsuaxoa/them_dichvu.php"><button>Thêm</button> </a>
+            <a href="index_menu_admin.php?pid=30"><button>Thêm</button> </a>
 <table>
     <tr>
         <th style="border-radius: 10px 0 0 0">Mã dịch vụ</th>

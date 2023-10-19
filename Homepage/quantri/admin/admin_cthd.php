@@ -1,17 +1,19 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from NHANVIEN";
+$sql="select * from CHITIETHOADON";
 $result=$link->query($sql);
 ?>
-<style>
+
+
+   <style>
     .layout_danhmuc{
-        width: 75%; 
+        border-radius: 7px;
+        width: 70%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
+        right:5%; 
         top:10%;
-        right:2%; 
-        height: 1800px;
-        border-radius: 10px;
+        height: 2400px
     }
     .danhmuc{
         width: 100%;
@@ -19,12 +21,13 @@ $result=$link->query($sql);
         background-color: gray;
         border-radius: 10px 10px 0 0;
         position: absolute;
+        top:2px;
     }
     button{
         padding: 15px 35px;
         position: absolute;
         right: 2%;
-        top: 90px;
+        top: 82px;
         border: none;
         background-color: rgb(210, 168, 84);
         border-radius: 10px;
@@ -39,7 +42,8 @@ $result=$link->query($sql);
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
-        
+        border-radius: 7px;
+
     }
    
     th{
@@ -53,7 +57,6 @@ $result=$link->query($sql);
         border-style:outset;
         padding: 10px;
         border-radius: 7px;
-        
 
     }
    
@@ -64,39 +67,40 @@ $result=$link->query($sql);
     a:hover{
         color: brown;
     }
+   
 </style>
-<div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhân viên  </h2>
-      <a href="index_menu_admin.php?pid=35"><button>Thêm</button> </a>
+
+  <div class="layout_danhmuc"> 
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Chi tiết hóa đơn</h2>
+      <a href="index_menu_admin.php?pid=41"><button>Thêm</button> </a>
+      
 <table>
-    <tr>
-        <th style="border-radius: 10px 0 0 0"> Mã nhân viên</th>
-        <th> Họ tên  </th>
-        <th> SDT </th>
-        <th> Chức vụ </th>
-        <th> Địa chỉ</th>
-        <th> CCCD</th>
-        <th> Lương</th>
-        <th >Sửa</th>
-        <th style="border-radius: 0 10px 0 0">Xóa</th>
-</tr>
-<?php
+         <tr>
+    <th style="border-radius: 10px 0 0 0" >Mã chi tiết hóa đơn</th>
+    <th> Mã hóa đơn</th>
+    <th> Mã khuyến mãi</th>
+    <th> Sửa </th>
+    <th style="border-radius: 0 10px 0 0">Xóa</th>
+         </tr>
+   <?php
 while ($row=$result->fetch_assoc())
 {
- ?>   
+   ?>   
 
-<tr>
-    <td> <?php echo $row["MA_NV"];?></td>
-    <td> <?php echo $row["HOTEN"];?></td>
-    <td> <?php echo $row["SDT"];?></td>
-    <td> <?php echo $row["CHUCVU"];?></td>
-    <td> <?php echo $row["DIACHI"];?></td>
-    <td> <?php echo $row["CCCD"];?></td>
-    <td> <?php echo $row["LUONG"];?></td>
+<tr align="center" >
+    <td> <?php echo $row["MA_CTHD"];?> </td>
+    <td> <?php echo $row["MA_HD"];?></td>
+    <td> <?php echo $row["MA_KM"];?></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
-<tr>
-<?php
+</tr>
+     <?php
  }
-?>
+      ?>
 </table>
+</div>
+</div>
+
+
+
+

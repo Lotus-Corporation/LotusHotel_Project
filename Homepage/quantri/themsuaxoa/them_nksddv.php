@@ -68,7 +68,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm nhật kí sử dụng dịch vụ</h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_nksddv.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_nksddv.php">
             <div>
                 <label>Mã nhật kí sử dụng dịch vụ</label><br>
                 <input type="text" name="ma_nksddv">

@@ -5,20 +5,19 @@ $result=$link->query($sql);
 ?>
 <style>
     .layout_danhmuc{
-        width: 80%; 
+        width: 75%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:8%; 
-        height: 2100px;
-        top:100px;
+        right:2%; 
+        height: 1100px;
         border-radius: 10px;
     }
     .danhmuc{
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
         top:0px;
     }
@@ -37,7 +36,7 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 9% 10% 0 3%; 
+        margin: 8% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -46,8 +45,7 @@ $result=$link->query($sql);
    
     th{
        background-color: gray;
-       padding: 10px;
-       border-radius: 7px;
+       padding: 10px
 
     }
 
@@ -69,10 +67,10 @@ $result=$link->query($sql);
 </style>
 <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Hóa Đơn </h2>
-      <button>Thêm</button>
+      <a href="index_menu_admin.php?pid=40"><button>Thêm</button></a>
 <table>
     <tr>
-        <th> Mã Hợp Đồng </th>
+        <th style="border-radius: 10px 0 0 0"> Mã Hóa Đơn </th>
         <th> Mã Nhân Viên </th>
         <th> Mã PTTT </th>
         <th> Mã Khách Hàng </th>

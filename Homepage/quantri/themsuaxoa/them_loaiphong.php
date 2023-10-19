@@ -67,7 +67,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  loại phòng </h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_loaiphong.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_loaiphong.php">
             <div>
                 <label>Mã loại phòng</label><br>
                 <input type="text" name="ma_lp">

@@ -1,8 +1,3 @@
-<?php 
-    $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from nhanvien";
-    $result=$link->query($sql);
-?>
 <style>
     .layout_danhmuc{
         width: 70%; 
@@ -67,7 +62,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm nhân viên</h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_nhanvien.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_nhanvien.php">
             <div>
                 <label>Mã nhân viên</label><br>
                 <input type="text" name="ma_nv">

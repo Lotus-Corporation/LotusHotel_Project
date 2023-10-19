@@ -9,16 +9,15 @@
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:5%; 
+        right:2%; 
         height: 1480px;
-        top:100px;
         border-radius: 10px;
     }
     .danhmuc{
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
         top:0px;
     }
@@ -37,7 +36,7 @@
     }
     table{ 
         width: 95%; 
-        margin: 9% 10% 0 3%; 
+        margin: 8% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -67,8 +66,8 @@
     }
 </style>
 <div class="layout_danhmuc">
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Danh sách chi nhánh</h2>
-    <a href="index_menu_admin.php?pid=23"><button>Thêm</button></a>
+    <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách chi nhánh</h2>
+    <a href="index_menu_admin.php?pid=38"><button>Thêm</button></a>
         <table>
             <tr>
                 <th style="border-radius: 10px 0 0 0">Mã Chi Nhánh</th>

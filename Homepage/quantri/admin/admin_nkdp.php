@@ -7,19 +7,18 @@ $result=$link->query($sql);
 
    <style>
     .layout_danhmuc{
-        width: 76%; 
+        width: 75%; 
         position: absolute; 
         background-color: rgb(253, 245, 233);
         top:10%;
-        right:1%; 
-        height: 1030px;
-        top:90px;
+        right:2%; 
+        height: 1030px
     }
     .danhmuc{
         width: 100%;
         height: 70px;
         background-color: gray;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
         position: absolute;
         top:0px;
     }
@@ -38,7 +37,7 @@ $result=$link->query($sql);
     }
     table{ 
         width: 95%; 
-        margin: 7% 10% 0 3%; 
+        margin: 8% 10% 0 3%; 
         border-radius: 10px;
         border-spacing: 0;
         border-collapse: separate; 
@@ -72,7 +71,7 @@ $result=$link->query($sql);
 
   <div class="layout_danhmuc"> 
     <div class="danhmuc"><h2 style="margin: 2% 0 0 2%"> Danh sách nhật kí đặt phòng</h2>
-    <a href="index_menu_admin.php?pid=24"><button>Thêm</button> </a>
+    <a href="index_menu_admin.php?pid=28"><button>Thêm</button> </a>
 
       
 <table>

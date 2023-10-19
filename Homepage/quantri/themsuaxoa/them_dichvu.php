@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  dịch vụ </h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_dichvu.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_dichvu.php">
             <div>
                 <label>Mã dịch vụ</label><br>
                 <input type="text" name="ma_dv">

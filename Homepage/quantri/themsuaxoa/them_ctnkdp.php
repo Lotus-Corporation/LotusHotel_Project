@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc">
     <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  chi tiết nhật kí đặt phòng </h2>
-        <form method="post" enctype="multipart/form-data" action="../control/ctr_them_ctnkdp.php">
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_ctnkdp.php">
             <div>
                 <label>Mã chi tiết nhật kí đặt phòng</label><br>
                 <input type="text" name="ma_ctnkdp">

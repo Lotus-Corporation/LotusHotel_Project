@@ -1,10 +1,3 @@
-<?php 
-    $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from NKSD_DICHVU";
-    $sql_dv="select * from DICHVU";
-    $result=$link->query($sql);
-    $result_dv=$link->query($sql_dv);
-?>
 <style>
     .layout_danhmuc{
         width: 70%; 
@@ -68,39 +61,23 @@
     }
 </style>
 <div class="layout_danhmuc">
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm  chi tiết nhật kí sử dụng dịch vụ </h2>
-        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_ctnksddv.php">
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Thêm khách hàng</h2>
+        <form method="post" enctype="multipart/form-data" action="control/ctrl_them_khachhang.php">
             <div>
-                <label>Mã chi tiết nhật kí sử dụng dịch vụ</label><br>
-                <input type="text" name="ma_ctnksddv">
+                <label>Mã khách hàng</label><br>
+                <input type="text" name="username">
             </div>
             <div>
-                <label>Mã nhật kí sử dụng dịch vụ</label><br>
-                <select name="ma_nksddv">
-                    <?php 
-                    while($row=$result->fetch_assoc()){
-                    ?>
-                    <option value=<?php echo $row["MA_NKSD_DICHVU"]?>><?php echo $row["MA_KH"]?></option>
-                    <?php 
-                    }
-                    ?>
-                </select>
+                <label>Họ tên</label><br>
+                <input type="text" name="hoten">
             </div>
             <div>
-                <label>Mã dịch vụ</label><br>
-                <select name="ma_dv">
-                    <?php 
-                    while($row_dv=$result_dv->fetch_assoc()){
-                    ?>
-                    <option value=<?php echo $row_dv["MA_DV"]?>><?php echo $row_dv["TENDV"]?></option>
-                    <?php 
-                    }
-                    ?>
-                </select>
+                <label>SĐT</label><br>
+                <input type="text" name="sdt">
             </div>
             <div>
-                <label>Số lượng</label><br>
-                <input type="text" name="soluong">
+                <label>CCCD</label><br>
+                <input type="text" name="password">
             </div>
             <button type="submit">Lưu</button>
         </form>
