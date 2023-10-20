@@ -28,7 +28,7 @@
           }
         ?>
     </div>
-  </div class="mmenu">
+  </div>
   <a class="logo1" href="index_menu.php?pid=2" >Services</a>
   <a class="logo1" href="index_menu.php?pid=3"> Restaurant </a>
   <a class="logo" href="index_menu.php">
@@ -42,7 +42,7 @@
   <a  style="float:left; font-size: 30px; margin-right:20px;" href="view/login.php">
   <i class="fa fa-user"></i>
   </a>
-</div>
+
 </div>
 </div>
 <script>
