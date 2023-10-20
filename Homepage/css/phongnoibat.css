@@ -2,7 +2,7 @@
 .layout_anh{
     height: auto; 
     position:relative; 
-    top:55px; 
+    
     margin-bottom: 5%;
 }   
 .layout_anh_opacity{
@@ -19,8 +19,8 @@
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2em;
-    display: block;
+    margin-bottom: 3em;
+    /* display: block; */
 }
 .layout_con {
     float: left; 
@@ -97,5 +97,5 @@
     margin-left: 15px;
 }
 .mau_layout {
-    margin: 400px 0 0 0;
+    margin: 3% 0 0 0;
 }

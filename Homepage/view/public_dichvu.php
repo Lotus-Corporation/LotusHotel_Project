@@ -12,7 +12,7 @@
         height: 600px; 
         background-color:rgb(40, 129, 143); 
         position:relative; 
-        top:55px; 
+        
         margin-bottom: 7%;
     }   
     .layout_anh_opacity{

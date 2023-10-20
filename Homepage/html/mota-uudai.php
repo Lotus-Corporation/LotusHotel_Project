@@ -43,7 +43,5 @@
     <br/>
     <br/>
     <br/>
-    <img class="uudai" src="img/khuyenmai/km12.png" alt="">
-    <img class="uudai" src="img/khuyenmai/km02.png" alt="">
   </div>
 </div>

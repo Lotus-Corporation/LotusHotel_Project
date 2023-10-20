@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/phongnoibat.css"> 
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="./js/js.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
 <script src="./js/js2.js"></script>
