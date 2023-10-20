@@ -12,7 +12,7 @@
         width: 100%;
         height: 600px; 
         position:relative; 
-        top:55px; 
+        
         margin-bottom: 7%;
     }   
     .layout_anh_opacity{

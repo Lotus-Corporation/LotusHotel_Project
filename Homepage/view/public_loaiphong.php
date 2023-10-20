@@ -12,7 +12,7 @@
     .layout_anh{
         height: 600px; 
         position:relative; 
-        top:55px; 
+        
         margin-bottom: 5%;
     }   
     .layout_anh_opacity{
