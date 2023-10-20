@@ -32,7 +32,7 @@
   <a class="logo1" href="index_menu.php?pid=2" >Services</a>
   <a class="logo1" href="index_menu.php?pid=3"> Restaurant </a>
   <a class="logo" href="index_menu.php">
-    <img src="img/logo.jpeg" alt="" width=100% height=130px ></a> 
+    <img src="img/logo.png" alt="" width=100% height=130px ></a> 
   <a class="logo1" href="index_menu.php?pid=4">Spa&Wellness</a>
   <a class="logo1" href="index_menu.php?pid=5" >Special Offers</a>
   <a class="logo1" href="index_menu.php?pid=6">Contacts</a>
