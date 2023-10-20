@@ -50,6 +50,7 @@
 
 #header {
   color: white;
+  align-content: center;
 }
 #header.shrink {
   height: 70px;
@@ -77,4 +78,29 @@
 }
 #header .menu a {
   color: black;
+}
+
+.thanh_logo1 img
+{
+  position: relative;
+  top: -27px;
+  height: 106px;
+  width: 157px;
+  left: 20%;
+}
+div#header.thanh_logo1 
+{
+
+  background: linear-gradient(180deg, rgba(22, 21, 20, 0.95) 0%, rgba(22, 21, 20, 0) 100%);
+}
+
+div#header_nhohon
+{
+  padding: 14px 0 0 0;
+}
+
+div#header.thanh_logo1.shrink
+{
+
+  background: white;
 }
