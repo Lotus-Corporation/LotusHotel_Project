@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/danhgia.css"> 
-<div class="layout_danh_gia_noi_bat" style="background: linear-gradient(white,rgb(193, 233, 244))">
+<div class="layout_danh_gia_noi_bat" >
   <h1 style="text-align: center"><b>ĐÁNH GIÁ NỔI BẬT</b></h1>
 
   <div class="danh_gia">
@@ -8,7 +8,6 @@
       klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna;
       knjn lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
       jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEkjdc nc wjj
-      ammwlkcnln cnken jkachuiwh lcneuh akehc H[ OISH;I uhiy yguy guyg it7
       <div style="margin:2%">⭐⭐⭐⭐⭐</div>
       <div><b>- Lalisa -</b></div>
     </div>

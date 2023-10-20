@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="css/dichvu.css">
-<div id="phandichvu" style=" background: linear-gradient(rgb(148, 211, 239),rgb(193, 233, 244));">
+<div id="phandichvu" >
       <div class="dichvu">
         <h2 class= "hat2">Welcome to an oasis of luxury and tranquility</h2>
         <br>
+        <img class='hinhanh' src="./img/anhphongnoibat/logo.jpeg" />
         <div>
-          <p>
+          <p class="tatacl">
             Tất cả mang lại một trải nghiệm khách sạn sang trọng và độc đáo. Từ
             các chi tiết thiết kế cho đến các triển lãm và sự kiện, hãy khám phá
             những gì độc đáo nhất của khách sạn chúng tôi.
@@ -85,10 +86,8 @@
                   alt="hoi-hop-su-kien"
                   data-src="img/3.jpg"
                   src="img/anhdichvu/3.jpg"
-                  width="300"
-                  height="200"
-                  data-width="700"
-                  data-height="700"
+                 
+                 
                   style="border: 10px solid white;"
                 />
               </div>
@@ -109,8 +108,7 @@
                   alt="tiec-cuoi"
                   data-src="img/4.jpg"
                   src="img/anhdichvu/4.jpg"
-                  width="300"
-                  height="200"
+               
                   data-width="700"
                   data-height="700"
                   style="border: 10px solid white;"

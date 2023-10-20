@@ -1,13 +1,14 @@
 <link rel="stylesheet" href="./css/mota-uudai.css"> 
-<div style="width: 100%; height: 680px; background-color: white; position:relative; top:46px">
+<div style="width: 100%; height: auto; position:relative;">
 <video autoplay muted loop width="100%" height="100%">
     <source src="img/clip.mp4" type="video/mp4">
 </video>
 
 </div>
 <div class="layout_mota-uudai">
+<p class="pp">  LOUTUS HOTELL  </p>
+<img class='tamhinhanh' src="./img/anhphongnoibat/logo.jpeg" />
   <div class="layout_mota" > 
-
     <div class="mota">
       <img class="mota_hinhanh"src="img/mota/mota1.png"  alt="">
       <div class="mota_mota"> 
@@ -33,11 +34,16 @@
     </div>
 
   </div>
-
+  <br/>
+    <br/>
+    <br/>
   <div>
-    <h2 style="font-size:30px ; text-align: center;"> Ưu Đãi </h2><br>
+    <h2 style="font-size:30px ; text-align: center; font-weight: normal;"> KHUYỄN MÃI ĐẶC BIỆT </h2><br>
+    <img class='hinhanh' src="./img/anhphongnoibat/logo.jpeg" />
+    <br/>
+    <br/>
+    <br/>
     <img class="uudai" src="img/khuyenmai/km12.png" alt="">
     <img class="uudai" src="img/khuyenmai/km02.png" alt="">
   </div>
-
 </div>

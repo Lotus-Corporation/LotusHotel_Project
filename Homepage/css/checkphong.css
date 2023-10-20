@@ -4,7 +4,7 @@
   height: 10%;
   top: 610px;
   left: 145px;
-  background-color: rgb(55, 117, 140);
+  background-color: rgb(119 177 199);
 }
 .check {
   margin-top: 1%;
@@ -22,8 +22,9 @@ width: 100px;
 height: 51px; 
 border: none;
 border-radius: 5px;
-transition: all 0.5s;
+
 -webkit-transition: all 0.5s;
+transition: all 0.5s;
 }
 
 .timkiem:hover {
@@ -34,8 +35,12 @@ transform: scale(1.1);
 
 .timkiem:active {
 background-color: rgba(27, 54, 73);
-transition: all 0.25s;
 -webkit-transition: all 0.25s;
+transition: all 0.25s;
 box-shadow: none;
 transform: scale(0.98);
+}
+img.tamhinhanh {
+  margin: -2% 0 0 46%;
+  height: 90px;
 }
