@@ -10,6 +10,7 @@
   $result=$link->query($sql);
 ?>
 <div id="header" class="thanh_logo1">
+<div id="header_nhohon">
   <a  style="float:left; font-size: 30px;margin-left:20px;" href="">
   <i class="fa fa-bars"></i>
   </a>
@@ -31,7 +32,7 @@
   <a class="logo1" href="index_menu.php?pid=2" >Services</a>
   <a class="logo1" href="index_menu.php?pid=3"> Restaurant </a>
   <a class="logo" href="index_menu.php">
-    <img src="img/anhphongnoibat/logo.png" alt="" width=100% height=130px ></a> 
+    <img src="img/logo.jpeg" alt="" width=100% height=130px ></a> 
   <a class="logo1" href="index_menu.php?pid=4">Spa&Wellness</a>
   <a class="logo1" href="index_menu.php?pid=5" >Special Offers</a>
   <a class="logo1" href="index_menu.php?pid=6">Contacts</a>
@@ -41,6 +42,8 @@
   <a  style="float:left; font-size: 30px; margin-right:20px;" href="view/login.php">
   <i class="fa fa-user"></i>
   </a>
+</div>
+</div>
 </div>
 <script>
     window.onscroll = function() {scrollFunction()};
