@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/mota-uudai.css"> 
-<div style="width: 100%; height: 680px; background-color: white; position:relative; top:46px">
+<div style="width: 100%; height: auto; position:relative;">
 <video autoplay muted loop width="100%" height="100%">
     <source src="img/clip.mp4" type="video/mp4">
 </video>
@@ -7,7 +7,7 @@
 </div>
 <div class="layout_mota-uudai">
 <p class="pp">  LOUTUS HOTELL  </p>
-<img class='tamhinhanh' src="./img/anhphongnoibat/logo.png" />
+<img class='tamhinhanh' src="./img/anhphongnoibat/logo.jpeg" />
   <div class="layout_mota" > 
     <div class="mota">
       <img class="mota_hinhanh"src="img/mota/mota1.png"  alt="">
@@ -38,8 +38,8 @@
     <br/>
     <br/>
   <div>
-    <h2 style="font-size:30px ; text-align: center;"> KHUYỄN MÃI ĐẶC BIỆT </h2><br>
-    <img class='hinhanh' src="./img/anhphongnoibat/logo.png" />
+    <h2 style="font-size:30px ; text-align: center; font-weight: normal;"> KHUYỄN MÃI ĐẶC BIỆT </h2><br>
+    <img class='hinhanh' src="./img/anhphongnoibat/logo.jpeg" />
     <br/>
     <br/>
     <br/>

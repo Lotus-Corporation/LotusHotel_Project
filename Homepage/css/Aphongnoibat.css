@@ -34,7 +34,6 @@
   font-size: 9px;
   margin-top: 45px;
   display: inline-block;
-  color: #fff;
   padding-right: 40px;
   background: transparent
 }
@@ -201,7 +200,6 @@ img.hinhanh {
 }
 
 .price {
-  color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;

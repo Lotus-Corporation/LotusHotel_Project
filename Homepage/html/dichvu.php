@@ -3,7 +3,7 @@
       <div class="dichvu">
         <h2 class= "hat2">Welcome to an oasis of luxury and tranquility</h2>
         <br>
-        <img class='hinhanh' src="./img/anhphongnoibat/logo.png" />
+        <img class='hinhanh' src="./img/anhphongnoibat/logo.jpeg" />
         <div>
           <p class="tatacl">
             Tất cả mang lại một trải nghiệm khách sạn sang trọng và độc đáo. Từ
