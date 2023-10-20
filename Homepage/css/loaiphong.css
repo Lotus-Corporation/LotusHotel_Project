@@ -1,6 +1,7 @@
 
 .loaiphong {
-    width: 1380px;
+    position: relative;
+    width: 100%;
     height: auto;
     margin: auto;
 }
@@ -19,4 +20,11 @@ p.loaiphong {
     color: rgb(251, 251, 252);
     font-size: 30px;
     
+}
+.phanloaiphong
+{
+    position:relative;
+    width: 1380px;
+    height:auto;
+    margin:auto;
 }
