@@ -12,7 +12,7 @@ $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into dichvu(MA_DV,TENDV,DONGIADV,DONVITINH,HINHANHDV)
 values ('$ma_dv','$ten_dv','$dongia','$donvitinh','$hinhanh')";
 if ($link->query($sql) === TRUE) {
-    header("location:../index_menu_admin.php?pid=16 ");
+    header("location:../index_menu_admin.php?pid=14 ");
   } else {
     echo "Thêm dữ liệu thất bại <br>Lỗi: " . $sql . "<br>" . $link->error;
   }

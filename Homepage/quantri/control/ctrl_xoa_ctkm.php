@@ -6,7 +6,7 @@ if(isset($_REQUEST['MA_CTKM']) and $_REQUEST['MA_CTKM']!=""){
     $sql = "DELETE FROM CHITIETKHUYENMAI WHERE MA_CTKM='$ma'";
     if ($link->query($sql) === TRUE) {
         echo "Xoá thành công!";
-        header("location:../index_menu_admin.php?pid=17");
+        header("location:../index_menu_admin.php?pid=18");
     } else {
         echo "Xóa thất bại! " . $link->error;
     }

@@ -6,7 +6,7 @@ if(isset($_REQUEST['USERNAME']) and $_REQUEST['USERNAME']!=""){
     $sql = "DELETE FROM KHACHHANG_ONLINE WHERE USERNAME='$ma'";
     if ($link->query($sql) === TRUE) {
         echo "Xoá thành công!";
-        header("location:../index_menu_admin.php?pid=20");
+        header("location:../index_menu_admin.php?pid=21");
     } else {
         echo "Xóa thất bại! " . $link->error;
     }

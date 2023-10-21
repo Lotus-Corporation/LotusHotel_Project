@@ -13,7 +13,7 @@ $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into khuyenmai(MA_KM,NGAYBATDAU,NGAYKETTHUC,TENKM,MOTA,HINHANHKM)
 values ('$ma_km','$ngaybatdau','$ngayketthuc','$ten_km','$mota','$hinhanh')";
 if ($link->query($sql) === TRUE) {
-    header("location:../index_menu_admin.php?pid=12 ");
+    header("location:../index_menu_admin.php?pid=17 ");
   } else {
     echo "Thêm dữ liệu thất bại <br>Lỗi: " . $sql . "<br>" . $link->error;
   }
