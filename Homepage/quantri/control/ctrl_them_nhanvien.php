@@ -10,7 +10,7 @@ $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into nhanvien(MA_NV,HOTEN,SDT,CHUCVU,DIACHI,CCCD,LUONG)
 values ('$ma_nv','$hoten','$sdt','$chucvu','$diachi','$cccd','$luong')";
 if ($link->query($sql) === TRUE) {
-    header("location:../index_menu_admin.php?pid=13 ");
+    header("location:../index_menu_admin.php?pid=19 ");
   } else {
     echo "Thêm dữ liệu thất bại <br>Lỗi: " . $sql . "<br>" . $link->error;
   }

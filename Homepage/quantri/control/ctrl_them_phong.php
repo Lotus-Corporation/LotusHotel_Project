@@ -14,7 +14,7 @@ $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into phong(MA_PHONG,MA_LOAIPHONG,TENPHONG,DONGIAPHONG,MA_CN,SONGUOITOIDA,ANHPHONG)
 values ('$ma_phong','$ma_lp','$tenphong','$dongiaphong','$ma_cn','$songuoitoida','$hinhanh')";
 if ($link->query($sql) === TRUE) {
-    header("location:../index_menu_admin.php?pid=20 ");
+    header("location:../index_menu_admin.php?pid=11 ");
   } else {
     echo "Thêm dữ liệu thất bại <br>Lỗi: " . $sql . "<br>" . $link->error;
   }

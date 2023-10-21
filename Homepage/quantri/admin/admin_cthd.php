@@ -92,7 +92,7 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_HD"];?></td>
     <td> <?php echo $row["MA_KM"];?></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
-    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_cthd.php?MA_CTHD=<?php echo $row['MA_CTHD']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
      <?php
  }
