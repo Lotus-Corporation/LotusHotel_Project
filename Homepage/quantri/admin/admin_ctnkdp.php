@@ -88,7 +88,7 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_NKDP"];?></td>
     <td><?php echo $row["MA_PHONG"];?></td>
     <td><?php echo $row["DONGIAPHONG"];?></td>
-    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a href="themsuaxoa/sua_ctnkdp.php?MA_CTNKDP=<?php echo $row['MA_CTNKDP']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_ctnkdp.php?ma_ctnkdp=<?php echo $row['MA_CTNKDP']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
 <?php

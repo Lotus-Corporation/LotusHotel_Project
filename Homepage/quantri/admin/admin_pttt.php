@@ -90,7 +90,7 @@ while ($row=$result->fetch_assoc())
 <tr align="center" >
     <td> <?php echo $row["MA_PTTT"];?> </td>
     <td> <?php echo $row["LOAIPTTT"];?></td>
-    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a href="themsuaxoa/sua_pttt.php?MA_PTTT=<?php echo $row['MA_PTTT']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_pttt.php?ma_pttt=<?php echo $row['MA_PTTT']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
      <?php
