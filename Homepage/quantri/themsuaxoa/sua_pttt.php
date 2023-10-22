@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa phương thức thanh toán</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_pttt.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_pttt.php">
          <div>
             <label>Mã phương thức thanh toán</label><br>
             <input type="text" name="ma_pttt" value="<?php echo $row['MA_PTTT']; ?>" readonly>

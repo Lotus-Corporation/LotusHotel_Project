@@ -75,7 +75,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa chi tiết nhật kí đặt phòng</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_ctnkdp.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_ctnkdp.php">
          <div>
             <label>Mã chi tiết nhật kí đặt phòng</label><br>
             <input type="text" name="ma_ctnkdp" value="<?php echo $row['MA_CTNKDP']; ?>" readonly>

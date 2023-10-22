@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1% 0 0 2%">Sửa dịch vụ</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_dichvu.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_dichvu.php">
          <div>
             <label>Mã dịch vụ</label><br>
             <input type="text" name="ma_dv" value="<?php echo $row['MA_DV']; ?>" readonly>
@@ -87,9 +87,20 @@
             <input type="text" name="donvitinh" value="<?php echo $row['DONVITINH']; ?>">
          </div>
          <div>
-            <label>Hình Ảnh</label><br> 
-            <input style="border:none" type="file" name="hinhanh">
-         </div>
+         <label>Hình Ảnh</label><br> 
+                <input style="border:none" type="file" id="imageUpload" name="hinhanh">
+                <img id="imagePreview" src="../img/dichvu/<?php echo $row['HINHANHDV']?>" width="200px" height="200px">
+            </div>
+
+            <script>
+                document.getElementById("imageUpload").addEventListener("change", function(e) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById("imagePreview").src = e.target.result;
+                    }
+                    reader.readAsDataURL(this.files[0]);
+            }   );
+            </script>
          <button type="submit">Lưu</button>
       </form>
    </div>

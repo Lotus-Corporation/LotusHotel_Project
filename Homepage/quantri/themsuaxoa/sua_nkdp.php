@@ -1,10 +1,16 @@
 <?php 
     $ma_nkdp = $_GET['MA_NKDP'];
+    $ma_kh = $_GET['ma_kh'];
     $link=new mysqli("localhost","root","","khachsan");
     $sql="select * from NHATKIDATPHONG where MA_NKDP='$ma_nkdp'";
+    $sql_kh="select* from KHACHHANG ";
     $result=$link->query($sql);
+    $result_kh=$link->query($sql_kh);
     $row=$result->fetch_assoc();
 ?>
+
+
+    
 <style>
     .layout_danhmuc{
         width: 70%; 
@@ -69,15 +75,27 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa nhật kí đặt phòng</h2>
-      <form method="post" action="../control/ctrl_sua_nkdp.php">
+      <form method="post" action="control/ctrl_sua_nkdp.php">
          <div>
             <label>Mã nhật kí đặt phòng:</label><br>
             <input type="text" name="MA_NKDP" value="<?php echo $row['MA_NKDP']; ?>" readonly>
          </div>
          <div>
-            <label>Mã khách hàng</label><br>
-            <input type="text" name="MA_KH" value="<?php echo $row['MA_KH']; ?>">
-         </div>
+                <label>Mã khách hàng</label><br>
+                <select name="MA_KH">
+                    <?php 
+                    while($row_kh=$result_kh->fetch_assoc()){
+                        $selected = '';
+                        if ($row_kh["MA_KH"] == $ma_kh) {
+                            $selected = 'selected="selected"';
+                        }
+                    ?>
+                    <option value=<?php echo $row_kh["MA_KH"]?> <?php echo $selected ?>><?php echo $row_kh["MA_KH"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
          <div>
             <label>Ngày đặt phòng</label><br>
             <input type="date" name="NGAYDAT" value="<?php echo $row['NGAYDAT']; ?>">

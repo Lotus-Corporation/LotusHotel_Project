@@ -125,7 +125,7 @@
 
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :2%0%02%">Sửa chi tiết khuyến mãi</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_ctkm.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_ctkm.php">
          <div>
             <label>Mã chi tiết khuyến mãi</label><br>
             <input type="text" name="ma_ctkm" value="<?php echo $row['MA_CTKM']; ?>" readonly>

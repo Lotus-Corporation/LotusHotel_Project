@@ -70,7 +70,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1% 0 0 2%">Sửa loại phòng</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_loaiphong.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_loaiphong.php">
          <div>
             <label>Mã loại phòng</label><br>
             <input type="text" name="ma_lp" value="<?php echo $row['MA_LOAIPHONG']; ?>" readonly>
@@ -82,7 +82,7 @@
          <div>
                <label>Hình Ảnh</label><br> 
                <input style="border:none" type="file" id="imageUpload" name="hinhanh">
-               <img id="imagePreview" src="../../img/loaiphong/<?php echo $row['Hinhanh']?>" width="200px" height="200px">
+               <img id="imagePreview" src="../img/loaiphong/<?php echo $row['Hinhanh']?>" width="200px" height="200px">
          </div>
 
             <script>

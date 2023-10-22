@@ -70,7 +70,7 @@
       border :solid2px ;
    }
    button{
-      padding :15px40px;
+      padding :15px 40px;
       border :none;
       background-color :rgb(234,159,85);
       border-radius :10px;
@@ -84,7 +84,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa hóa đơn</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_hoadon.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_hoadon.php">
          <div>
             <label>Mã hóa đơn</label><br>
             <input type="text" name="ma_hd" value="<?php echo $row['MA_HD']; ?>" readonly>

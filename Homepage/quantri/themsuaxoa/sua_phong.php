@@ -1,9 +1,14 @@
 <?php 
     $ma_phong = $_GET['MA_PHONG'];
+    $ma_lp = $_GET['ma_lp'];
     $link=new mysqli("localhost","root","","khachsan");
     $sql="select * from PHONG where MA_PHONG='$ma_phong'";
+    $sql_lp="select* from LOAIPHONG ";
     $result=$link->query($sql);
+    $result_lp=$link->query($sql_lp);
     $row=$result->fetch_assoc();
+
+    
 ?>
 <style>
     .layout_danhmuc{
@@ -69,15 +74,34 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa phòng</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_phong.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_phong.php">
          <div>
             <label>Mã phòng</label><br>
             <input type="text" name="ma_phong" value="<?php echo $row['MA_PHONG']; ?>" readonly>
          </div>
-         <div>
-            <label>Mã loại phòng</label><br>
-            <input type="text" name="MA_LOAIPHONG" value="<?php echo $row['MA_LOAIPHONG']; ?>">
-         </div>
+         
+
+
+
+          <div>
+                <label>Mã loại phòng</label><br>
+                <select name="MA_LOAIPHONG">
+                    <?php 
+                    while($row_lp=$result_lp->fetch_assoc()){
+                        $selected = '';
+                        if ($row_lp["MA_LOAIPHONG"] == $ma_lp) {
+                            $selected = 'selected="selected"';
+                        }
+                    ?>
+                    <option value=<?php echo $row_lp["MA_LOAIPHONG"]?> <?php echo $selected ?>><?php echo $row_lp["MA_LOAIPHONG"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
+
+
+
          <div>
             <label>Tên phòng</label><br>
             <input type="text" name="tenphong" value="<?php echo $row['TENPHONG']; ?>">
@@ -94,6 +118,21 @@
             <label>Số người tối đa</label><br>
             <input type="text" name="songuoitoida" value="<?php echo $row['SONGUOITOIDA']; ?>">
          </div>
+         <div>
+         <label>Hình Ảnh</label><br> 
+                <input style="border:none" type="file" id="imageUpload" name="hinhanh">
+                <img id="imagePreview" src="../img/chinhanh/<?php echo $row['ANHPHONG']?>" width="200px" height="200px">
+            </div>
+
+            <script>
+                document.getElementById("imageUpload").addEventListener("change", function(e) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById("imagePreview").src = e.target.result;
+                    }
+                    reader.readAsDataURL(this.files[0]);
+            }   );
+            </script>
          <button type="submit">Lưu</button>
       </form>
    </div>

@@ -112,6 +112,51 @@
       case 42:
         include("themsuaxoa/sua_chinhanh.php");
         break;
+      case 43:
+        include("themsuaxoa/sua_cthd.php");
+        break;
+      case 44:
+        include("themsuaxoa/sua_ctkm.php");
+        break;
+      case 45:
+        include("themsuaxoa/sua_ctnkdp.php");
+        break;
+      case 46:
+        include("themsuaxoa/sua_ctnksddv.php");
+        break;
+      case 47:
+        include("themsuaxoa/sua_dichvu.php");
+        break;
+      case 48:
+      include("themsuaxoa/sua_hoadon.php");
+      break;
+      case 49:
+      include("themsuaxoa/sua_khachhang.php");
+      break;
+      case 50:
+      include("themsuaxoa/sua_khachhangonline.php");
+      break;
+      case 51:
+      include("themsuaxoa/sua_khuyenmai.php");
+      break;
+      case 52:
+      include("themsuaxoa/sua_loaiphong.php");
+      break;
+      case 53:
+      include("themsuaxoa/sua_nhanvien.php");
+      break;
+      case 54:
+      include("themsuaxoa/sua_nkdp.php");
+      break;
+      case 55:
+      include("themsuaxoa/sua_nksddv.php");
+      break;
+      case 56:
+      include("themsuaxoa/sua_phong.php");
+      break;
+      case 57:
+      include("themsuaxoa/sua_pttt.php");
+      break;
       }
       
   }

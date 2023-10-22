@@ -75,7 +75,7 @@
 </style>
 <div class="layout_danhmuc">
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa chi tiết hóa đơn</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_chinhanh.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_cthd.php">
          <div>
             <label>Mã chi tiết hóa đơn</label><br>
             <input type="text" name="ma_cthd" value="<?php echo $row['MA_CTHD']; ?>" readonly>
