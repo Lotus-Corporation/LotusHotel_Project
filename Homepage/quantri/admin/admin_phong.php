@@ -10,7 +10,7 @@ $result=$link->query($sql);
         position: absolute; 
         background-color: rgb(253, 245, 233);
         right:2%; 
-        height: 5320px;
+        height: 6600px;
         top: 10%
     }
     .danhmuc{
@@ -96,7 +96,7 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["DONGIAPHONG"];?></td>
     <td> <?php echo $row["MA_CN"];?></td>
     <td> <?php echo $row["SONGUOITOIDA"];?></td>
-    <td><img src="../img/phong/<?php echo $row["ANHPHONG"]; ?>" style="width: 100px; height: 100px;"></td>
+    <td><img src="../img/phong/<?php echo $row["ANHPHONG"]; ?>" style="width: 200px"></td>
     <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_phong.php?ma_phong=<?php echo $row['MA_PHONG']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>

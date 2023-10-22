@@ -109,6 +109,9 @@
       case 41:
         include("themsuaxoa/them_cthd.php");
         break;
+      case 42:
+        include("themsuaxoa/sua_chinhanh.php");
+        break;
       }
       
   }

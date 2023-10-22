@@ -38,7 +38,7 @@
         <div class="layout">
             <a href="">
                 <div class="layout_con">
-                    <img src="img/<?php echo $row["ANHPHONG"]; ?>">
+                    <img src="img/phong/<?php echo $row["ANHPHONG"]; ?>">
                     <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
                     <div  class="tenphong">
                         <div><h2><?php echo $row["TENPHONG"] ?></h2></div>

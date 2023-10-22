@@ -10,19 +10,13 @@
     }
     .layout_anh{
         width: 100%;
-        height: 600px; 
+        height: 850px; 
         position:relative; 
-        
+        background-image: url('https://template67976.motopreview.com/mt-demo/67900/67976/mt-content/uploads/2018/04/mt-1431-content-bg01.jpg');
         margin-bottom: 7%;
+        background-position: center center;
+        background-attachment: fixed;
     }   
-    .layout_anh_opacity{
-        width: 100%;
-        height: 600px; 
-        position:absolute; 
-        top:0;
-        background-color: black; 
-        opacity:0.5;
-    }
     .loigoi{
         text-align: center; 
         position:absolute; 
@@ -31,15 +25,15 @@
         color: #fff;
     }
     .layout:nth-child(n){
-        margin-left: 12%;
+        margin-left: 8%;
     }
     .layout_con{
         float: left; 
-        width:40%;
-        height:330px;
+        width:43%;
+        height:350px;
         margin: 2%;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         position: relative;
         overflow: hidden;
         transition: 0.25s
@@ -58,7 +52,7 @@
     .mota{
         height: 110px;
         position: absolute;
-        top:230px;
+        top:250px;
         width: 100%;
         padding: 20px;
         background-color: #fff;
@@ -80,8 +74,6 @@
 </style>
 
 <div class="layout_anh">
-    <img src=""style="height: 600px; width:100%">
-    <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%">ENJOY THE VALUES</div>
         <div style="font-size:45px">SPECIAL OFFERS</div>
@@ -94,7 +86,7 @@
 <div class="layout">
     <a href="">
         <div class="layout_con">
-            <img src="img/<?php echo $row["HINHANHKM"]; ?>" style="width: 100%; height: 230px;">
+            <img src="img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 100%; height: 250px;">
             <div class="mota">
                 <h2><?php echo $row["TENKM"] ?></h2>
                 <p><?php echo $row["MOTA"]?></p>

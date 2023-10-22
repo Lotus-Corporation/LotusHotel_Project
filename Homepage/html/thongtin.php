@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="./css/thongtin.css"> 
+<link rel="stylesheet" href="css/thongtin.css"> 
 <div class="loi_goi">
-    <h3>HÃY BẮT ĐẦU TRẢI NGHIỆM </h3>
-    <h2>LOTUS</h2>
+  <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:17px;margin-top:2%">HÃY BẮT ĐẦU TRẢI NGHIỆM</div>
+  <div style="font-size:40px">LOTUS</div>
 </div>
 <div class="layout_thong_tin">
       <div class="dat_phong">

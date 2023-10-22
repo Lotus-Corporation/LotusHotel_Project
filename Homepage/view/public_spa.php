@@ -7,18 +7,21 @@
     }
     .layout_anh{
         width: 100%;
-        height: 600px; 
+        height: 800px; 
         position:relative; 
-        
+        background-image: url('img/dichvu/spa.jpeg');
+        background-attachment: fixed;
+        background-position: center bottom;
+        background-size: cover;
         margin-bottom: 7%;
     }   
     .layout_anh_opacity{
         width: 100%;
-        height: 600px; 
+        height: 800px; 
         position:absolute; 
         top:0;
-        background-color: black; 
-        opacity:0.5;
+        background-color: black;
+        opacity:0.2;
     }
     .loigoi{
         text-align: center; 
@@ -147,8 +150,8 @@
 </style>
 
 
-<div class="layout_anh" style="margin-top:-10px">
-    <img src="./img/dichvu/spa.jpeg" style="height: 650px; width:100%">
+<div class="layout_anh" style="">
+    <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%; margin-left:20px">RELAX WITH LOTUS SPA</div>
         <div style="font-size:45px;margin-left:18px">SPA & WELLNESS</div>

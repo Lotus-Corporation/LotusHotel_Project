@@ -33,7 +33,7 @@
  
    
     .layout2_con{
-        height:330px;
+        height:350px;
         margin: 2%;
         text-decoration: none;
         border-radius: 5px;
@@ -93,7 +93,7 @@
 <div class="layout2">
     <a href="">
         <div class="layout2_con">
-            <img src="img/<?php echo $row["HINHANHKM"]; ?>" style="width: 100%; height: 230px;">
+            <img src="img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 100%; height: 230px;">
             <div class="mota2">
                 <h2 class="hathai"><?php echo $row["TENKM"] ?></h2>
                 <p class="chupe"><?php echo $row["MOTA"]?></p>

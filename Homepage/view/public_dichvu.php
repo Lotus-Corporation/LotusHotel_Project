@@ -9,26 +9,28 @@
         margin: 0;
     }
     .layout_anh{
-        height: 600px; 
+        height: 700px; 
         background-color:rgb(40, 129, 143); 
         position:relative; 
-        
+        background-attachment: fixed;
+        background-image: url('https://hiltonbyplaya.honeymoonwishes.com/images/registry_images/popup_138584.jpg');
+        background-position: center center;
         margin-bottom: 7%;
     }   
     .layout_anh_opacity{
         width: 100%;
-        height: 600px; 
+        height: 700px; 
         position:absolute; 
         top:0;
-        background-color: black; 
-        opacity:0.5;
+        background-color: black;
+        opacity:0.4;
     }
     .loigoi{
         text-align: center; 
         position:absolute; 
-        top:40%;
+        top:43%;
         left:38%;
-        color: #fff;
+        color: #fff;    
     }
     .layout:nth-child(n){
         margin-left: 10%;
@@ -81,7 +83,6 @@
 </style>
 
 <div class="layout_anh">
-    <img src="https://coronapoolrepair.com/wp-content/uploads/2021/05/60a6080f1f01c.jpg"style="height: 600px; width:100%">
     <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style=" font-size:60px; margin-left:15%">SERVICES</div>
