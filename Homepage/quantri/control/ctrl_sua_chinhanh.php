@@ -1,19 +1,22 @@
-<<<<<<< HEAD
 <?php 
-$ma_cn=$_POST["ma_cn"];
-$tinhthanh=$_POST["tinhthanh"];
-$diachi=$_POST["diachi"];
-$sdt=$_POST["sdt"];
-$ma_nv=$_POST["ma_qli"];
-$hinhanh=$_POST["hinhanh"];
-$link=new mysqli("localhost","root","","khachsan");
-$sql="UPDATE 'chinhanh' SET ma_cn='$ma_cn',tinhthanh='$tinhthanh',diachi='$diachi',sdt='$sdt',ma_qli='$ma_nv',hinhanh='$hinhanh')";
-if ($link->query($sql) === TRUE) {
-    echo "Sửa dữ liệu thành công!";
-  } else {
-    echo "Sửa dữ liệu thất bại <br> Lỗi: " . $sql . "<br>" . $link->error;
-  }
+    $thu_muc="../../img/chinhanh/";
+    $ten_files=$thu_muc . $_FILES["hinhanh"]["name"];
+    move_uploaded_file($_FILES["hinhanh"]["tmp_name"],$ten_files);
+    
+    $macn=$_POST["macn"];
+    $tinhthanh=$_POST["tinhthanh"];
+    $diachi=$_POST["diachi"];
+    $sdt=$_POST["sdt"];
+    $ma_nv=$_POST["ma_qli"];
+    $hinhanh=$_FILES["hinhanh"]["name"];
+    $link=new mysqli("localhost","root","","khachsan");
+    $sql="UPDATE chinhanh SET diachi='$diachi',tinhthanh='$tinhthanh',sdt='$sdt',ma_nv='$ma_nv',hinhanh='$hinhanh' where ma_cn='$macn'";
+    
+    if ($link->query($sql) === TRUE) {
+        header("location:../index_menu_admin.php?pid=22");
+    } else {
+        echo "Cập nhật thất bại! " . $link->error;
+    }
+
 ?>
-=======
-sai r tks
->>>>>>> 3dd1fb2b61037199299144fa45eea73d85373633
+

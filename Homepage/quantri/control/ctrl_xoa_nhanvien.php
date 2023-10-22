@@ -6,7 +6,7 @@ if(isset($_REQUEST['MA_NV']) and $_REQUEST['MA_NV']!=""){
     $sql = "DELETE FROM NHANVIEN WHERE MA_NV='$ma'";
     if ($link->query($sql) === TRUE) {
         echo "Xoá thành công!";
-        header("location:../index_menu_admin.php?pid=18");
+        header("location:../index_menu_admin.php?pid=19");
     } else {
         echo "Xóa thất bại! " . $link->error;
     }

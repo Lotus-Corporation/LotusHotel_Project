@@ -10,19 +10,13 @@
         margin: 0;
     }
     .layout_anh{
-        height: 600px; 
+        height: 800px; 
         position:relative; 
-        
         margin-bottom: 5%;
+        background-attachment: fixed;
+        background-image: url('https://template65036.motopreview.com/mt-demo/65000/65036/mt-content/uploads/2017/12/mt-1286-home-header-bg.jpg');
+        background-position: center;
     }   
-    .layout_anh_opacity{
-        width: 100%;
-        height: 600px; 
-        position:absolute; 
-        top:0;
-        background-color: black; 
-        opacity:0.5;
-    }
     .loigoi{
         text-align: center; 
         position:absolute; 
@@ -35,14 +29,15 @@
     }
     .layout_con{
         float: left; 
-        width:40%;
+        width:42%;
         height:350px;
-        margin: 3% 3%;
+        margin: 2%;
         text-decoration: none;
         position: relative;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition: transform 2s;
         overflow: hidden;
+        border-radius: 10px;
     }
     .layout_con:hover{
         transform: scale(1);
@@ -80,8 +75,6 @@
 </style>
 
 <div class="layout_anh">
-    <img src="https://laseta.bithemer.com/assets/img/background/bg5.jpg"style="height: 600px; width:100%">
-    <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%">THE COLLECTION</div>
         <div style="font-size:55px">ROOM</div>
@@ -94,7 +87,7 @@
 <div class="layout">
     <a href="">
         <div class="layout_con">
-            <img src="img/<?php echo $row["ANHPHONG"]; ?>">
+            <img src="img/phong/<?php echo $row["ANHPHONG"]; ?>">
             <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
             <div  class="tenphong">
                 <div><h2><?php echo $row["TENPHONG"] ?></h2></div>

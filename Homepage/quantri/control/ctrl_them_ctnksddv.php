@@ -7,7 +7,7 @@ $link=new mysqli("localhost","root","","khachsan");
 $sql="insert into CHITIET_NKSDDV(MA_CT_NKSDDV,MA_NKSD_DICHVU,MA_DV,SOLUONG)
 values ('$ma_ctnksddv','$ma_nksddv','$ma_dv','$soluong')";
 if ($link->query($sql) === TRUE) {
-    header("location:../index_menu_admin.php?pid=18 ");
+    header("location:../index_menu_admin.php?pid=16 ");
   } else {
     echo "Thêm dữ liệu thất bại <br>Lỗi: " . $sql . "<br>" . $link->error;
   }

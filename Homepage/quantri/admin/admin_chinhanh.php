@@ -72,6 +72,7 @@
             <tr>
                 <th style="border-radius: 10px 0 0 0">Mã Chi Nhánh</th>
                 <th>Địa chỉ</th>
+                <th>Tỉnh thành</th>
                 <th>SĐT</th>
                 <th>Mã Quản Lí</th>
                 <th>Hình Ảnh</th>
@@ -86,11 +87,12 @@
                     <tr>
                         <td><?php echo $row["MA_CN"]; ?></td>
                         <td><?php echo $row["DIACHI"]; ?></td>
+                        <td><?php echo $row["TINHTHANH"]; ?></td>
                         <td><?php echo $row["SDT"]; ?></td>
                         <td><?php echo $row["MA_NV"]; ?></td>
                         <td><img src="../img/chinhanh/<?php echo $row["HINHANH"]; ?>" style="width: 100px; height: 100px;"></td>
-                        <td><a href="themsuaxoa/sua_chinhanh.php?ma_cn=<?php echo $row['MA_CN']; ?>"><img src="../img/icon/edit.png" width="10px" height="10px"> Sửa</a></td>
-                        <td><a href="control/ctrl_xoa_chinhanh.php?ma_cn=<?php echo $row['MA_CN']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+                        <td><a href="index_menu_admin.php?pid=42&&ma_cn=<?php echo $row['MA_CN']?>&&ma_nv=<?php echo $row['MA_NV'] ?>"><img src="../img/icon/edit.png" width="10px" height="10px"> Sửa</a></td>
+                        <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_chinhanh.php?ma_cn=<?php echo $row['MA_CN']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
                     </tr>
             <?php
                 }

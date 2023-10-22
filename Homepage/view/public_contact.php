@@ -1,22 +1,25 @@
 <html>
     <style>
     body{
-        margin: 0
+        margin: 0;
+        background:linear-gradient(rgb(231, 245, 249),rgb(193, 233, 244));
     }   
     .layout_anh{
         width: 100%;
-        height: 600px; 
+        height: 800px; 
         position:relative; 
-        
+        background-attachment: fixed;
+        background-position: center center;
+        background-image: url('https://playa-cms-assets.s3.amazonaws.com/styled/hero-jewel-punta-cana-resort-spa-couple-treatment-rooms-exterior-05.jpg/1aec8f98fbf6e55d357bd6023672360d');
         margin-bottom: 7%;
     }   
     .layout_anh_opacity{
         width: 100%;
-        height: 600px; 
+        height: 800px; 
         position:absolute; 
         top:0;
         background-color: black; 
-        opacity:0.5;
+        opacity:0.3;
     }
     .loigoi{
         text-align: center; 
@@ -29,6 +32,7 @@
         animation-name: chuyendong;
         animation-duration: 5s;
         font-size: 20px;
+        margin-bottom: 4%;
         margin-left: 23%;
         border: 1px solid gray;
         border-radius: 7px;
@@ -64,6 +68,7 @@
         float: right;
         margin-right: 10%;
         margin-top: 2%;
+        border-radius: 5px;
     }
     button:hover{
         background-color: rgb(5, 53, 107);
@@ -75,7 +80,6 @@
 </style>
 <body>
 <div class="layout_anh">
-    <img src="https://laseta.bithemer.com/assets/img/background/bg6.jpg"style="height: 600px; width:100%">
     <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%">LOTUS HOTEL</div>

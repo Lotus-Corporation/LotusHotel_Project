@@ -79,7 +79,7 @@ $result=$link->query($sql);
 </tr>
 <?php
 while ($row=$result->fetch_assoc())
-{
+{   
  ?>   
 
 <tr>
@@ -87,8 +87,8 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["HOTEN"];?></td>
     <td> <?php echo $row["SDT"];?></td>
     <td> <?php echo $row["CCCD"];?></td>
-    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
-    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+    <td><a href="themsuaxoa/sua_khachhang.php?MA_KH=<?php echo $row['MA_KH']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_khachhang.php?MA_KH=<?php echo $row['MA_KH']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 <tr>
 <?php
  }

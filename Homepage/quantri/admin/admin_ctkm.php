@@ -74,7 +74,8 @@ $result=$link->query($sql);
 
       <table>
          <tr>
-    <th style="border-radius: 10px 0 0 0" >Mã Khuyến Mãi</th>
+    <th style="border-radius: 10px 0 0 0" >Mã Chi Tiết Khuyến Mãi</th>
+    <th> Mã Khuyến Mãi</th>
     <th> Mã Loại Phòng</th>
     <th> Giá Trị </th>
     <th> Mã Dịch Vụ </th>
@@ -87,12 +88,13 @@ while ($row=$result->fetch_assoc())
    ?>   
 
 <tr align="center" >
+<td> <?php echo $row["MA_CTKM"];?> </td>
     <td> <?php echo $row["MA_KM"];?> </td>
     <td> <?php echo $row["MA_LOAIPHONG"];?></td>
     <td> <?php echo $row["GIATRI"];?></td>
     <td> <?php echo $row["MA_DV"];?></td>
-    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
-    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+    <td><a href="themsuaxoa/sua_ctkm.php?MA_CTKM=<?php echo $row['MA_CTKM']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_ctkm.php?MA_CTKM=<?php echo $row['MA_CTKM']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
      <?php
  }

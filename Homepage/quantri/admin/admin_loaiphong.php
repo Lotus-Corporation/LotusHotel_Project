@@ -10,7 +10,7 @@ $result=$link->query($sql);
         background-color: rgb(253, 245, 233);
         top:10%;
         right:2%; 
-        height: 1100px;
+        height: 200%;
         border-radius: 10px
     }
     .danhmuc{
@@ -84,9 +84,9 @@ while ($row=$result->fetch_assoc())
 <tr align="center" >
     <td> <?php echo $row["MA_LOAIPHONG"];?></td>
     <td> <?php echo $row["LOAIPHONG"];?></td>
-    <td> <img src="../img/loaiphong/<?php echo $row["Hinhanh"];?>" alt="" width=400px height=200px></td>
-    <td><a href=""><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
-    <td><a href=""><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
+    <td> <img src="../img/loaiphong/<?php echo $row["Hinhanh"];?>" alt="" width=400px></td>
+    <td><a href="themsuaxoa/sua_loaiphong.php?MA_LOAIPHONG=<?php echo $row['MA_LOAIPHONG']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_loaiphong.php?MA_LOAIPHONG=<?php echo $row['MA_LOAIPHONG']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 <tr>
 <?php
  }

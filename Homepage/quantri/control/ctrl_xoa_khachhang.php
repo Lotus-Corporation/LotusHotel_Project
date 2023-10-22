@@ -6,7 +6,7 @@ if(isset($_REQUEST['MA_KH']) and $_REQUEST['MA_KH']!=""){
     $sql = "DELETE FROM KHACHHANG WHERE MA_KH='$ma'";
     if ($link->query($sql) === TRUE) {
         echo "Xoá thành công!";
-        header("location:../index_menu_admin.php?pid=19");
+        header("location:../index_menu_admin.php?pid=20");
     } else {
         echo "Xóa thất bại! " . $link->error;
     }
