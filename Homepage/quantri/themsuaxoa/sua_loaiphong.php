@@ -4,6 +4,7 @@
     $sql="select * from LOAIPHONG where MA_LOAIPHONG='$ma_lp'";
     $result=$link->query($sql);
     $row=$result->fetch_assoc();
+    $row_lp=$result->fetch_assoc();
 ?>
 <style>
     .layout_danhmuc{
@@ -68,8 +69,8 @@
    }
 </style>
 <div class="layout_danhmuc"> 
-   <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa loại phòng</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_loaiphong.php">
+   <div class="danhmuc"><h2 style="margin :1% 0 0 2%">Sửa loại phòng</h2>
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_loaiphong.php">
          <div>
             <label>Mã loại phòng</label><br>
             <input type="text" name="ma_lp" value="<?php echo $row['MA_LOAIPHONG']; ?>" readonly>
@@ -79,9 +80,20 @@
             <input type="text" name="loaiphong" value="<?php echo $row['LOAIPHONG']; ?>">
          </div>
          <div>
-            <label>Hình Ảnh</label><br> 
-            <input style="border:none" type="file" name="hinhanh">
+               <label>Hình Ảnh</label><br> 
+               <input style="border:none" type="file" id="imageUpload" name="hinhanh">
+               <img id="imagePreview" src="../img/loaiphong/<?php echo $row['Hinhanh']?>" width="200px" height="200px">
          </div>
+
+            <script>
+                document.getElementById("imageUpload").addEventListener("change", function(e) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById("imagePreview").src = e.target.result;
+                    }
+                    reader.readAsDataURL(this.files[0]);
+            }   );
+            </script>
          <button type="submit">Lưu</button>
       </form>
    </div>

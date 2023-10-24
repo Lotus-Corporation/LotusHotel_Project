@@ -12,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 100%
+        height: 50%
     }
     .danhmuc{
         width: 100%;
@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa khuyến mãi</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_khuyenmai.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_khuyenmai.php">
          <div>
             <label>Mã khuyến mãi</label><br>
             <input type="text" name="ma_km" value="<?php echo $row['MA_KM']; ?>" readonly>
@@ -91,10 +91,23 @@
             <input type="text" name="mota" value="<?php echo $row['MOTA']; ?>">
          </div>
          <div>
-            <label>Hình Ảnh</label><br> 
-            <input style="border:none" type="file" name="hinhanh">
-         </div>
+         <label>Hình Ảnh</label><br> 
+                <input style="border:none" type="file" id="imageUpload" name="hinhanh">
+                <img id="imagePreview" src="../img/khuyenmai/<?php echo $row['HINHANHKM']?>" width="200px" height="200px">
+            </div>
+
+            <script>
+                document.getElementById("imageUpload").addEventListener("change", function(e) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById("imagePreview").src = e.target.result;
+                    }
+                    reader.readAsDataURL(this.files[0]);
+            }   );
+            </script>
          <button type="submit">Lưu</button>
       </form>
    </div>
 </div>
+
+

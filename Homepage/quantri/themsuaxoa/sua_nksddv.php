@@ -1,10 +1,15 @@
 <?php 
     $ma_nksddv = $_GET['MA_NKSD_DICHVU'];
+    $ma_kh = $_GET['ma_kh'];
     $link=new mysqli("localhost","root","","khachsan");
     $sql="select * from NKSD_DICHVU where MA_NKSD_DICHVU='$ma_nksddv'";
+    $sql_kh="select* from KHACHHANG ";
     $result=$link->query($sql);
+    $result_kh=$link->query($sql_kh);
     $row=$result->fetch_assoc();
 ?>
+
+
 <style>
     .layout_danhmuc{
         width: 70%; 
@@ -55,7 +60,7 @@
       border :solid2px ;
    }
    button{
-      padding :15px40px;
+      padding :15px 40px;
       border :none;
       background-color :rgb(234,159,85);
       border-radius :10px;
@@ -68,16 +73,28 @@
    }
 </style>
 <div class="layout_danhmuc"> 
-   <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa nhật kí sử dụn../g dịch vụ</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_nksddv.php">
+   <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa nhật kí sử dụng dịch vụ</h2>
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_nksddv.php">
          <div>
             <label>Mã nhật kí sử dụng dịch vụ</label><br>
             <input type="text" name="ma_nksddv" value="<?php echo $row['MA_NKSD_DICHVU']; ?>" readonly>
          </div>
          <div>
-            <label>Mã khách hàng</label><br>
-            <input type="text" name="ma_kh" value="<?php echo $row['MA_KH']; ?>">
-         </div>
+                <label>Mã khách hàng</label><br>
+                <select name="ma_kh">
+                    <?php 
+                    while($row_kh=$result_kh->fetch_assoc()){
+                        $selected = '';
+                        if ($row_kh["MA_KH"] == $ma_kh) {
+                            $selected = 'selected="selected"';
+                        }
+                    ?>
+                    <option value=<?php echo $row_kh["MA_KH"]?> <?php echo $selected ?>><?php echo $row_kh["MA_KH"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
          <button type="submit">Lưu</button>
       </form>
    </div>

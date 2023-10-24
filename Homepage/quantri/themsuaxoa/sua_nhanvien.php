@@ -69,7 +69,7 @@
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa nhân viên</h2>
-      <form method="post" enctype="multipart/form-data" action="../control/ctrl_sua_nhanvien.php">
+      <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_nhanvien.php">
          <div>
             <label>Mã nhân viên</label><br>
             <input type="text" name="ma_nv" value="<?php echo $row['MA_NV']; ?>" readonly>
