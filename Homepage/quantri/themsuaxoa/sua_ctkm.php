@@ -1,5 +1,7 @@
 <?php 
     $ma_ctkm = $_GET['MA_CTKM'];
+    $ma_lp = $_GET['ma_lp'];
+    $ma_dv = $_GET['ma_dv'];
     $link=new mysqli("localhost","root","","khachsan");
     $sql="select * from CHITIETKHUYENMAI where MA_CTKM='$ma_ctkm'";
     $result=$link->query($sql);
@@ -10,6 +12,12 @@
 
     $sql_km="select * from khuyenmai";
     $result_km=$link->query($sql_km);
+
+    $sql_lp="select* from LOAIPHONG ";
+    $result_lp=$link->query($sql_lp);
+
+    $sql_dv="select* from DICHVU ";
+    $result_dv=$link->query($sql_dv);
 ?>
 <style>
     .layout_danhmuc{
@@ -18,7 +26,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 80%
+        height: 110%
     }
     .danhmuc{
         width: 100%;
@@ -54,38 +62,20 @@
         border-radius: 10px;
     }
     div >select{
-        width:60%;
-        height:30px;
-        font-size :15px;
-        margin-top :25px;
-        border :solid2px ;
-    }
-
-    .layout_danhmuc{
-        width: 75%; 
-        position: absolute; 
-        background-color: rgb(253, 245, 233);
-        right:2%; 
-        top:10%;
-        height: 2400px;
-    }
-    .danhmuc{
-        width: 100%;
-        height: 70px;
-        background-color: gray;
-        border-radius: 10px 10px 0 0;
-        position: absolute;
-        top:2px;
+        width: 60%;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 25px;
+        border: solid 2px ;
     }
     button{
-        padding: 15px 35px;
-        position: absolute;
-        right: 2%;
-        top: 82px;
+        padding: 15px 40px;
         border: none;
-        background-color: rgb(210, 168, 84);
+        background-color: rgb(234, 159, 85);
         border-radius: 10px;
         cursor: pointer;
+        float: right;
+        margin-right: 18%;
     }
     button:hover{
         background-color: rgb(161, 110, 7);
@@ -146,14 +136,40 @@
             <label>Giá trị</label><br>
             <input type="text" name="giatri" value="<?php echo $row['GIATRI']; ?>">
          </div>
+        
          <div>
-            <label>Mã loại phòng</label><br>
-            <input type="text" name="ma_lp" value="<?php echo $row['MA_LOAIPHONG']; ?>">
-         </div>
-         <div>
-            <label>Mã dịch vụ</label><br>
-            <input type="text" name="ma_dv" value="<?php echo $row['MA_DV']; ?>">
-         </div>
+                <label>Mã loại phòng</label><br>
+                <select name="MA_LOAIPHONG">
+                    <?php 
+                    while($row_lp=$result_lp->fetch_assoc()){
+                        $selected = '';
+                        if ($row_lp["MA_LOAIPHONG"] == $ma_lp) {
+                            $selected = 'selected="selected"';
+                        }
+                    ?>
+                    <option value=<?php echo $row_lp["MA_LOAIPHONG"]?> <?php echo $selected ?>><?php echo $row_lp["MA_LOAIPHONG"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
+             <div>       
+         <label>Mã loại phòng</label><br>
+                <select name="ma_dv">
+                    <?php 
+                    while($row_dv=$result_dv->fetch_assoc()){
+                        $selected = '';
+                        if ($row_lp["MA_DV"] == $ma_dv) {
+                            $selected = 'selected="selected"';
+                        }
+                    ?>
+                    <option value=<?php echo $row_dv["MA_DV"]?> <?php echo $selected ?>><?php echo $row_dv["MA_DV"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
+            <
          <button type="submit">Lưu</button>
       </form>
    </div>

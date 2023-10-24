@@ -1,11 +1,15 @@
 <?php 
     $ma_phong = $_GET['MA_PHONG'];
     $ma_lp = $_GET['ma_lp'];
+    $ma_cn = $_GET['ma_cn'];
     $link=new mysqli("localhost","root","","khachsan");
     $sql="select * from PHONG where MA_PHONG='$ma_phong'";
     $sql_lp="select* from LOAIPHONG ";
+    $sql_macn="select* from CHINHANH ";
+    
     $result=$link->query($sql);
     $result_lp=$link->query($sql_lp);
+    $result_macn=$link->query($sql_macn);
     $row=$result->fetch_assoc();
 
     
@@ -110,10 +114,29 @@
             <label>Đơn giá phòng</label><br>
             <input type="text" name="dongiaphong" value="<?php echo $row['DONGIAPHONG']; ?>">
          </div>
+
+
+
+
+        
          <div>
-            <label>Mã chi nhánh</label><br>
-            <input type="text" name="ma_cn" value="<?php echo $row['MA_CN']; ?>">
-         </div>
+                <label>Mã chi nhánh</label><br>
+                <select name="ma_cn">
+                    <?php 
+                    while($row_macn=$result_macn->fetch_assoc()){
+                        $selected = '';
+                        if ($row_macn["MA_CN"] == $ma_cn) {
+                            $selected = 'selected="selected"';
+                        }
+                    ?>
+                    <option value=<?php echo $row_macn["MA_CN"]?> <?php echo $selected ?>><?php echo $row_macn["MA_CN"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
+
+
          <div>
             <label>Số người tối đa</label><br>
             <input type="text" name="songuoitoida" value="<?php echo $row['SONGUOITOIDA']; ?>">
