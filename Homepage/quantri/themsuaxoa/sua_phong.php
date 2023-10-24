@@ -144,7 +144,7 @@
          <div>
          <label>Hình Ảnh</label><br> 
                 <input style="border:none" type="file" id="imageUpload" name="hinhanh">
-                <img id="imagePreview" src="../img/chinhanh/<?php echo $row['ANHPHONG']?>" width="200px" height="200px">
+                <img id="imagePreview" src="../img/phong/<?php echo $row['ANHPHONG']?>" width="200px" height="200px">
             </div>
 
             <script>
