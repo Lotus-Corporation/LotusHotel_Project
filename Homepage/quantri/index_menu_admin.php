@@ -2,11 +2,13 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <
   </head>
   <body>
   <?php 
   session_start();
-  if(isset($_SESSION['user'])){
+  if(isset($_SESSION['user']))
+  {
   ?>
   <?php include ('admin/admin_menu.php')?>
   <?php
@@ -162,7 +164,15 @@
   }
   ?>
   <?php 
-  } else echo 'Ra admin.php đăng nhập đi'
+  } else {
+    echo "<script>
+        alert('BẠN CẦN PHẢI ĐĂNG NHẬP TRƯỚC');
+        setTimeout(function(){
+            window.location.href = 'ADMIN.php';
+        }, 50);
+    </script>";
+}
+
   ?>
            
     
