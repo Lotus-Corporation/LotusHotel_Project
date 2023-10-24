@@ -154,7 +154,7 @@
                 </select>
             </div>
              <div>       
-         <label>Mã loại phòng</label><br>
+         <label>Mã Dịch Vụ </label><br>
                 <select name="ma_dv">
                     <?php 
                     while($row_dv=$result_dv->fetch_assoc()){
