@@ -12,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 100%
+        height: 85%
     }
     .danhmuc{
         width: 100%;
@@ -27,12 +27,12 @@
         margin: 5% 0 0 10%;
     }
     form >div{
-        margin: 0 7.5% 5% 0%;
+        margin: 0 9% 7% 23%;
         background-color:rgb(251, 231, 206);
         font-size: 17px;
         padding: 0 35px 25px 35px;
         float: left;
-        width: 35%;
+        width: 40%;
         border-radius: 10px;
     }
     input {
