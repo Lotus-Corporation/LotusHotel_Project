@@ -5,6 +5,7 @@
     $result=$link->query($sql);
     $row=$result->fetch_assoc();
 ?>
+
 <style>
     .layout_danhmuc{
         width: 70%; 
@@ -12,7 +13,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 80%
+        height: 100%
     }
     .danhmuc{
         width: 100%;
@@ -48,24 +49,24 @@
         border-radius: 10px;
     }
     div >select{
-        width:60%;
-        height:30px;
-        font-size :15px;
-        margin-top :25px;
-        border :solid2px ;
+        width: 60%;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 25px;
+        border: solid 2px ;
     }
     button{
-       padding :15px 40px;
-       border :none;
-       background-color :rgb(234,159,85);
-       border-radius :10px;
-       cursor :pointer;
-       float:right;
-       margin-right :18%;
-   }
-   button:hover{
-      background-color :rgb(161,110,7);
-   }
+        padding: 15px 40px;
+        border: none;
+        background-color: rgb(234, 159, 85);
+        border-radius: 10px;
+        cursor: pointer;
+        float: right;
+        margin-right: 18%;
+    }
+    button:hover{
+        background-color: rgb(161, 110, 7);
+    }
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1% 0 0 2%">Sửa dịch vụ</h2>
