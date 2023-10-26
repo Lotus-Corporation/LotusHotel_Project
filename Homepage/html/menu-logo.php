@@ -34,9 +34,27 @@
   <a  style="float:left; font-size: 35px; margin-right:20px;" href="index_menu.php?pid=7">
   <i class="fa fa-shopping-cart"></i>
   </a>
-  <a  style="float:left; font-size: 30px; margin-right:20px;" href="view/login.php">
-  <i class="fa fa-user"></i>
-  </a>
+  <?php 
+    session_start();
+    if(isset($_SESSION['user_client']))
+    {
+  ?>
+  <div id="client"><i class="fa fa-user"></i>
+    <div id="menu_client" >
+      <a href="view/profile_khachhang.php">View Profile</a>
+      <a href="quantri/control/ctrl_logout.php">Log Out</a>
+    </div>
+  </div>
+  <?php 
+  } else{
+  ?>
+    <a  style="float:left; font-size: 30px; margin-right:20px;" href="view/login.php">
+    <i class="fa fa-user"></i>
+    </a>
+  <?php
+  }
+  ?>
+  
 
 </div>
 <script>

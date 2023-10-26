@@ -1,7 +1,7 @@
 .thanh_logo1{
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   height: auto;
   background: linear-gradient(180deg, rgba(22, 21, 20, 0.95) 0%, rgba(22, 21, 20, 0) 100%);
   padding: 14px 0 0 0;
@@ -19,6 +19,9 @@
 }
 .fa{
   color: white;
+}
+.fa:hover{
+  color:rgb(136, 201, 247)
 }
 .logo {
   float: left;
@@ -42,7 +45,7 @@
   display: none;
   font-size: 18px;
 }
-.menu a{
+.menu a, #menu_client a{
   padding: 12px 16px;
   display: block;
   text-decoration: none;
@@ -67,3 +70,23 @@
 {
   background: white;
 }
+#client > i{
+  float: left;
+  width: 2%;
+  height: 53px;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1.5;
+}
+#menu_client{
+  width: 160px;
+  background-color: rgb(252, 252, 252);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+  display: none;
+  font-size: 18px
+}
+#client:hover #menu_client{display: block}
+#menu_client a:hover{color:rgb(0, 91, 156);}

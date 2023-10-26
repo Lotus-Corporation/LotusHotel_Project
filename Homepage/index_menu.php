@@ -12,9 +12,9 @@
               // case 0:
               //   include("view/public_dichvu.php");
               //   break;
-              // case 1: 
-              //     include("home.php");
-              //     break;
+              case 1: 
+                include("view/profile_khachhang.php");
+                break;
               case 2:
                 include("view/public_dichvu.php");
                 break;

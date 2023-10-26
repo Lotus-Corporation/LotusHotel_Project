@@ -2,7 +2,7 @@
     <style>
     body{
         margin: 0;
-        background:linear-gradient(rgb(231, 245, 249),rgb(193, 233, 244));
+        
     }   
     .layout_anh{
         width: 100%;
@@ -34,9 +34,9 @@
         font-size: 20px;
         margin-bottom: 4%;
         margin-left: 23%;
-        border: 1px solid gray;
-        border-radius: 7px;
-        background-color: rgb(245, 252, 255);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #cecece;
+        background:linear-gradient(rgb(231, 245, 249),rgb(193, 233, 244));
         width: 50%;
         height: 450px;
         padding: 40px;
@@ -57,13 +57,14 @@
     input{
         width:100%;
         height: 30px;
-        border: solid 0.01px gray;
-        border-radius: 3px;
+        border: solid 1px #cecece;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 #cecece
     }
     button{
         padding: 15px 40px;
         border: none;
-        background-color: rgb(193, 233, 244);
+        background-color: rgb(93, 147, 166);
         cursor: pointer;
         float: right;
         margin-right: 10%;
@@ -107,7 +108,7 @@
             </div>
             <div style="width:100%">
                 <label>Lời nhắn</label><br>
-                <textarea placeholder="Lời nhắn của bạn.." style="height:100px;width:95%; border-radius:3px"></textarea>
+                <textarea placeholder="Lời nhắn của bạn.." style="height:100px;width:95%; border-radius:3px;border: solid 1px #cecece;box-shadow: 0 5px 5px 0 #cecece;"></textarea>
             </div>
             <button type="submit">Gửi</button>
         </form>

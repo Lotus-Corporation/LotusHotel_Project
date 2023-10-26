@@ -102,7 +102,7 @@
         font-family: Jost,sans-serif;
         font-size:25px; 
     }
-    p,.mota2{
+    p,.mota2, .khungtren,li{
         font-family:Jost,sans-serif;
         text-align: justify;
         word-spacing: 1px;
@@ -139,6 +139,59 @@
     button:hover{
         background-color: rgb(48, 95, 129);
     }
+    .layout_menu{
+        width: 100%;
+        height: 520px;
+        margin-top: 5%;
+        text-align:center 
+    }
+    .chon {
+        display: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        border-bottom: 1px solid #d2d2d2 ;
+        padding: 10px;
+        font-size: 17px;
+        width: 94%;
+    }
+    .khungtren {
+        width: 160px;
+        position: relative;
+        left: 250px;
+        display: block;
+        line-height:3;
+        text-align: center;
+        height: 50px;
+        padding:0 10px;
+        color: rgb(56, 187, 223);
+        font-size:18px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .khungtren:hover {
+        color: rgb(5, 92, 116);
+    }
+    .noidung {
+        width: 90%;
+        padding:20px;
+        position: absolute;
+        top: 50px;
+        left: 5%;
+        background: white;
+        text-align:left
+    }
+    .chon:checked + .khungtren {
+        background: white;
+        color:black;
+        transition: all 0.5s;
+    }
+    .chon:checked + label + .noidung {
+        z-index: 1;
+        transition: all 0.35s;
+    }
 </style>
 
 <div class="layout_anh">
@@ -162,7 +215,7 @@
         </div>
     </div>
     <div class="layout_anh2">
-        <div class="layout_gioithieu_mota2" >
+        <div class="layout_gioithieu_mota2" >   
             <div class="mota1">ABOUT OUR</div>
             <div style="font-size:45px">BAR</div>
             <div><p>Ipsum dolor sit aalienum perfeDuo laoreet patbas, has ea essent expetenda. Libris accusam principes ut vix, vel ad partem delectus, ad eos posse mundi. Summo congue adipisci pri eu, nemore verterem voluptatibus ne mei. Dolorum detraxit ad eam, in usu quod omnesque consequuntur, dicit congue meliore vi</p></div>
@@ -170,6 +223,76 @@
         </div>
     </div>
 </div>
+<div class="layout_menu">
+    <div class="mota1" style="font-size:20px;margin-bottom: 1%;">FOOD & DRINK</div>
+    <div style="font-size:40px">MENU</div>
+    <div style="position: relative;top:7%;width:80%;left:10%">
+
+        <div  style="float:left">
+            <input type="radio" id= "starters" name="nhahang"class="chon" checked>
+            <label for="starters" class="khungtren">STARTERS</label>
+            <div class="noidung">
+                <ul>
+                    <li>1. Charentais type melon cold soup with fresh almonds and verbena</li>
+                    <li>2. Vitello tonnato with citruses, Kalamata olives, rocket salad, parmesan and pistachios</li>
+                    <li>3. Blue lobster, organic quinoa, mango and lime dressing</li>
+                    <li>4. Royale sea bream in tartar with berries and smoked lettuce cream</li>
+                    <li>5. Avocado over country bread, coriander, pomegranate, poached organic egg</li>
+                    <li>6. Avocado with crab meat</li>
+                    <li>7. Heirloom tomatoes with stracciatella, pineapple, watermelon and focaccia</li>
+                </ul>
+            </div>
+        </div>
+          
+        <div  style="float:left">
+            <input type="radio" id= "maindishes" name="nhahang"class="chon">
+            <label for="maindishes" class="khungtren">MAIN DISHES</label>
+            <div class="noidung">
+                <ul>
+                    <li>1. Linguine, button mushrooms, spinach sprouts and seasonal truffles</li>
+                    <li>2. Meunière sole fish, steamed vegetables and grenobloise sauce</li>
+                    <li>3. Seared john dory fish with pilaf rice, avocado, orange, coriander dressing</li>
+                    <li>4. Seared red mullet "a la plancha", courgettes, marjoram and vierge sauce</li>
+                    <li>5. Grilled or seared beef filet, mashed potatoes and shallots compotée with Phu Quoc pepper</li>
+                    <li>6. Seared rib steak with roasted potatoes, lettuce heart and bearnaise sauce</li>
+                    <li>7. Roasted chicken supreme from Bresse, heirloom tomatoes with Xérès vinager, spinach couli</li>
+                </ul>
+            </div>
+        </div>
+
+        <div  style="float:left">
+            <input type="radio" id= "dessert" name="nhahang"class="chon">
+            <label for="dessert" class="khungtren">DESSERT</label>
+            <div class="noidung">
+            <ul>
+                    <li>1. Chicken club sandwich - Tomatoes, organic hard-boiled eggs, bacon, lettuce with chicken breast</li>
+                    <li>2. Blue lobster club sandwich - Onion compotée, spinash sprouts, homemade french-fries and tomatoes confites</li>
+                    <li>3. Veggie burger - Vegetable paty, onion compotée, avocado, tomatoes, salad, Philadelphia cheese</li>
+                    <li>4. Ritz burger - Burger, tomatoes, lettuce, onion compotée, Beaufort cheese and homemade french-fries</li>
+                    <li>5. Beef in tartar - with homemade french fries and lettuce heart</li>
+                    <li>6. Croque Monsieur - with veal ham, homemade french fries and lettuce heart</li>
+                </ul>
+            </div>
+        </div>
+
+        <div  style="float:left">
+            <input type="radio" id= "vegetarian" name="nhahang" class="chon">
+            <label for="vegetarian" class="khungtren">VEGETARIAN</label>
+            <div class="noidung">
+            <ul>
+                    <li>1. César, with chicken breast and marinated anchovies</li>
+                    <li>2. César, with grilled prawns</li>
+                    <li>3. Vendôme - Crispy curly lettuce, artichoke hearts, green beans, duck foie gras</li>
+                    <li>4. Vendôme, with the simple luxury of a truffle dressing</li>
+                    <li>5. Niçoise - Tuna ventresca "confite", potatoes, french beans, artichokes, quail eggs and basil pesto</li>
+                    <li>6. Farmacy - Sprouts, avocado, Goji berries, mixed seeds beetroot vinaigrette</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <div class="layout_thongtin">
     <div class="thongtin"  >
         <i class="fa fa-phone" style="font-size:35px;color:#343434"> </i>
@@ -180,9 +303,5 @@
         <div><p>lotushotel@gmail.com</p></div>
     </div>
     <button><p style="font-size: 15px;color:#fff;text-align: center;"><i class="fa fa-check-square-o " > BOOK  A TABLE</i></p></button>
-</div>
-<div class="menu">
-    <div class="mota1">FOOD & DRINK</div>
-    <div style="font-size:40px">MENU</div>
 </div>
 

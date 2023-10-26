@@ -1,5 +1,4 @@
 .layout_danh_gia_noi_bat{
-  /* float: left; */
   width: 1380px;
   height: auto;
   margin: auto;
@@ -8,7 +7,7 @@
   float: left;
   width: 40%;
   height: 200px;
-  margin: 3% 0% 3% 7%;
+  text-align: left;
   border-radius: 20px;
   background-color: rgb(132, 193, 219);
 }
@@ -24,4 +23,15 @@
   width: 70%;
   height: 150px;
   margin: 5% 3% 3% 3%;
+}
+button{
+  background: transparent; 
+  border: none;
+}
+button img{
+  opacity:0.3;
+  cursor:pointer;
+}
+button >img:hover{
+  opacity: 0.8;
 }
