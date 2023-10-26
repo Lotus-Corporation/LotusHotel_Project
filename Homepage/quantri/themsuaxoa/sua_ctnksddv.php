@@ -11,14 +11,15 @@
     $sql_dv="select * from DICHVU";
     $result_dv=$link->query($sql_dv);
 ?>
+
 <style>
-    .layout_danhmuc{
+   .layout_danhmuc{
         width: 70%; 
         position: absolute; 
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 100%
+        height: 80%
     }
     .danhmuc{
         width: 100%;
@@ -30,16 +31,18 @@
     }
     form{
         width: 90%; 
-        margin: 5% 0 0 10%;
+        margin: 5% 0 0 10%; 
+        display: flex;
+        flex-wrap: wrap;
     }
     form >div{
-        margin: 0 7.5% 5% 0%;
+        margin: 0 5% 7.5% 0%;
         background-color:rgb(251, 231, 206);
         font-size: 17px;
         padding: 0 35px 25px 35px;
         float: left;
-        width: 35%;
         border-radius: 10px;
+        flex-basis: 35%;
     }
     input {
         width: 70%;
@@ -54,24 +57,27 @@
         border-radius: 10px;
     }
     div >select{
-        width:60%;
-        height:30px;
-        font-size :15px;
-        margin-top :25px;
-        border :solid2px ;
+        width: 60%;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 25px;
+        border: solid 2px
     }
     button{
-       padding :15px 40px;
-       border :none;
-       background-color :rgb(234,159,85);
-       border-radius :10px;
-       cursor :pointer;
-       float:right;
-       margin-right :18%;
-   }
-   button:hover{
-      background-color :rgb(161,110,7);
-   }
+        padding: 15px 40px;
+        border: none;
+        background-color: rgb(234, 159, 85);
+        border-radius: 10px;
+        cursor: pointer;
+        float: right;
+        margin-right: 18%;
+        width: 10%;
+        height: 10%;
+       
+    }
+    button:hover{
+        background-color: rgb(161, 110, 7);
+    }
 </style>
 <div class="layout_danhmuc"> 
    <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa chi tiết nhật kí sử dụng dịch vụ</h2>
