@@ -12,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 1000px
+        height: 800px
     }
     .danhmuc{
         width: 100%;
