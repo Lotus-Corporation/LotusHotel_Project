@@ -42,9 +42,19 @@
    background-color:#885819;
    padding:15px;
    position:absolute;
-   color:#fff;
+   color:#ffffff;
    border-radius: 0 0 0 15px;
 }
+.cart{
+    top:30%;
+    right:0;
+    font-size:15px;
+    background-color:#885819;
+    padding:15px;
+    position:absolute;
+    color:#fff;
+    border-radius: 0 0 0 15px;
+ }
 .tenphong{
    font-size:15px;
    position:absolute;

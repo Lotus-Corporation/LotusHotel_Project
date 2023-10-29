@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>LOTUS HOTEL</title>
+    <link rel="icon" href="img/anhphongnoibat/logo.png" type = "image/x-icon" > 
   </head>
   <body>
     <?php include ('html/menu-logo.php');?>

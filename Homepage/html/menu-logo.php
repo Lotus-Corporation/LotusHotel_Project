@@ -31,8 +31,8 @@
   <a class="logo1" href="index_menu.php?pid=4">Spa&Wellness</a>
   <a class="logo1" href="index_menu.php?pid=5" >Special Offers</a>
   <a class="logo1" href="index_menu.php?pid=6">Contacts</a>
-  <a  style="float:left; font-size: 35px; margin-right:20px;" href="index_menu.php?pid=7">
-  <i class="fa fa-shopping-cart"></i>
+  <a style="float:left; font-size: 35px; margin-right:20px;" href="view/public_giohang.php">
+    <i class="fa fa-shopping-cart"></i>
   </a>
   <?php 
     session_start();

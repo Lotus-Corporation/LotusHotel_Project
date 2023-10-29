@@ -17,14 +17,14 @@
   text-align: center;
   white-space: nowrap;
   font-size: 23px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .fa{
   color: white;
 }
 .fa:hover{
-  color:rgb(136, 201, 247)
+  color:rgb(161, 197, 222)
 }
 .logo {
   float: left;

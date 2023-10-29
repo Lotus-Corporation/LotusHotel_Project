@@ -52,6 +52,16 @@
         color: #fff;
         border: 10px;
     }
+    .cart{
+    top:30%;
+    right:0;
+    font-size:15px;
+    background-color:#885819;
+    padding:15px;
+    position:absolute;
+    color:#fff;
+    border-radius: 0 0 0 15px;
+ }
     .tenphong{
         font-size: 15px;
         position: absolute;
@@ -89,6 +99,7 @@
         <div class="layout_con">
             <img src="img/phong/<?php echo $row["ANHPHONG"]; ?>">
             <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
+            <div class="cart"><i class="fa fa-shopping-cart"> Add to cart</i></div>
             <div  class="tenphong">
                 <div><h2><?php echo $row["TENPHONG"] ?></h2></div>
                 <i class="fa fa-bed" aria-hidden="true"> 1 bed</i>
