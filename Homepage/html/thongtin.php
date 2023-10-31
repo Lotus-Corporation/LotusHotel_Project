@@ -5,10 +5,35 @@
 </div>
 <div class="layout_thong_tin">
       <div class="dat_phong">
-        <div class="dat_phong1" style="left: 2%;"> <?php include ('view/formcheckphong/chondiadiem.php');?></div>
-        <div class="dat_phong1" style="left: 27%"> <?php include ('view/formcheckphong/checkin.php');?></div>
-        <div class="dat_phong1" style="left: 52%"> <?php include ('view/formcheckphong/checkout.php');?></div>
-        <div class="dat_phong2" style="left: 77.3%">✔ Check room</div>
+      <form method="post" action="index_menu.php?pid=10" >
+        <div class="dat_phong1" style="left: 2%;"> 
+            <?php 
+                $link=new mysqli("localhost","root","","khachsan");
+                $sql="select * from CHINHANH";   
+                $result1=$link->query($sql);
+            ?>
+            <select name="chon" style="cursor: pointer;;height: 50px;text-align: center; width: 100%;font-family: 'Courier New';font-size: 18px; border:none;border-radius: 5px;"> 
+                <?php
+                    while($row=$result1->fetch_assoc())
+                    {
+                ?>
+                        <option value =<?php echo $row["MA_CN"] ?>> <?php echo $row["TINHTHANH"]?> </option>
+                <?php
+                    }
+                ?>
+            </select>
+        </div>
+        <div class="dat_phong1" style="left: 27%">       
+           <input type="date" name="ngay_di" style="cursor: pointer;;height: 50px;width:100%;font-family: 'Courier New';font-size: 18px; border:none;border-radius: 5px;"> 
+        </div>
+        <div class="dat_phong1" style="left: 52%"> 
+           <input type="date" name="ngay_ve" style="cursor: pointer;;height: 50px;width:100%;font-family: 'Courier New';font-size: 18px; border:none;border-radius: 5px;"> 
+        </div>
+
+        <div class="dat_phong2" style="left: 77.3%">
+            <input type="submit" value="✔ Check room"  style=" border-radius: 5px;color: rgb(255, 255, 255);  line-height: 3;width:100%;height:100%;background-color: rgb(27, 54, 73);" >
+        </div>
+    </form>
       </div>
       
         <div class="thong_tin" style="margin: 5% 2% 0 8%">
