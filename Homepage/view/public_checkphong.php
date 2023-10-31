@@ -1,6 +1,4 @@
 
-
-?>
 <style>
     body{
         background-color:aliceblue;
