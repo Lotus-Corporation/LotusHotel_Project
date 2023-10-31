@@ -12,7 +12,7 @@
             </div>
             <div>
               <img class="circle" src="img/diadiemnoibat/dnb3.jpg" alt="" >
-              <p style="text-align:center;" > PHAN THIẾT </p>
+              <p style="text-align:center;" > BUÔN MA THUỘT </p>
               </div>
               <div>
               <img class="circle" src="img/diadiemnoibat/dnb4.jpg" alt="" >
