@@ -43,7 +43,7 @@
                     <div class="cart"><i class="fa fa-shopping-cart"> Add to cart</i></div>
                     <div  class="tenphong">
                         <div><h2><?php echo $row["TENPHONG"] ?></h2></div>
-                        <i class="fa fa-bed" aria-hidden="true">1 bed</i>
+                        <i class="fa fa-bed" aria-hidden="true"><?php echo $row["SOGIUONG"]?> bed</i>
                         <i class="fa fa-users" aria-hidden="true">Max <?php echo $row["SONGUOITOIDA"]?></i>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 800,
+    autoplaySpeed: 1500,
     prevArrow: '<button type="button" class="slick-prev" style="background: transparent; border: none;  "> <img src="./img/anhphongnoibat/mt.png" alt="some_text" style="opacity:0.4;filter:alpha(opacity=40); padding: 0 0 0 29px;;"/></button>',
     nextArrow: '<button type="button" class="slick-next" style="background: transparent; border: none; padding: 4px"> <img src="./img/anhphongnoibat/mt2.png" alt="some_text" style="opacity:0.4;filter:alpha(opacity=40)"/></button>'
   });
