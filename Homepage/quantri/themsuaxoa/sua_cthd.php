@@ -79,7 +79,7 @@
     }
 </style>
 <div class="layout_danhmuc">
-   <div class="danhmuc"><h2 style="margin :1%0%02%">Sửa chi tiết hóa đơn</h2>
+   <div class="danhmuc"><h2 style="margin :1% 0 0 2%">Sửa chi tiết hóa đơn</h2>
       <form method="post" enctype="multipart/form-data" action="control/ctrl_sua_cthd.php">
          <div>
             <label>Mã chi tiết hóa đơn</label><br>
@@ -91,7 +91,7 @@
                <?php 
                while($row_hd=$result_hd->fetch_assoc()){
                ?>
-               <option value=<?php echo $row_hd["MA_HD"]?>><?php echo $row_hd["NGAYLAP_HD"]?></option>
+               <option value=<?php echo $row_hd["MA_HD"]?>><?php echo $row_hd["MA_HD"]?></option>
                <?php 
                }
                ?>

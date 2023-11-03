@@ -1,212 +1,175 @@
-<!-- CHUA THAO TAC DUOC GI -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>LOTUS HOTEL</title>
-    <link rel="icon" href="../img/anhphongnoibat/logo.png" type = "image/x-icon" > 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-.khungngoai{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 20px;
-    padding: 40px;
+<?php 
+session_start();
+$link=new mysqli("localhost","root","","khachsan");
+
+if(!isset($_SESSION["cart"])) {
+    $_SESSION["cart"] = array();
 }
-.right{
-    background-color: rgb(136, 201, 247);
-    border-radius: 20px;
-    padding: 40px;
-    color: #fff;
-}
-.thongtin{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    border-bottom: 1px solid rgb(7, 79, 130);
-    padding-bottom: 20px;
-}
-.thongtin h1,
-.thongtin .group:nth-child(-n+3){
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.thongtin input, 
-.thongtin select
-{
-    width: 100%;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin-top: 10px;
-    border:none;
-    color: black;
-}
-.tong {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-.tong div:nth-child(2){
-    font-weight: bold;
-    font-size: x-large;
-}
-body{
-    font-family: monospace;
-}
-a{
-    text-decoration: none;
-}
-.listsp h1{
-    border-top: 2px solid  rgb(79, 159, 190);  
-    padding: 20px 0;
-}
-.sanpham img{
-    height: 150px;
-}
-.sanpham{
-    display: grid;
-    grid-template-columns: 270px 1fr 100px 120px 80px 30px;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    padding: 0 10px;
-    box-shadow: 0 10px 20px #5555;
-    border-radius: 20px;
-    background-color:white
-}
-.name,
-.tonggia{
-    font-size: large;
-    font-weight: bold;
-}
-.button{
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(79, 159, 190) ;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #fff;
-}
-.button:hover {
-    background-color:rgb(167, 215, 249)
-}
-p {
-    font-size:20px;
-    text-align:center
+// $array=$_SESSION["cart"] = array();
+// unset($array);
+if(isset($_GET["action"])){
+    switch($_GET["action"]){
+        case "add":
+            if(isset($_POST["soluongphong"])) {
+                foreach($_POST["soluongphong"] as $ma_p => $sl_p){
+                    $_SESSION["cart"][$ma_p] = $sl_p;
+                }
+            }
+            elseif(isset($_POST["soluong_dv"])) {
+                foreach($_POST["soluong_dv"] as $ma_dv => $sl_dv){
+                    if (isset($_SESSION["cart"][$ma_dv])) {
+                        $_SESSION["cart"][$ma_dv] += $sl_dv;
+                    } else {
+                        $_SESSION["cart"][$ma_dv] = $sl_dv;
+                    }
+                }
+            }
+            header("Location:public_giohang.php");
+            break;
+
+        case "delete":
+            if(isset($_GET["ma_phong"])) {
+                unset($_SESSION["cart"][$_GET["ma_phong"]]);
+            }
+            elseif(isset($_GET["ma_dv"])){
+                unset($_SESSION["cart"][$_GET["ma_dv"]]);
+            }
+            header("Location:public_giohang.php");
+            break;
+
+        case "submit":
+            if (isset($_POST["decrease"])||isset($_POST["increase"])||isset($_POST["update_button"])) {
+                foreach($_POST["soluong_dv"] as $ma_dv => $sl_dv){
+                    $_SESSION["cart"][$ma_dv] = $sl_dv;
+                }
+            }elseif(empty($_SESSION["cart"])){
+                echo "
+                <script>
+                    alert('Danh sách đặt phòng rỗng! Không thể đặt phòng hay dịch vụ!');
+                    setTimeout(function(){
+                        window.location.href = 'public_giohang.php';
+                    }, 50);
+                </script>";
+            }
+            elseif(isset($_SESSION['user_client'])){
+                if(empty($_POST["name"])){
+                    $_SESSION["error_name"]="Bạn chưa nhập họ tên!";
+                }if(empty($_POST["phone"])){
+                    $_SESSION["error_phone"]= "Bạn chưa nhập số điện thoại!";
+                }if(empty($_POST["cccd"])){
+                    $_SESSION["error_cccd"]= "Bạn chưa nhập căn cước công dân!";
+                }if(empty($_POST["ngaydat"])){
+                    $_SESSION["error_ngaydat"]= "Bạn chưa chọn ngày đặt!";
+                }if(empty($_POST["ngaytra"])){
+                    $_SESSION["error_ngaytra"]= "Bạn chưa chọn ngày trả!";
+                }
+                elseif(!empty($_POST["soluongphong"])||!empty($_POST["soluong_dv"])||!empty($_POST["soluongphong"]&&!empty($_POST["soluong_dv"]))) {
+                    $sql="INSERT INTO KHACHHANG(MA_KH,HOTEN,SDT, CCCD) 
+                    VALUES (null,'".$_POST["name"]."','".$_POST["phone"]."','".$_POST["cccd"]."')";
+                    $result = $link->query($sql);
+                    $ma_kh= $link->insert_id;
+                    var_dump($sql);
+                    $tong_tien_phong=0;
+                    $tong_tien_dv=0;
+
+                    if(!empty($_POST["soluongphong"])){
+                        $sql_phong="select * from PHONG where MA_PHONG in (".implode(",",array_keys($_POST["soluongphong"])).")";
+                        $result_phong = $link->query($sql_phong);
+                        $tong_tien_phong=0;
+                        while($row= $result_phong->fetch_assoc()) {
+                            $row_nkdp[] = $row;
+                            $tong_tien_phong += $row["DONGIAPHONG"]; 
+                        }
+                        
+                        $sql="INSERT INTO NHATKIDATPHONG(MA_NKDP,MA_KH,NGAYDAT,NGAYTRAPHONG,TONGTIENPHONG)
+                        VALUES (null,'".$ma_kh."','".$_POST["ngaydat"]."','".$_POST["ngaytra"]."','".$tong_tien_phong."')";
+                        $result = $link->query($sql);
+                        
+                        $ma_nkdp= $link->insert_id;
+                        foreach ($row_nkdp as $row) {
+                            $sql="INSERT INTO CHITIETNHATKIDATPHONG(MA_CTNKDP,MA_NKDP,MA_PHONG,TENPHONG,DONGIAPHONG)
+                            VALUES (null,'".$ma_nkdp."','".$row["MA_PHONG"]."','".$row["TENPHONG"]."','".$row["DONGIAPHONG"]."')";
+                            $result = $link->query($sql);
+                        }
+                    }
+                    if(!empty($_POST["soluong_dv"])){
+                        $sql_dv="select * from DICHVU where MA_DV in (".implode(",",array_keys($_POST["soluong_dv"])).")";
+                        $result_dv = $link->query($sql_dv);
+                        $thanh_tien=0;
+                        $tong_tien_dv=0;
+                        while($row= $result_dv->fetch_assoc()) {
+                            $row_nksddv[] = $row;
+                            $tong_tien_dv += $_POST["soluong_dv"][$row["MA_DV"]] * $row["DONGIADV"];
+                        }
+
+                        $sql="INSERT INTO NKSD_DICHVU(MA_NKSD_DICHVU,MA_KH,TONGTIEN_DV)
+                        VALUES (null,'".$ma_kh."','".$tong_tien_dv."')";
+                        $result = $link->query($sql);
+                        
+                        $ma_nksddv= $link->insert_id;
+                        foreach ($row_nksddv as $row) {
+                            $sql="INSERT INTO CHITIET_NKSDDV(MA_CT_NKSDDV,MA_NKSD_DICHVU,MA_DV,TENDV,SOLUONG,DONGIADV)
+                            VALUES (null,'".$ma_nksddv."','".$row["MA_DV"]."','".$row["TENDV"]."','".$_POST["soluong_dv"][$row["MA_DV"]]."','".$row["DONGIADV"]."')";
+                            $result= $link->query($sql);
+                        }
+                    }
+                    if(empty($ma_nkdp)){
+                        $tong_hoa_don = $tong_tien_dv;
+                        $thoi_gian_lap_hd = date('Y-m-d H:i:s');
+                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKSD_DICHVU, TONG_HOADON, THOIGIAN_LAP_HD) 
+                        VALUES ('".$ma_kh."', '". $ma_nksddv."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
+                        $result = $link->query($sql);
+                    }elseif(empty($ma_nksddv)){
+                        $tong_hoa_don = $tong_tien_phong;
+                        $thoi_gian_lap_hd = date('Y-m-d H:i:s');
+                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP,  TONG_HOADON, THOIGIAN_LAP_HD) 
+                        VALUES ('".$ma_kh."', '".$ma_nkdp."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
+                        $result = $link->query($sql);
+                    }else{
+                        $tong_hoa_don = $tong_tien_phong + $tong_tien_dv;
+                        $thoi_gian_lap_hd = date('Y-m-d H:i:s');
+                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP, MA_NKSD_DICHVU, TONG_HOADON, THOIGIAN_LAP_HD) 
+                        VALUES ('".$ma_kh."', '".$ma_nkdp."', '".$ma_nksddv."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
+                        $result = $link->query($sql);
+                    } 
+                }echo"thanh cong";  
+            }else  echo "
+            <script>
+                var result = confirm('BẠN CẦN PHẢI ĐĂNG NHẬP TRƯỚC');
+                if (result) { 
+                    window.location.href = 'login.php';
+                } else {
+                    window.history.back();
+                }
+            </script>";
+            break;
+    }
 }
 
-.soluong input {
-    width:25px
-}
-.soluong button {
-    font-size:17px;
-    background: none;
-    border: none;
-}
+if(!empty($_SESSION["cart"])){
+    $sql_phong = "select * from PHONG where MA_PHONG in (".implode(",",array_keys($_SESSION["cart"])).")";
+    $result_phong = $link->query($sql_phong);
+    $sql_dv = "select * from DICHVU where MA_DV in (".implode(",",array_keys($_SESSION["cart"])).")";
+    $result_dv = $link->query($sql_dv);
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-</style>
-<body>
-<p> LOTUS HOTEL </p> 
-    <div class="khungngoai">
-        <div class="listsp">
-            <a href="../index_menu.php"><i class="fa fa-reply"> keep searching room </i></a>
-            <h1>List Product in Cart</h1>
-            <div>
-                <div class="sanpham">
-                    <img src="../img/anhphongnoibat/1.jpg" style="border-radius:20px;">
-                        <div class="name">SUITE</div>
-                        <div>2000VND</div>
-                    <div class="soluong">
-                      <button class="decrease">-</button>
-                      <input type="number" value="5" min="1" max="99">
-                      <button class="increase">+</button>
-                    </div>
-                    <div class="tonggia">200000VND</div>
-                    <i class="fa fa-times"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="right">
-            <h1>Checkout</h1>
-            <div class="thongtin">
-                <div class="group">
-                    <label for="name">Full Name</label>
-                    <input type="text" name="name" id="name">
-                </div>
+    $tong_sl_phong=0;
+    $tong_tien_phong=0;
     
-                <div class="group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone">
-                </div>
+    $tong_sl_dv=0;
+    $tong_tien_dv=0;
+    $tong_tien=0;
     
-                <div class="group">
-                    <label for="address">Address</label>
-                    <input type="text" name="address" id="address">
-                </div>
     
-                <div class="group">
-                    <label for="country">Country</label>
-                    <select name="country" id="country">
-                        <option value="">Choose..</option>
-                        <option value="">...</option>
-                    </select>
-                </div>
     
-                <div class="group">
-                    <label for="city">City</label>
-                    <select name="city" id="city">
-                        <option value="">Choose..</option>
-                        <option value="">...</option>
-                    </select>
-                </div>
-            </div>
-            <div class="return">
-                <div class="tong">
-                    <div>Total Quantity</div>
-                    <div>1</div>
-                </div>
-                <div class="tong">
-                    <div>Total Price</div>
-                    <div>1000VND</div>
-                </div>
-            </div>
-            <button class="button">CHECKOUT</button>
-            </div>
-    </div>
+}
+?>
+<?php 
+$tong_sl_phong=0;
+$tong_tien_phong=0;
 
-    <script>
-document.querySelectorAll('.sanpham .soluong').forEach(function(soluong) {
-    var decrease = soluong.querySelector('.decrease');
-    var increase = soluong.querySelector('.increase');
-    var input = soluong.querySelector('input');
+$tong_sl_dv=0;
+$tong_tien_dv=0;
+$tong_tien=0;
 
-    decrease.addEventListener('click', function() {
-        if (input.value > 1) {
-            input.value--;
-        }
-    });
-
-    increase.addEventListener('click', function() {
-        if (input.value < 99) {
-            input.value++;
-        }
-    });
-});
-
-</script>
-</body>
-</html>
+include ("giohang.php")
+?>

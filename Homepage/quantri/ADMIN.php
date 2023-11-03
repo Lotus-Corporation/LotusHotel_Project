@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if(isset($_SESSION['user'])){ 
+	echo "
+	<script>
+		alert('BẠN ĐÃ ĐĂNG NHẬP RỒI');
+		setTimeout(function(){
+			window.location.href = 'index_menu_admin.php';
+		}, 50);
+	</script>";
+}else{
+?>
+
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 <link href="css/font-awesome.min.css" rel="stylesheet"/>
@@ -92,4 +105,4 @@ body {
 			</form>
 	</div>
 </div>
-
+<?php }?>

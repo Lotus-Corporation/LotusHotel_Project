@@ -92,18 +92,19 @@
     while ($row=$result->fetch_assoc())
     {
 ?>
-<div class="layout">
-    <a href="">
+<form method="POST" action="view/public_giohang.php?action=add">
+    <div class="layout">
         <div class="layout_con">
             <img src="img/dichvu/<?php echo $row["HINHANHDV"]; ?>" style="width: 100%; height: 280px; border-radius:5px">
             <div class="mota">
                 <h3><?php echo $row["TENDV"] ?></h3>
                 <p><?php echo $row["DONGIADV"]?> VND/<?php echo $row["DONVITINH"]?></p>
-                
             </div>
+            <input type=hidden value="1" name="soluong_dv[<?php echo $row["MA_DV"]?>]">
+            <input type=submit>
         </div>
-    </a>
-</div>
+    </div>
+</form>
 <?php
     }
 ?>

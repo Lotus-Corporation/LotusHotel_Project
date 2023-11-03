@@ -37,9 +37,6 @@
               case 8:
                 include("view/public_loaiphong.php");
                 break;
-              case 10:
-                include("view/public_checkphong.php");
-                break;
           }
         }else {include("home.php");}
     ?> 

@@ -11,8 +11,8 @@
               <p style="text-align:center;" > ĐÀ NẴNG </p>
             </div>
             <div>
-              <img class="circle" src="img/diadiemnoibat/dnb5.jpg" alt="" >
-              <p style="text-align:center;" > TP.HỒ CHÍ MINH </p>
+              <img class="circle" src="img/diadiemnoibat/dnb3.jpg" alt="" >
+              <p style="text-align:center;" > PHAN THIẾT </p>
               </div>
               <div>
               <img class="circle" src="img/diadiemnoibat/dnb4.jpg" alt="" >

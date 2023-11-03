@@ -4,10 +4,13 @@
 <video autoplay muted loop width="100%" height="100%">
     <source src="img/clip.mp4" type="video/mp4">
 </video>
-
-<?php include ('checkphong.php');?>
-
+    <div class="dat_phong" style="position: absolute; bottom:0%">
+        <div class="dat_phong1" style="left: 2%;"> <?php include ('view/formcheckphong/chondiadiem.php');?></div>
+        <div class="dat_phong1" style="left: 27%"> <?php include ('view/formcheckphong/checkin.php');?></div>
+        <div class="dat_phong1" style="left: 52%"> <?php include ('view/formcheckphong/checkout.php');?></div>
+        <div class="dat_phong2" style="left: 77.3%">✔ Check room</div>
     </div>
+</div>
 <div class="layout_mota-uudai">
 <p class="pp">  LOTUS HOTEL  </p>
 <img class='tamhinhanh' src="./img/anhphongnoibat/logo.jpeg" />

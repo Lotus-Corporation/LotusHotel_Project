@@ -85,37 +85,29 @@ a {
     <div style="font-family:Garamond; font-size:50px;margin-top:-100px">LOTUS HOTEL</div>
     <div style="font-size:40px;font-style: italic;padding: 20px">Rất hân hạnh khi được phục vụ bạn</div>
 	<div class="khung_ngoai">
-			<form action="../quantri/control/ctrl_logup_client.php" method="post" class="login">
-            	<div style="padding: 20px 0px;position: relative;margin-top:-140px">
-					<i class="icon fa fa-user"></i>
-					<input type="text" class="khung_dangnhap" placeholder="Username" name="username">
-				</div>
-				<div style="padding: 20px 0px;position: relative">
-					<i class="icon fa fa-user "> </i>
-					<input type="text" class="khung_dangnhap" placeholder="Your name" name="hoten">
-				</div>
-      <div style="padding: 20px 0px;position: relative;">
-					<i class="icon fa fa-envelope "></i>
-					<input type="text" class="khung_dangnhap" placeholder=" Email"   name="email">
-				</div>
-      <div style="padding: 20px 0px;position: relative;">
-					<i class="icon fa fa-phone "> </i>
-					<input type="text" class="khung_dangnhap" placeholder="Your number"  name="number">
-	  </div>
-
-      <div style="padding: 20px 0px;position: relative;">
-					<i class="icon fa fa-key "></i>
-					<input type="password" class="khung_dangnhap" placeholder=" Password" name="pass">
-	  </div>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      <input type="submit" value="SIGN UP" class="button_dangnhap" name="dangnhap">
-	  <div style="font-size:20px;margin-top:10px;margin-left:40px " >
-      <a href="../index_menu.php"><br> Home  </a>
-      <a href="login.php"> Sign in </a>
-      </div>
-			</form>
+		<form action="../quantri/control/ctrl_logup_client.php" method="post" class="login">
+			<div style="padding: 20px 0px;position: relative;margin-top:-70px">
+				<i class="icon fa fa-user"></i>
+				<input type="text" class="khung_dangnhap" placeholder="Username" name="username">
+			</div>
+			<div style="padding: 20px 0px;position: relative">
+				<i class="icon fa fa-user "> </i>
+				<input type="text" class="khung_dangnhap" placeholder="Email" name="email">
+			</div>
+			<div style="padding: 20px 0px;position: relative;">
+				<i class="icon fa fa-key "></i>
+				<input type="password" class="khung_dangnhap" placeholder="Password"  name="pass">
+			</div>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+			<input type="submit" value="SIGN UP" class="button_dangnhap" name="dangnhap">
+			<div style="font-size:20px;margin-top:10px;margin-left:40px " >
+				<a href="../index_menu.php"><br> Home  </a>
+				<a href="login.php"> Sign in </a>
+      		</div>
+		</form>
 	</div>
 </div>
+
 

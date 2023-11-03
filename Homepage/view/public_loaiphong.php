@@ -4,6 +4,7 @@
     $sql="select * from PHONG where MA_LOAIPHONG='$mlp'";
     $result=$link->query($sql);
 ?>
+
 <style>
     body{
         background-color:aliceblue;
@@ -50,18 +51,18 @@
         padding: 15px;
         position: absolute;
         color: #fff;
-        border: 10px;
+        border-radius: 0 0 0 15px;
     }
     .cart{
-    top:30%;
-    right:0;
-    font-size:15px;
-    background-color:#885819;
-    padding:15px;
-    position:absolute;
-    color:#fff;
-    border-radius: 0 0 0 15px;
- }
+        top:30%;
+        right:0;
+        font-size:15px;
+        background-color:#885819;
+        padding:15px;
+        position:absolute;
+        color:#fff;
+        border-radius: 0 0 0 15px;
+    }
     .tenphong{
         font-size: 15px;
         position: absolute;
@@ -76,7 +77,7 @@
     .layout_con > img{
         width: 100%; 
         height: 350px; 
-        transition: transform 0.7s
+        transition: 0.7s
     }
     .layout_con >img:hover{
         transform: scale(1.07);
@@ -99,7 +100,10 @@
         <div class="layout_con">
             <img src="img/phong/<?php echo $row["ANHPHONG"]; ?>">
             <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
-            <div class="cart"><i class="fa fa-shopping-cart"> Booking </i></div>
+            <form method="POST" action="view/public_giohang.php?action=add">
+                <input type=number value="1" name="soluongphong[<?php echo $row["MA_PHONG"]?>]">
+                <button type=submit name="addtocart" class="cart"><i class="fa fa-shopping-cart"> Add to cart</i></button>
+            </form>
             <div  class="tenphong">
                 <div><h2><?php echo $row["TENPHONG"] ?></h2></div>
                 <i class="fa fa-bed" aria-hidden="true"> <?php echo $row["SOGIUONG"]?> bed</i>
