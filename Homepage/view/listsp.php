@@ -1,12 +1,13 @@
-<button name="update_button" class="update">Update</button>
+<button name="update_button" class="update">Cập nhật</button>
 <?php 
 while($row = $result_phong->fetch_assoc()) {
 ?>
     <div class="sanpham" >
         <img src="../img/phong/<?php echo $row["ANHPHONG"] ?>" style="border-radius:20px;">
-        <div class="name"><?php echo $row["TENPHONG"] ?></div>
+        <div class="name">Phòng <?php echo $row["TENPHONG"] ?></div>
+        <div></div>
         <div class="soluong1">
-            <input type="hidden" value="1" min="1" max="99" name="soluongphong[<?php echo $row["MA_PHONG"] ?>]">
+            <input type="number" value="1" min="1" max="99" name="soluongphong[<?php echo $row["MA_PHONG"] ?>]" readonly>
         </div>
         <div class="tonggia"><?php echo $row["DONGIAPHONG"]?></div>
         <a href="public_giohang.php?action=delete&&ma_phong=<?php echo $row["MA_PHONG"] ?>"><i class="fa fa-times"></i></a>

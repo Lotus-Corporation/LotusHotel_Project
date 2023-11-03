@@ -68,18 +68,32 @@
         width: 83%;
         padding-left: 7%;
         border-radius: 5px;
-        transition: 0.5s;
         font-size: 18px;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .mota:hover{
         background-color: gray;
         color: #fff;
+        transition: 0.5s
     }
     h3{
         margin-bottom: -10px;
     }
-
+    button{
+        top:10%;
+        right:0;
+        font-size:15px;
+        padding:17px;
+        position:absolute;
+        border-radius: 0 0 0 15px;
+        border:none;
+        background-color: black;
+        cursor: pointer;
+    }
+    button:hover{
+        transition: 0.8s;
+        transform: scale(1.03);
+    }
 </style>
 
 <div class="layout_anh">
@@ -96,12 +110,13 @@
     <div class="layout">
         <div class="layout_con">
             <img src="img/dichvu/<?php echo $row["HINHANHDV"]; ?>" style="width: 100%; height: 280px; border-radius:5px">
+            <button><i class="fa fa-shopping-cart"> Booking</i></button>
             <div class="mota">
                 <h3><?php echo $row["TENDV"] ?></h3>
                 <p><?php echo $row["DONGIADV"]?> VND/<?php echo $row["DONVITINH"]?></p>
+                <input type=hidden value="1" name="soluong_dv[<?php echo $row["MA_DV"]?>]">
+                
             </div>
-            <input type=hidden value="1" name="soluong_dv[<?php echo $row["MA_DV"]?>]">
-            <input type=submit>
         </div>
     </div>
 </form>

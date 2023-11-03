@@ -38,8 +38,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.thongtin input, 
-.thongtin select
+.thongtin input
 {
     width: 100%;
     padding: 15px 20px;
@@ -65,12 +64,17 @@ body{
 a{
     text-decoration: none;
 }
+.sanpham a{
+    color: black;
+}
 .listsp h1{
     border-top: 2px solid  rgb(79, 159, 190);  
     padding: 20px 0;
 }
 .sanpham img{
     height: 150px;
+    width: 250px;
+    background-position: center;
 }
 .sanpham{
     display: grid;
@@ -106,8 +110,9 @@ p {
     text-align:center
 }
 
-.soluong input {
-    width:25px
+.soluong input,.soluong1 input {
+    width:25px;
+    text-align: center;
 }
 .soluong button {
     font-size:17px;
@@ -120,6 +125,16 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+.update{
+    position: absolute;
+    left: 50%;
+    top:22%;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px
+}
+.update:hover{transform: scale(1.02)}
 
 </style>
 
@@ -128,8 +143,8 @@ input[type="number"]::-webkit-outer-spin-button {
 <form method="post" action="public_giohang.php?action=submit">
     <div class="khungngoai">
         <div class="listsp">
-            <a href="../index_menu.php"><i class="fa fa-reply"> keep searching room </i></a>
-            <h1>List Product in Cart</h1>
+            <a href="../index_menu.php"><i class="fa fa-reply"> Trang chủ </i></a>
+            <h1>Danh sách đã đặt</h1>
             <?php 
             if(!empty($_SESSION["cart"])){
                 include ("listsp.php");
@@ -139,16 +154,16 @@ input[type="number"]::-webkit-outer-spin-button {
             ?>
         </div>
         <div class="right">
-            <h1>BOOKING ROOM</h1>
+            <h1>BOOKING</h1>
             <div class="thongtin">
                 <div class="group">
-                    <label for="name">Full Name</label>
+                    <label for="name">Họ tên</label>
                     <input type="text" name="name" >
                     <?php echo $_SESSION["error_name"];$_SESSION["error_name"]="";?>
                 </div>
     
                 <div class="group">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Số điện thoại</label>
                     <input type="text" name="phone">
                     <?php echo $_SESSION["error_phone"];$_SESSION["error_phone"]=""; ?>
                 </div>
@@ -170,20 +185,6 @@ input[type="number"]::-webkit-outer-spin-button {
                     <input type="date" name="ngaytra">
                     <?php echo $_SESSION["error_ngaytra"];$_SESSION["error_ngaytra"]=""; ?>
                 </div>
-                <div>
-    <?php 
-    while($row=$result->fetch_array()){
-        $sql_ctkm="select * from CHITIETKHUYENMAI where MA_KM='".$row["MA_KM"]."'";
-        $result_ctkm=$link->query($sql_ctkm);
-        $row_ctkm=$result_ctkm->fetch_array();
-        $value = $row_ctkm["GIATRI_PHANTRAM"] . ',' . $row_ctkm["GIATRI_THUC"];
-        var_dump($value);
-    ?>
-        <input type="checkbox" name="ma_km[]" value="<?php echo htmlspecialchars($value); ?>"><?php echo $row["TENKM"]?>
-    <?php 
-    }
-    ?>
-</div>
             </div>
             <div class="return">
                 <div class="tong">

@@ -62,7 +62,9 @@
         position:absolute;
         color:#fff;
         border-radius: 0 0 0 15px;
+        border:none
     }
+    .cart:hover{cursor: pointer;}
     .tenphong{
         font-size: 15px;
         position: absolute;
@@ -102,7 +104,7 @@
             <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
             <form method="POST" action="view/public_giohang.php?action=add">
                 <input type=number value="1" name="soluongphong[<?php echo $row["MA_PHONG"]?>]">
-                <button type=submit name="addtocart" class="cart"><i class="fa fa-shopping-cart"> Add to cart</i></button>
+                <button type=submit class="cart"><i class="fa fa-shopping-cart"> Booking</i></button>
             </form>
             <div  class="tenphong">
                 <div><h2><?php echo $row["TENPHONG"] ?></h2></div>

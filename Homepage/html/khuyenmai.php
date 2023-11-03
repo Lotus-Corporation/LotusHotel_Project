@@ -30,10 +30,8 @@
         background-color: black; 
         opacity:0.5;
     }
- 
-   
     .layout2_con{
-        height:350px;
+        height:300px;
         margin: 2%;
         text-decoration: none;
         border-radius: 5px;
@@ -53,7 +51,7 @@
         opacity: 0.93
     }
     .mota2{
-        height: 110px;
+        height: 60px;
         position: absolute;
         top:230px;
         width: 100%;
@@ -73,6 +71,7 @@
     }
     .chupe{
         margin-top: -13px;
+        font-size:17px;
     }
      .layout3 {
     display: flex;
