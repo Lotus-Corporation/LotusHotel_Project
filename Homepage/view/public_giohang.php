@@ -1,7 +1,6 @@
 <?php 
 session_start();
 $link=new mysqli("localhost","root","","khachsan");
-
 if(!isset($_SESSION["cart"])) {
     $_SESSION["cart"] = array();
 }

@@ -10,7 +10,7 @@
     UNION ALL
     (SELECT * FROM loaiphong WHERE MA_LOAIPHONG='SUT' )";
     $result=$link->query($sql);
-    
+
 ?>
 <style> 
     body{
@@ -32,8 +32,8 @@
         background-color: black; 
         opacity:0.5;
     }
- 
-   
+
+
     .layout2_con{
         height:350px;
         margin: 2%;
@@ -54,7 +54,7 @@
         transform: scale(1.07);
         opacity: 0.93
     }
-    .mota_2{
+    .mota2{
         height: 10px;
         position: absolute;
         top:230px;
@@ -66,14 +66,12 @@
         transition: 0.5s;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .mota_2:hover{
+    .mota2:hover{
         background-color: rgb(28, 113, 136);
         color: #fff;
     }
-    .hathai{
-        margin-top: -10px;
-    }
-     .layout_3 {
+
+     .layout3 {
     display: flex;
     width: 1380px;
     height: auto;
@@ -84,17 +82,17 @@
 }
 </style>
 <h1 style="text-align: center"><b>LOẠI PHÒNG</b></h1>
-<div class="layout_3">
+<div class="layout3">
 <?php
     while ($row=$result->fetch_assoc())
     {
 ?>
-<div class="layout_2">
+<div class="layout2">
     <a href="">
         <div class="layout2_con">
             <img src="img/loaiphong/<?php echo $row["Hinhanh"]; ?>" style="width: 100%; height: 230px;">
-            <div class="mota_2">
-                <h2 class="hathai"><?php echo $row["LOAIPHONG"] ?></h2>
+            <div class="mota2">
+                <h2 style="margin-top: -10px;margin-left:100px"><?php echo $row["LOAIPHONG"] ?></h2>
             </div>
         </div>
     </a>
@@ -103,4 +101,3 @@
     }
 ?>
 </div>
-

@@ -2,7 +2,7 @@
 <div class="loi_goi">
   <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:17px;margin-top:2%">HÃY BẮT ĐẦU TRẢI NGHIỆM</div>
   <div style="font-size:40px">LOTUS</div>
-</div>
+  </div>
 <div class="layout_thong_tin">
       <div class="dat_phong">
       <form method="post" action="index_menu.php?pid=10" >
@@ -35,7 +35,7 @@
         </div>
     </form>
       </div>
-      
+
         <div class="thong_tin" style="margin: 5% 2% 0 8%">
           <h1>LOTUS</h1>
           klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn

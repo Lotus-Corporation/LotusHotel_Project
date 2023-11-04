@@ -6,8 +6,8 @@ create table CHITIET_NKSDDV (
     foreign keY (MA_DV)  references DICHVU(MA_DV),
     TENDV varchar(100),
     SOLUONG int,
-    DONGIADV int,
-) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    DONGIADV int
+) ;
 
 insert into CHITIET_NKSDDV(MA_NKSD_DICHVU,MA_DV,SOLUONG)VALUES
 (1,'01',2),

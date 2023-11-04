@@ -13,7 +13,7 @@ create table HOADON(
     TONG_KM_GIAM float,
     TONG_HOADON float,
     THOIGIAN_LAP_HD date
-) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+);
 -- insert into HOADON(MA_NV, MA_PTTT, MA_KH, MA_NKDP, MA_NKSD_DICHVU, THOIGIAN_LAP_HD, TONGTIEN) values
 -- ('NV02','PTTT03',1,1,7,'2023/01/04',null),
 -- ('NV04','PTTT01',2,2,3,'2023/01/06',null),
