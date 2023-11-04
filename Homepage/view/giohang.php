@@ -1,10 +1,4 @@
-<?php 
-    $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from KHUYENMAI";
-    $result=$link->query($sql);
-    // $sql_ctkm="select * from CHITIETKHUYENMAI";
-    // $result_ctkm=$link->query($sql_ctkm);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,34 +150,63 @@ input[type="number"]::-webkit-outer-spin-button {
         <div class="right">
             <h1>BOOKING</h1>
             <div class="thongtin">
+<?php 
+if(isset($_SESSION['user_client']))
+{
+    $username = $_SESSION['user_client'];
+    $link=new mysqli("localhost","root","","khachsan");
+    $sql="select * from KHACHHANG_ACCOUNT where USERNAME='$username'";
+    $result=$link->query($sql);
+    $row = $result->fetch_assoc();
+?>
                 <div class="group">
                     <label for="name">Họ tên</label>
-                    <input type="text" name="name" >
-                    <?php echo $_SESSION["error_name"];$_SESSION["error_name"]="";?>
+                    <input type="text" name="name" value="<?php echo $row['HOTEN'] ?>">
+                    <lable style="color:red"><?php echo $_SESSION["error_name"];$_SESSION["error_name"]="";?></lable>
                 </div>
     
                 <div class="group">
                     <label for="phone">Số điện thoại</label>
-                    <input type="text" name="phone">
-                    <?php echo $_SESSION["error_phone"];$_SESSION["error_phone"]=""; ?>
+                    <input type="text" name="phone" value="<?php echo $row['SDT']; ?>">
+                    <lable style="color:red"><?php echo $_SESSION["error_phone"];$_SESSION["error_phone"]=""; ?></lable>
                 </div>
     
                 <div class="group">
                     <label for="address">CCCD</label>
-                    <input type="text" name="cccd">
-                    <?php echo $_SESSION["error_cccd"];$_SESSION["error_cccd"]=""; ?>
+                    <input type="text" name="cccd" value="<?php echo $row['CCCD']; ?>">
+                    <lable style="color:red"><?php echo $_SESSION["error_cccd"];$_SESSION["error_cccd"]=""; ?></lable>
                 </div>
-    
+<?php 
+} else {
+?>
+                <div class="group">
+                    <label for="name">Họ tên</label>
+                    <input type="text" name="name">
+                    <lable style="color:red"><?php echo $_SESSION["error_name"];$_SESSION["error_name"]="";?></lable>
+                </div>
+
+                <div class="group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" name="phone">
+                    <lable style="color:red"><?php echo $_SESSION["error_phone"];$_SESSION["error_phone"]=""; ?></lable>
+                </div>
+
+                <div class="group">
+                    <label for="address">CCCD</label>
+                    <input type="text" name="cccd">
+                    <lable style="color:red"><?php echo $_SESSION["error_cccd"];$_SESSION["error_cccd"]=""; ?></lable>
+                </div>
+<?php } ?>
                 <div class="group">
                     <label for="ngaydat">Ngày đặt</label>
                     <input type="date" name="ngaydat">
-                    <?php echo $_SESSION["error_ngaydat"];$_SESSION["error_ngaydat"]=""; ?>
+                    <lable style="color:red"><?php echo $_SESSION["error_ngaydat"];$_SESSION["error_ngaydat"]=""; ?></lable>
                 </div>
     
                 <div class="group">
                     <label for="ngaytra">Ngày trả</label>
                     <input type="date" name="ngaytra">
-                    <?php echo $_SESSION["error_ngaytra"];$_SESSION["error_ngaytra"]=""; ?>
+                    <lable style="color:red"><?php echo $_SESSION["error_ngaytra"];$_SESSION["error_ngaytra"]=""; ?></lable>
                 </div>
             </div>
             <div class="return">

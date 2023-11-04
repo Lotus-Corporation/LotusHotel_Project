@@ -13,13 +13,14 @@ body {
 	align-items: center;
 	justify-content: center;
     margin-top: 70px;
+	padding-bottom: 5%;
 }
 
 .khung_ngoai {		
 	background:linear-gradient(white,rgb(193, 233, 244)); 	
 	position: relative;	
-	height: 650px;
-	width: 360px;	
+	height: 790px;
+	width: 400px;	
 	box-shadow: 0px 0px 24px rgb(35, 95, 112);
     border-radius:45px
 }
@@ -44,7 +45,7 @@ body {
 	padding: 15px;
 	padding-left: 24px;
 	font-weight: 600;
-	width: 85%;
+	width: 95%;
     font-size:15px;
     top:10px
 }
@@ -63,7 +64,7 @@ body {
 	border-radius: 26px;
 	border: 0.5px solid rgb(35, 95, 112);
 	font-weight: 700;
-	width: 85%;
+	width: 95%;
 	color: rgb(37, 105, 132);
 	box-shadow: 0px 2px 2px rgb(35, 95, 112);
 	cursor: pointer;
@@ -76,9 +77,6 @@ body {
 	border-color: white;
 	outline: none;
 }
-a {
-  margin-right: 80px;
-}
 
 </style>
 <div class="container">
@@ -86,25 +84,37 @@ a {
     <div style="font-size:40px;font-style: italic;padding: 20px">Rất hân hạnh khi được phục vụ bạn</div>
 	<div class="khung_ngoai">
 		<form action="../quantri/control/ctrl_logup_client.php" method="post" class="login">
-			<div style="padding: 20px 0px;position: relative;margin-top:-70px">
+			<div style="padding: 20px 0px;position: relative;margin-top:-100px">
 				<i class="icon fa fa-user"></i>
-				<input type="text" class="khung_dangnhap" placeholder="Username" name="username">
+				<input type="text" class="khung_dangnhap" placeholder="Username" name="username" required>
 			</div>
 			<div style="padding: 20px 0px;position: relative">
 				<i class="icon fa fa-user "> </i>
-				<input type="text" class="khung_dangnhap" placeholder="Email" name="email">
+				<input type="text" class="khung_dangnhap" placeholder="Họ tên" name="hoten" required>
+			</div>
+			<div style="padding: 20px 0px;position: relative">
+				<i class="icon fa fa-user "> </i>
+				<input type="text" class="khung_dangnhap" placeholder="Email" name="email" required>
+			</div>
+			<div style="padding: 20px 0px;position: relative">
+				<i class="icon fa fa-user "> </i>
+				<input type="text" class="khung_dangnhap" placeholder="Số điện thoại" name="sdt" required>
+			</div>
+			<div style="padding: 20px 0px;position: relative">
+				<i class="icon fa fa-user "> </i>
+				<input type="text" class="khung_dangnhap" placeholder="Căn cước công dân" name="cccd" required>
 			</div>
 			<div style="padding: 20px 0px;position: relative;">
 				<i class="icon fa fa-key "></i>
-				<input type="password" class="khung_dangnhap" placeholder="Password"  name="pass">
+				<input type="password" class="khung_dangnhap" placeholder="Password"  name="pass" required>
 			</div>
 			<label>
 				<input type="checkbox" checked="checked" name="remember"> Remember me
 			</label>
 			<input type="submit" value="SIGN UP" class="button_dangnhap" name="dangnhap">
 			<div style="font-size:20px;margin-top:10px;margin-left:40px " >
-				<a href="../index_menu.php"><br> Home  </a>
-				<a href="login.php"> Sign in </a>
+				<a href="../index_menu.php" style="margin-left: 50px;"><br> Home </a>
+				<a href="login.php" style="margin-left: 110px;"> Sign in </a>
       		</div>
 		</form>
 	</div>

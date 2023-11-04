@@ -51,7 +51,7 @@ if(isset($_GET["action"])){
                     }, 50);
                 </script>";
             }
-            elseif(isset($_SESSION['user_client'])){
+            elseif(isset($_SESSION['user_client'])){  
                 if(empty($_POST["name"])){
                     $_SESSION["error_name"]="Bạn chưa nhập họ tên!";
                 }if(empty($_POST["phone"])){
@@ -71,7 +71,7 @@ if(isset($_GET["action"])){
                     var_dump($sql);
                     $tong_tien_phong=0;
                     $tong_tien_dv=0;
-
+                    
                     if(!empty($_POST["soluongphong"])){
                         $sql_phong="select * from PHONG where MA_PHONG in (".implode(",",array_keys($_POST["soluongphong"])).")";
                         $result_phong = $link->query($sql_phong);
@@ -131,8 +131,15 @@ if(isset($_GET["action"])){
                         $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP, MA_NKSD_DICHVU, TONG_HOADON, THOIGIAN_LAP_HD) 
                         VALUES ('".$ma_kh."', '".$ma_nkdp."', '".$ma_nksddv."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
                         $result = $link->query($sql);
-                    } 
-                }echo"thanh cong";  
+                    } echo"
+                    <script>
+                        alert('Đặt thành công!');
+                        setTimeout(function(){
+                            window.location.href = 'public_giohang.php';
+                        }, 50);
+                    </script>";
+                }
+            
             }else  echo "
             <script>
                 var result = confirm('BẠN CẦN PHẢI ĐĂNG NHẬP TRƯỚC');

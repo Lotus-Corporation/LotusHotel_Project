@@ -88,7 +88,7 @@ a {
 			<form action="../quantri/control/ctrl_login_client.php" method="post" class="login">
             <div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-user"></i>
-					<input type="text" class="khung_dangnhap" placeholder="Username / Email" name="username">
+					<input type="text" class="khung_dangnhap" placeholder="Username" name="username">
 				</div>
 				<div style="padding: 20px 0px;position: relative;">
 					<i class="icon fa fa-lock"></i>

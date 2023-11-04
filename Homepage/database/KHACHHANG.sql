@@ -1,11 +1,8 @@
 CREATE TABLE KHACHHANG(
 MA_KH int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-USERNAME varchar(10),
-HOTEN varchar(50),
-EMAIL varchar(100),
-SDT INT(10),
-PASS varchar(50),
-CCCD varchar(12)
+HOTEN varchar(50) not null,
+SDT INT(10) not null,
+CCCD varchar(12) not null
 )ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
