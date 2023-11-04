@@ -119,6 +119,16 @@ if(isset($_GET["action"])){
                         $sql = "INSERT INTO HOADON(MA_KH, MA_NKSD_DICHVU, TONG_HOADON, THOIGIAN_LAP_HD) 
                         VALUES ('".$ma_kh."', '". $ma_nksddv."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
                         $result = $link->query($sql);
+
+                        $sql_km="select * from KHUYENMAI where MA_KM in (".implode(",",array_keys($_POST["ma_km"])).")";
+                        $result_km = $link->query($sql_km);
+                        while($row= $result_km->fetch_assoc()) {
+                            $row_cthd[] = $row;
+                        }
+                        $sql="INSERT INTO CHITIETHOADON(MA_NKSD_DICHVU,MA_KH,TONGTIEN_DV)
+                        VALUES (null,'".$ma_kh."','".$tong_tien_dv."')";
+                        $result = $link->query($sql);
+
                     }elseif(empty($ma_nksddv)){
                         $tong_hoa_don = $tong_tien_phong;
                         $thoi_gian_lap_hd = date('Y-m-d H:i:s');

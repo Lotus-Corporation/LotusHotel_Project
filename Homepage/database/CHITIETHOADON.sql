@@ -4,7 +4,9 @@ create table CHITIETHOADON(
     FOREIGN KEY (MA_HD) REFERENCES HOADON(MA_HD),
     MA_KM varchar(10) ,
     FOREIGN KEY (MA_KM) REFERENCES KHUYENMAI(MA_KM),
-    TENKM varchar(100)
+    TENKM varchar(100),
+    GIATRI_PHANTRAM float,
+    GIATRI_THUC int
 )ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 -- insert into CHITIETHOADON values
 -- ('CTHD01','HD01','km05'),
