@@ -66,7 +66,7 @@
                     <div class="description">
                         Được thiết kế sang trọng và hoàn hảo với các tiện nghi hiện đại, đáp ứng tất cả kỳ nghỉ thư thái của bạn trong căn phòng yên tĩnh với cửa sổ lớn nhìn ra quang cảnh thành phố.
                     </div>
-                    <P>Tiện nghi của phòng</P>
+                    <P style="font-weight: bold;">Tiện nghi của phòng</P>
                     <div class="amenities">
                         <div class="amenity"><img src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/external-wardrobe-furniture-household-prettycons-solid-prettycons_1678159280.png"> Tủ quần áo</div>
                         <div class="amenity"><img src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/bed--v1_1678159161.png"> Ga trải giường, gối</div>
