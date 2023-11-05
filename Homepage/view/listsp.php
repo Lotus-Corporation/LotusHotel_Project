@@ -2,7 +2,7 @@
 <?php 
 while($row = $result_phong->fetch_assoc()) {
 ?>
-    <div class="sanpham" >
+    <div class="sanpham  " >
         <img src="../img/phong/<?php echo $row["ANHPHONG"] ?>" style="border-radius:20px;">
         <div class="name">Phòng <?php echo $row["TENPHONG"] ?></div>
         <div></div>

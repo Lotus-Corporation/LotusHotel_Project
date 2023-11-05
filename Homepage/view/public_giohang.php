@@ -67,7 +67,6 @@ if(isset($_GET["action"])){
                     VALUES (null,'".$_POST["name"]."','".$_POST["phone"]."','".$_POST["cccd"]."')";
                     $result = $link->query($sql);
                     $ma_kh= $link->insert_id;
-                    var_dump($sql);
                     $tong_tien_phong=0;
                     $tong_tien_dv=0;
                     
@@ -113,33 +112,135 @@ if(isset($_GET["action"])){
                         }
                     }
                     if(empty($ma_nkdp)){
-                        $tong_hoa_don = $tong_tien_dv;
-                        $thoi_gian_lap_hd = date('Y-m-d H:i:s');
-                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKSD_DICHVU, TONG_HOADON, THOIGIAN_LAP_HD) 
-                        VALUES ('".$ma_kh."', '". $ma_nksddv."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
+                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKSD_DICHVU,TONG_HOADON,THANHTIEN, THOIGIAN_LAP_HD) 
+                        VALUES ('".$ma_kh."', '". $ma_nksddv."','".$tong_tien_dv."','".$tong_tien_dv."','".date('Y-m-d H:i:s')."')";
                         $result = $link->query($sql);
+                        $ma_hd=$link->insert_id;
+                        if(!empty($_POST["soluong_km"])){
+                            $sql_dv = "SELECT MA_DV FROM CHITIET_NKSDDV WHERE MA_NKSD_DICHVU = '".$ma_nksddv."'";
+                            $result_dv = $link->query($sql_dv);
+                            $ma_km_arr = array_keys($_POST["soluong_km"]);
 
-                        $sql_km="select * from KHUYENMAI where MA_KM in (".implode(",",array_keys($_POST["ma_km"])).")";
-                        $result_km = $link->query($sql_km);
-                        while($row= $result_km->fetch_assoc()) {
-                            $row_cthd[] = $row;
+                                while($row_dv = $result_dv->fetch_assoc()) {
+                                    foreach($ma_km_arr as $ma_km) {
+                                    $sql_km = "SELECT KHUYENMAI.MA_KM, TENKM, GIATRI_PHANTRAM, GIATRI_THUC FROM KHUYENMAI INNER JOIN CHITIETKHUYENMAI ON KHUYENMAI.MA_KM = CHITIETKHUYENMAI.MA_KM WHERE KHUYENMAI.MA_KM = '".$ma_km."' AND MA_DV = '".$row_dv["MA_DV"]."'";
+                                    $result_km = $link->query($sql_km);
+                                    while($row= $result_km->fetch_assoc()) {
+                                        $sql="INSERT INTO CHITIETHOADON(MA_CTHD,MA_HD,MA_KM,TENKM,GIATRI_PHANTRAM,GIATRI_THUC)
+                                        VALUES (null,'".$ma_hd."','".$row["MA_KM"]."','".$row["TENKM"]."','".$row["GIATRI_PHANTRAM"]."','".$row["GIATRI_THUC"]."')";
+                                        $result = $link->query($sql);
+                                    }
+                                }
+                            }
+                            $sql = "SELECT SUM(GIATRI_PHANTRAM) AS GIATRI_PHANTRAM1, SUM(GIATRI_THUC) AS GIATRI_THUC1 FROM CHITIETHOADON WHERE MA_HD = '".$ma_hd."'";
+                            $result = $link->query($sql);
+                            $row = $result->fetch_assoc();
+                            $giatri_phantram = isset($row["GIATRI_PHANTRAM1"]) ? $row["GIATRI_PHANTRAM1"] : 0;
+                            $giatri_thuc = isset($row["GIATRI_THUC1"]) ? $row["GIATRI_THUC1"] : 0; 
+                            
+                            $thanhtien = $tong_tien_dv * (1 - $giatri_phantram) - $giatri_thuc;
+                            $tong_km_giam = $tong_tien_dv - $thanhtien;
+
+                            $sql = "UPDATE HOADON SET THANHTIEN = '".$thanhtien."', TONG_KM_GIAM = '".$tong_km_giam."' WHERE MA_HD = '".$ma_hd."'";
+                            $result = $link->query($sql);
                         }
-                        $sql="INSERT INTO CHITIETHOADON(MA_NKSD_DICHVU,MA_KH,TONGTIEN_DV)
-                        VALUES (null,'".$ma_kh."','".$tong_tien_dv."')";
-                        $result = $link->query($sql);
-
                     }elseif(empty($ma_nksddv)){
-                        $tong_hoa_don = $tong_tien_phong;
-                        $thoi_gian_lap_hd = date('Y-m-d H:i:s');
-                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP,  TONG_HOADON, THOIGIAN_LAP_HD) 
-                        VALUES ('".$ma_kh."', '".$ma_nkdp."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
+                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP,TONG_HOADON,THANHTIEN, THOIGIAN_LAP_HD) 
+                        VALUES ('".$ma_kh."', '".$ma_nkdp."','".$tong_tien_phong."','".$tong_tien_phong."', '".date('Y-m-d H:i:s')."')";
                         $result = $link->query($sql);
-                    }else{
-                        $tong_hoa_don = $tong_tien_phong + $tong_tien_dv;
-                        $thoi_gian_lap_hd = date('Y-m-d H:i:s');
-                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP, MA_NKSD_DICHVU, TONG_HOADON, THOIGIAN_LAP_HD) 
-                        VALUES ('".$ma_kh."', '".$ma_nkdp."', '".$ma_nksddv."', '".$tong_hoa_don."','".$thoi_gian_lap_hd."')";
+                        $ma_hd=$link->insert_id;
+
+                        if(!empty($_POST["soluong_km"])){
+                            $sql_dp = "SELECT MA_PHONG FROM CHITIETNHATKIDATPHONG WHERE MA_NKDP = '".$ma_nkdp."'";
+                            $result_dp = $link->query($sql_dp);
+                            while($row_dp = $result_dp->fetch_assoc()) {
+                                $sql = "SELECT MA_LOAIPHONG FROM PHONG WHERE MA_PHONG = '".$row_dp["MA_PHONG"]."'";
+                                $result_lp = $link->query($sql);
+                                $ma_km_arr = array_keys($_POST["soluong_km"]);
+
+                                while($row_lp = $result_lp->fetch_assoc()) {
+                                    foreach($ma_km_arr as $ma_km) {
+                                        $sql_km = "SELECT KHUYENMAI.MA_KM, TENKM, GIATRI_PHANTRAM, GIATRI_THUC FROM KHUYENMAI INNER JOIN CHITIETKHUYENMAI ON KHUYENMAI.MA_KM = CHITIETKHUYENMAI.MA_KM WHERE KHUYENMAI.MA_KM = '".$ma_km."' AND MA_LOAIPHONG = '".$row_lp["MA_LOAIPHONG"]."'";
+                                        $result_km = $link->query($sql_km);
+                                        while($row= $result_km->fetch_assoc()) {
+                                            $sql="INSERT INTO CHITIETHOADON(MA_CTHD,MA_HD,MA_KM,TENKM,GIATRI_PHANTRAM,GIATRI_THUC)
+                                            VALUES (null,'".$ma_hd."','".$row["MA_KM"]."','".$row["TENKM"]."','".$row["GIATRI_PHANTRAM"]."','".$row["GIATRI_THUC"]."')";
+                                            $result = $link->query($sql);
+                                        }
+                                    }
+                                }
+                            }
+                            $sql = "SELECT SUM(GIATRI_PHANTRAM) AS GIATRI_PHANTRAM1, SUM(GIATRI_THUC) AS GIATRI_THUC1 FROM CHITIETHOADON WHERE MA_HD = '".$ma_hd."'";
+                            $result = $link->query($sql);
+                            $row = $result->fetch_assoc();
+                            $giatri_phantram = isset($row["GIATRI_PHANTRAM1"]) ? $row["GIATRI_PHANTRAM1"] : 0;
+                            $giatri_thuc = isset($row["GIATRI_THUC1"]) ? $row["GIATRI_THUC1"] : 0; 
+                            $thanhtien = $tong_tien_phong * (1 - $giatri_phantram) - $giatri_thuc;
+                            $tong_km_giam = $tong_tien_phong - $thanhtien;
+
+                            $sql = "UPDATE HOADON SET THANHTIEN = '".$thanhtien."', TONG_KM_GIAM = '".$tong_km_giam."' WHERE MA_HD = '".$ma_hd."'";
+                            $result = $link->query($sql);
+                        }
+                    }elseif(!empty($ma_nksddv) && !empty($ma_nkdp)){
+                        $tong_hoa_don=$tong_tien_dv + $tong_tien_phong;
+                        $sql = "INSERT INTO HOADON(MA_KH, MA_NKDP, MA_NKSD_DICHVU, TONG_HOADON,THANHTIEN, THOIGIAN_LAP_HD) 
+                        VALUES ('".$ma_kh."', '".$ma_nkdp."', '".$ma_nksddv."', '".$tong_hoa_don."','".$tong_hoa_don."','".date('Y-m-d H:i:s')."')";
                         $result = $link->query($sql);
+                        $ma_hd=$link->insert_id;
+
+                        if(!empty($_POST["soluong_km"])){
+                            $ma_km_arr = array_keys($_POST["soluong_km"]);
+                            var_dump($ma_km_arr);   
+                            $sql_dp = "SELECT MA_PHONG FROM CHITIETNHATKIDATPHONG WHERE MA_NKDP = '".$ma_nkdp."'";
+                            $result_dp = $link->query($sql_dp);
+                            while($row_dp = $result_dp->fetch_assoc()) {
+                                $sql = "SELECT MA_LOAIPHONG FROM PHONG WHERE MA_PHONG = '".$row_dp["MA_PHONG"]."'";
+                                $result_lp = $link->query($sql);
+
+                                while($row_lp = $result_lp->fetch_assoc()) {
+                                    foreach($ma_km_arr as $ma_km) {
+                                        $sql_km = "SELECT KHUYENMAI.MA_KM, TENKM, GIATRI_PHANTRAM, GIATRI_THUC FROM KHUYENMAI INNER JOIN CHITIETKHUYENMAI ON KHUYENMAI.MA_KM = CHITIETKHUYENMAI.MA_KM WHERE KHUYENMAI.MA_KM = '".$ma_km."' AND MA_LOAIPHONG = '".$row_lp["MA_LOAIPHONG"]."'";
+                                        $result_km = $link->query($sql_km);
+                                        while($row= $result_km->fetch_assoc()) {
+                                            $sql="INSERT INTO CHITIETHOADON(MA_CTHD,MA_HD,MA_KM,TENKM,GIATRI_PHANTRAM,GIATRI_THUC,LOAI_GIAM_GIA)
+                                            VALUES (null,'".$ma_hd."','".$row["MA_KM"]."','".$row["TENKM"]."','".$row["GIATRI_PHANTRAM"]."','".$row["GIATRI_THUC"]."','LOAI_PHONG')";
+                                            $result = $link->query($sql);
+                                        }
+                                    }
+                                }
+                            }
+                            $sql_dv = "SELECT MA_DV FROM CHITIET_NKSDDV WHERE MA_NKSD_DICHVU = '".$ma_nksddv."'";
+                            $result_dv = $link->query($sql_dv);
+                            while($row_dv = $result_dv->fetch_assoc()) {
+                                foreach($ma_km_arr as $ma_km) {
+                                    $sql_km = "SELECT KHUYENMAI.MA_KM, TENKM, GIATRI_PHANTRAM, GIATRI_THUC FROM KHUYENMAI INNER JOIN CHITIETKHUYENMAI ON KHUYENMAI.MA_KM = CHITIETKHUYENMAI.MA_KM WHERE KHUYENMAI.MA_KM = '".$ma_km."' AND MA_DV = '".$row_dv["MA_DV"]."'";
+                                    $result_km = $link->query($sql_km);
+                                    while($row= $result_km->fetch_assoc()) {
+                                        $sql="INSERT INTO CHITIETHOADON(MA_CTHD,MA_HD,MA_KM,TENKM,GIATRI_PHANTRAM,GIATRI_THUC,LOAI_GIAM_GIA)
+                                        VALUES (null,'".$ma_hd."','".$row["MA_KM"]."','".$row["TENKM"]."','".$row["GIATRI_PHANTRAM"]."','".$row["GIATRI_THUC"]."','DICH_VU')";
+                                        $result = $link->query($sql);
+                                    }
+                                }
+                            }
+                            $sql = "SELECT SUM(GIATRI_PHANTRAM) AS GIATRI_PHANTRAM1, SUM(GIATRI_THUC) AS GIATRI_THUC1 FROM CHITIETHOADON WHERE MA_HD = '".$ma_hd."' AND LOAI_GIAM_GIA='LOAI_PHONG'";
+                            $result = $link->query($sql);
+                            if ($result) {
+                                $row = $result->fetch_assoc();
+                                $giatri_phantram_p = isset($row["GIATRI_PHANTRAM1"]) ? $row["GIATRI_PHANTRAM1"] : 0;
+                                $giatri_thuc_p = isset($row["GIATRI_THUC1"]) ? $row["GIATRI_THUC1"] : 0; 
+                            }
+                            $sql = "SELECT SUM(GIATRI_PHANTRAM) AS GIATRI_PHANTRAM1, SUM(GIATRI_THUC) AS GIATRI_THUC1 FROM CHITIETHOADON WHERE MA_HD = '".$ma_hd."' AND LOAI_GIAM_GIA='DICH_VU'";
+                            $result = $link->query($sql);
+                            if ($result) {
+                                $row = $result->fetch_assoc();
+                                $giatri_phantram_dv = isset($row["GIATRI_PHANTRAM1"]) ? $row["GIATRI_PHANTRAM1"] : 0;
+                                $giatri_thuc_dv = isset($row["GIATRI_THUC1"]) ? $row["GIATRI_THUC1"] : 0;
+                            }
+                            $thanhtien = ($tong_tien_phong * (1 - $giatri_phantram_p) - $giatri_thuc_p) + ($tong_tien_dv * (1 - $giatri_phantram_dv) - $giatri_thuc_dv);
+                            $tong_km_giam = $tong_tien_phong + $tong_tien_dv - $thanhtien;
+                            $sql = "UPDATE HOADON SET THANHTIEN = '".$thanhtien."', TONG_KM_GIAM = '".$tong_km_giam."' WHERE MA_HD = '".$ma_hd."'";
+                            $result = $link->query($sql);
+                        }
                     } echo"
                     <script>
                         alert('Đặt thành công!');

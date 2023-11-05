@@ -1,12 +1,13 @@
 create table CHITIETHOADON(
     MA_CTHD int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    MA_HD varchar(10) not null ,
+    MA_HD int not null ,
     FOREIGN KEY (MA_HD) REFERENCES HOADON(MA_HD),
     MA_KM varchar(10) ,
     FOREIGN KEY (MA_KM) REFERENCES KHUYENMAI(MA_KM),
     TENKM varchar(100),
     GIATRI_PHANTRAM float,
-    GIATRI_THUC int
+    GIATRI_THUC int,
+    LOAI_GIAM_GIA varchar(50)
 )ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 -- insert into CHITIETHOADON values
 -- ('CTHD01','HD01','km05'),

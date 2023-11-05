@@ -1,7 +1,7 @@
 <?php 
 $link=new mysqli("localhost","root","","khachsan");
-$sql="select * from KHUYENMAI";
-$result=$link->query($sql);
+$sql_km="select * from KHUYENMAI";
+$result_km=$link->query($sql_km);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -212,15 +212,15 @@ if(isset($_SESSION['user_client']))
                     <input type="date" name="ngaytra">
                     <lable style="color:red"><?php echo $_SESSION["error_ngaytra"];$_SESSION["error_ngaytra"]=""; ?></lable>
                 </div>
-                <div>
-                    <?php while($row=$result->fetch_assoc()){?>
-                        <?php echo $row["TENKM"]?><input type="checkbox" name="ma_km[<?php echo $row["MA_KM"]?>]" value=1>
+                <div class="group">
+                    <?php while($row_km=$result_km->fetch_assoc()){?>
+                        <?php echo $row_km["MOTA"]?><input type="checkbox" name="soluong_km[<?php echo $row_km["MA_KM"]?>]" value=1>
                     <?php }?>
                 </div>
             </div>
             <div class="return">
                 <div class="tong">
-                    <div>Tổng số lượng phòng</div>
+                    <div>Tổng số lượng</div>
                     <div><?php echo $tong_sl_phong ?></div>
                 </div>
                 <div class="tong">
