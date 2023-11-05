@@ -50,7 +50,7 @@
         transform: scale(1.07);
         opacity: 0.93
     }
-    .mota2{
+    .mota2_khuyenmai{
         height: 60px;
         position: absolute;
         top:230px;
@@ -62,7 +62,7 @@
         transition: 0.5s;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .mota2:hover{
+    .mota2_khuyenmai:hover{
         background-color: rgb(28, 113, 136);
         color: #fff;
     }
@@ -93,7 +93,7 @@
     <a href="">
         <div class="layout2_con">
             <img src="img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 100%; height: 230px;">
-            <div class="mota2">
+            <div class="mota2_khuyenmai">
                 <h2 class="hathai"><?php echo $row["TENKM"] ?></h2>
                 <p class="chupe"><?php echo $row["MOTA"]?></p>
             </div>
