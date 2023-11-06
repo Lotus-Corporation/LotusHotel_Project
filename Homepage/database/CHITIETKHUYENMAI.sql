@@ -8,7 +8,7 @@ create table CHITIETKHUYENMAI(
     foreign key (MA_LOAIPHONG) references LOAIPHONG(MA_LOAIPHONG),
     MA_DV varchar(10),
     foreign key (MA_DV) references DICHVU(MA_DV)
-) ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+);
 
 insert into CHITIETKHUYENMAI(MA_CTKM,MA_KM,GIATRI_PHANTRAM,GIATRI_THUC,MA_LOAIPHONG,MA_DV) values
 ('CTKM01','km01',0.15,null,null,'01'),
