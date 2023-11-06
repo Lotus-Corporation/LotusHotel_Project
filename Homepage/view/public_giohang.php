@@ -1,3 +1,5 @@
+<title>LOTUS HOTEL</title>
+<link rel="icon" href="../img/anhphongnoibat/logo.png" type = "image/x-icon" > 
 <?php 
 session_start();
 $link=new mysqli("localhost","root","","khachsan");
