@@ -106,9 +106,9 @@
             <label>Ngày trả phòng</label><br>
             <input type="date" name="NGAYTRAPHONG" value="<?php echo $row['NGAYTRAPHONG']; ?>">
          </div>
-         <div class="date-input">
-            <label>Trạng thái phòng</label><br>
-            <input type="text" name="TRANGTHAI" value="<?php echo $row['TRANGTHAI']; ?>">
+         <div >
+            <label>Tổng tiền phòng</label><br>
+            <input type="text" name="TONGTIENPHONG" value="<?php echo $row['TONGTIENPHONG']; ?>">
          </div>
          <button type="submit">Lưu</button>
       </form>

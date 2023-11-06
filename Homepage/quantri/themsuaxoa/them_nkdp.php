@@ -115,9 +115,9 @@
 
  
 
-<div class="date-input">
- <label>Trạng thái phòng</label></br>
- <input type="text" name="TRANGTHAI">
+<div >
+ <label>Tổng tiền phòng</label></br>
+ <input type="text" name="TONGTIENPHONG">
 </div>
 
 <button type="submit">Lưu</button>

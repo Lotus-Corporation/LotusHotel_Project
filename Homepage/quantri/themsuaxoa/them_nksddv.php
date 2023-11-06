@@ -1,6 +1,7 @@
 <?php 
     $link=new mysqli("localhost","root","","khachsan");
     $sql="select * from khachhang";
+    $sql="select * from nksd_dichvu";
     $result=$link->query($sql);
 
 ?>
@@ -11,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 380px
+        height: 450px
     }
     .danhmuc{
         width: 100%;
@@ -84,12 +85,18 @@
                     <?php 
                     while($row=$result->fetch_assoc()){
                     ?>
-                    <option value=<?php echo $row["MA_KH"]?>><?php echo $row["HOTEN"]?></option>
+                    <option value=<?php echo $row["MA_KH"]?>><?php echo $row["MA_KH"]?></option>
                     <?php 
                     }
                     ?>
                 </select>
             </div>
+
+            <div>
+                <label>Tổng tiền dịch vụ</label><br>
+                <input type="text" name="tongtien_dv">
+            </div>
+
             <button type="submit">Lưu</button>
         </form>
     </div>

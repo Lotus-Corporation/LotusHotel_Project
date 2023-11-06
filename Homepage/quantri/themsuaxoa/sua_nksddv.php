@@ -16,7 +16,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 400px
+        height: 450px
     }
     .danhmuc{
         width: 100%;
@@ -99,6 +99,12 @@
                     ?>
                 </select>
             </div>
+
+            <div>
+            <label>Tổng tiền dịch vụ</label><br>
+            <input type="text" name="tongtien_dv" value="<?php echo $row['TONGTIEN_DV']; ?>" readonly>
+         </div>
+
          <button type="submit">Lưu</button>
       </form>
    </div>

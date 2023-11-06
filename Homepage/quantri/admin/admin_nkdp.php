@@ -80,7 +80,7 @@ $result=$link->query($sql);
     <th> Mã khách hàng </th>
     <th> Ngày đặt phòng </th>
     <th> Ngày trả phòng </th>
-    <th> Trạng thái phòng </th>
+    <th> Tổng tiền phòng </th>
     <th>Sửa</th>
     <th style="border-radius: 0 10px 0 0">Xóa</th>
          </tr>
@@ -94,7 +94,7 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_KH"];?></td>
     <td><?php echo $row["NGAYDAT"];?></td>
     <td><?php echo $row["NGAYTRAPHONG"];?></td>
-    <td><?php echo $row["TRANGTHAI"];?></td>
+    <td><?php echo $row["TONGTIENPHONG"];?></td>
     <td><a href="index_menu_admin.php?pid=54&&MA_NKDP=<?php echo $row['MA_NKDP']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_nkdp.php?ma_nkdp=<?php echo $row['MA_NKDP']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 </tr>
