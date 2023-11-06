@@ -5,7 +5,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 750px
+        height: 760px
     }
     .danhmuc{
         width: 100%;
@@ -73,16 +73,16 @@
                 <input type="text" name="ma_km">
             </div>
             <div>
+            <label>Tên khuyến mãi</label><br>
+                <input type="text" name="ten_km">
+            </div>
+            <div>
                 <label>Ngày bắt đầu</label><br>
                 <input type="date" name="ngaybatdau">
             </div>
             <div>
             <label>Ngày kết thúc</label><br>
                 <input type="date" name="ngayketthuc">
-            </div>
-            <div>
-            <label>Tên khuyến mãi</label><br>
-                <input type="text" name="ten_km">
             </div>
             <div>
             <label>Mô tả</label><br>

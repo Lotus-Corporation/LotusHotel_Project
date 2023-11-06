@@ -92,26 +92,44 @@
                <?php 
                while($row_nksddv=$result_nksddv->fetch_assoc()){
                ?>
-               <option value=<?php echo $row_nksddv["MA_NKSD_DICHVU"]?>><?php echo $row_nksddv["MA_KH"]?></option>
+               <option value=<?php echo $row_nksddv["MA_NKSD_DICHVU"]?>><?php echo $row_nksddv["MA_NKSD_DICHVU"]?></option>
                <?php 
                }
                ?>
             </select>
          </div>
          <div>
-            <label>Mã dịch vụ</label><br>
-            <select name="ma_dv">
+            <label>Tên dịch vụ</label><br>
+            <select name="ten_dv">
                <?php 
                while($row_dv=$result_dv->fetch_assoc()){
                ?>
-               <option value=<?php echo $row_dv["MA_DV"]?>><?php echo $row_dv["TENDV"]?></option>
+               <option value=<?php echo $row_dv["TENDV"]?>><?php echo $row_dv["TENDV"]?></option>
                <?php 
                }
                ?>
             </select>
          </div>
+
+         <div>
+            <label>Mã dịch vụ</label><br>
+            <select name="_dv">
+               <?php 
+               while($row_dv=$result_dv->fetch_assoc()){
+               ?>
+               <option value=<?php echo $row_dv["MA_DV"]?>><?php echo $row_dv["MA_DV"]?></option>
+               <?php 
+               }
+               ?>
+            </select>
+         </div>
+
          <div>
             <label>Số lượng</label><br>
+            <input type="text" name="soluong" value="<?php echo $row['SOLUONG']; ?>">
+         </div>
+         <div>
+            <label>Đơn giá dịch vụ</label><br>
             <input type="text" name="soluong" value="<?php echo $row['SOLUONG']; ?>">
          </div>
          <button type="submit">Lưu</button>

@@ -83,8 +83,10 @@ $row_macn=$result_macn->fetch_assoc()
     <th> Đơn Giá Phòng </th>
     <th> Mã Chi Nhánh </th>
     <th> Số Người Tối Đa </th>
+    <th> Số giường</th>
     <th> Hình ảnh </th>
     <th> Sửa </th>
+
     <th style="border-radius: 0 10px 0 0">Xóa</th>
          </tr>
    <?php
@@ -99,6 +101,7 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["DONGIAPHONG"];?></td>
     <td> <?php echo $row["MA_CN"];?></td>
     <td> <?php echo $row["SONGUOITOIDA"];?></td>
+    <td> <?php echo $row["SOGIUONG"];?></td>
     <td><img src="../img/phong/<?php echo $row["ANHPHONG"]; ?>" style="width: 200px"></td>
     <td><a href="index_menu_admin.php?pid=56&&MA_PHONG=<?php echo $row['MA_PHONG']?>&&ma_lp=<?php echo $row['MA_LOAIPHONG'] ?>&&ma_cn=<?php echo $row_macn['MA_CN'] ?>; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_phong.php?ma_phong=<?php echo $row['MA_PHONG']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>

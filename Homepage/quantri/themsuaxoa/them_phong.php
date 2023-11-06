@@ -12,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 800px
+        height: 850px
     }
     .danhmuc{
         width: 100%;
@@ -115,6 +115,12 @@
                 <label>Số người tối đa</label><br>
                 <input type="text" name="songuoitoida">
             </div>
+
+            <div>
+                <label>Số giường</label><br>
+                <input type="text" name="sogiuong">
+            </div>
+
             <div>
                 <label>Hình Ảnh</label><br> 
                 <input style="border:none" type="file" name="hinhanh">

@@ -72,9 +72,9 @@
     <tr>
         <th style="border-radius: 10px 0 0 0">Mã KM</th>
         <th>Tên</th>
-        <th>Mô tả</th>
         <th>Ngày bắt đầu</th>
         <th>Ngày kết thúc</th>
+        <th>Mô tả</th>
         <th>Hình Ảnh</th>
         <th> Sửa </th>
         <th style="border-radius: 0 10px 0 0">Xóa</th>
@@ -86,9 +86,9 @@
         <tr>
             <td><?php echo $row["MA_KM"]; ?></td>
             <td><?php echo $row["TENKM"]; ?></td>
-            <td><?php echo $row["MOTA"]; ?></td>
             <td><?php echo $row["NGAYBATDAU"]; ?></td>
             <td><?php echo $row["NGAYKETTHUC"]; ?></td>
+            <td><?php echo $row["MOTA"]; ?></td>
             <td><img src="../img/khuyenmai/<?php echo $row["HINHANHKM"]; ?>" style="width: 250px"></td>
             <td><a href="index_menu_admin.php?pid=51&&MA_KM=<?php echo $row['MA_KM']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
             <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_khuyenmai.php?MA_KM=<?php echo $row['MA_KM']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>

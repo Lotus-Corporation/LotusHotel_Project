@@ -146,6 +146,12 @@
             <label>Số người tối đa</label><br>
             <input type="text" name="songuoitoida" value="<?php echo $row['SONGUOITOIDA']; ?>">
          </div>
+
+         <div>
+            <label>Số giường</label><br>
+            <input type="text" name="sogiuong" value="<?php echo $row['DONGIAPHONG']; ?>">
+         </div>
+
          <div>
          <label>Hình Ảnh</label><br> 
                 <input style="border:none" type="file" id="imageUpload" name="hinhanh">

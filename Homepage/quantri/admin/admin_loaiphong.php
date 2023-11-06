@@ -10,7 +10,7 @@ $result=$link->query($sql);
         background-color: rgb(253, 245, 233);
         top:10%;
         right:2%; 
-        height: 200%;
+        height: 150%;
         border-radius: 10px
     }
     .danhmuc{

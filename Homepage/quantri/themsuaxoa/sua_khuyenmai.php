@@ -81,16 +81,16 @@
             <input type="text" name="ma_km" value="<?php echo $row['MA_KM']; ?>" readonly>
          </div>
          <div>
+            <label>Tên khuyến mãi</label><br>
+            <input type="text" name="ten_km" value="<?php echo $row['TENKM']; ?>">
+         </div>
+         <div>
             <label>Ngày bắt đầu</label><br>
             <input type="date" name="ngaybatdau" value="<?php echo $row['NGAYBATDAU']; ?>">
          </div>
          <div>
             <label>Ngày kết thúc</label><br>
             <input type="date" name="ngayketthuc" value="<?php echo $row['NGAYKETTHUC']; ?>">
-         </div>
-         <div>
-            <label>Tên khuyến mãi</label><br>
-            <input type="text" name="ten_km" value="<?php echo $row['TENKM']; ?>">
          </div>
          <div>
             <label>Mô tả</label><br>
