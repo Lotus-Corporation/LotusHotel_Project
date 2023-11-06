@@ -12,7 +12,7 @@
         top: 10%;
         right: 5%; 
         background-color: rgb(253, 245, 233);
-        height: 550px
+        height: 800px
     }
     .danhmuc{
         width: 100%;
@@ -85,7 +85,19 @@
                     <?php 
                     while($row=$result->fetch_assoc()){
                     ?>
-                    <option value=<?php echo $row["MA_NKSD_DICHVU"]?>><?php echo $row["MA_KH"]?></option>
+                    <option value=<?php echo $row["MA_NKSD_DICHVU"]?>><?php echo $row["MA_NKSD_DICHVU"]?></option>
+                    <?php 
+                    }
+                    ?>
+                </select>
+            </div>
+            <div>
+                <label>Tên dịch vụ</label><br>
+                <select name="ten_dv">
+                    <?php 
+                    while($row_dv=$result_dv->fetch_assoc()){
+                    ?>
+                    <option value=<?php echo $row_dv["TENDV"]?>><?php echo $row_dv["TENDV"]?></option>
                     <?php 
                     }
                     ?>
@@ -93,18 +105,14 @@
             </div>
             <div>
                 <label>Mã dịch vụ</label><br>
-                <select name="ma_dv">
-                    <?php 
-                    while($row_dv=$result_dv->fetch_assoc()){
-                    ?>
-                    <option value=<?php echo $row_dv["MA_DV"]?>><?php echo $row_dv["TENDV"]?></option>
-                    <?php 
-                    }
-                    ?>
-                </select>
+                <input type="text" name="ma_dv">
             </div>
             <div>
                 <label>Số lượng</label><br>
+                <input type="text" name="soluong">
+            </div>
+            <div>
+                <label>Đơn giá dịch vụ</label><br>
                 <input type="text" name="soluong">
             </div>
             <button type="submit">Lưu</button>
