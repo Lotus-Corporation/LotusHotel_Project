@@ -9,7 +9,7 @@ $result_km=$link->query($sql_km);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <style>
 .khungngoai{
@@ -27,9 +27,7 @@ $result_km=$link->query($sql_km);
 .thongtin{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    border-bottom: 1px solid rgb(7, 79, 130);
-    padding-bottom: 20px;
+    gap: 20px
 }
 .thongtin h1,
 .thongtin .group:nth-child(-n+3){
@@ -133,6 +131,85 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 10px
 }
 .update:hover{transform: scale(1.02)}
+.group button{
+    border:none;
+}
+#danhsach{
+    background-color:transparent;
+    width: 208%;
+    padding: 20px 0;
+    border-top: solid 1px rgb(38, 98, 141);
+    border-bottom: 1px solid rgb(38, 98, 141);
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+}
+#danhsach:hover{
+    border-top:solid 1.5px rgb(5, 85, 143);
+    border-bottom:solid 1.5px rgb(5, 85, 143);
+    transform: scale(1.005);
+    cursor: pointer;
+}
+#cancel{
+    position: absolute;
+    top:10px;
+    right:10px;
+    padding:10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bolder;
+}
+#ok{
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
+    padding:15px 30px;
+    border-radius:5px;
+    background-color: rgb(136, 201, 247);
+    color: #fff;
+    font-weight: bold;
+}
+dialog{
+    margin-top: 5px;
+    width: 40%;
+    height: 83%;
+    padding:50px;
+    border: none;
+    border-radius:5px;
+    background-color: aliceblue;
+}
+.dialog_con{
+    margin-top: 7%;
+    height: 500px;
+    border: none;
+    overflow-y: scroll;
+    
+}
+td{
+    padding:10px;
+    border-bottom: 1px solid rgb(38, 98, 141)
+}
+td:hover{
+    border-bottom: 2px solid rgb(5, 85, 143);
+}
+#ok:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    
+    background-color: rgb(105, 190, 251);
+    transform: scale(1.015)
+}
+
+.luu_y{
+    margin-top: 8%;
+    font-size: 13px;
+}
+.dskm{
+    position: absolute;
+    top:5%;
+    font-size: 25px;
+}
+
 
 </style>
 
@@ -213,9 +290,28 @@ if(isset($_SESSION['user_client']))
                     <lable style="color:red"><?php echo $_SESSION["error_ngaytra"];$_SESSION["error_ngaytra"]=""; ?></lable>
                 </div>
                 <div class="group">
-                    <?php while($row_km=$result_km->fetch_assoc()){?>
-                        <?php echo $row_km["MOTA"]?><input type="checkbox" name="soluong_km[<?php echo $row_km["MA_KM"]?>]" value=1>
-                    <?php }?>
+                    <button id="danhsach" type="button">Áp mã khuyến mãi</button>
+                    <dialog id="danhsach_km">
+                        <div class="dialog_con">
+                        <table><?php while($row_km=$result_km->fetch_assoc()){?>
+                            <tr>
+                                
+                                <td>
+                                    <?php echo $row_km["MOTA"]?>
+                                    
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="soluong_km[<?php echo $row_km["MA_KM"]?>]" value=1>
+                                </td>
+                            </tr>
+                            <?php }?>
+                        </table>
+                        </div>
+                        <div class="dskm"><b>Các khuyến mãi</b></div>
+                        <div class="luu_y"><b>Lưu ý: Mỗi phòng, mỗi dịch vụ chỉ áp 1 mã khuyến mãi.</b></div>
+                        <button type ="button" id="ok">ÁP MÃ</button>
+                        <button type ="button" id="cancel">X</button>
+                    </dialog>
                 </div>
             </div>
             <div class="return">
@@ -249,3 +345,27 @@ if(isset($_SESSION['user_client']))
     
 </body>
 </html>
+<script>
+(function($) {
+  'use strict';
+
+  var $dachsach = $('#danhsach'),
+    $dachsach_km = $('#danhsach_km');
+
+    $dachsach.on('click', function() {
+    $dachsach_km[0].showModal();
+  });
+  $('#ok').on('click', function() {
+    var selectedValues = $('input[name="soluong_km"]:checked').map(function() {
+      return this.value;
+    }).get();
+    console.log(selectedValues);
+    $('#selectedValues').val(selectedValues.join(','));
+    $dachsach_km[0].close();
+  });
+  $('#cancel').on('click', function() {
+    $dachsach_km[0].close();
+  });
+
+})(jQuery);
+</script>
