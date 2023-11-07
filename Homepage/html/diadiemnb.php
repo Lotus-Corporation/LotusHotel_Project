@@ -1,24 +1,40 @@
 <link rel="stylesheet" href="./css/diadiemnb.css">   
 <div class="diadiemnoibat">
-        <h2  style="font-size:20px;text-align: center;font-weight: normal; ">ĐỊA ĐIỂM NỔI BẬT</h2>
-            <div class="anhdiadiem" >
-              <div >
-              <img class="circle" src="img/diadiemnoibat/dnb1.jpg" alt="" > 
-              <p style="text-align:center;"> SAPA </p>
-            </div>
-              <div>
-              <img class="circle" src="img/diadiemnoibat/dnb2.jpg" alt="" >
-              <p style="text-align:center;" > ĐÀ NẴNG </p>
-            </div>
-            <div>
-              <img class="circle" src="img/diadiemnoibat/dnb5.jpg" alt="" >
-              <p style="text-align:center;" > TP.HỒ CHÍ MINH </p>
-              </div>
-              <div>
-              <img class="circle" src="img/diadiemnoibat/dnb4.jpg" alt="" >
-              <p style="text-align:center;" > ĐÀ LẠT </p>
-              </div>
-            </div>
+<h1 style="text-align: center"><b>ĐỊA ĐIỂM NỔI BẬT</b></h1>
+        <div class="container">
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb1.jpg">
+    <span>SAPA</span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb2.jpg">
+    <span> ĐÀ NẴNG</span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb5.jpg" >
+    <span> HỒ CHÍ MINH </span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb6.jpg">
+    <span>ĐÀ LẠT</span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb7.jpg">
+    <<span>....</span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb8.jpg">
+    <span>....</span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb9.jpg">
+    <span>....</span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb10.jpg">
+    <span>....</span>
+  </div>
+</div>
       </div>
 
-      
+

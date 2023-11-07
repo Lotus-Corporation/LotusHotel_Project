@@ -223,43 +223,26 @@ ul{
         </div>
    </div>
 
-   cho xiu
+
    <div style="height:600px;background-color:white; position: relative;">
-    <div style="width:25%; height:100%; background-color:rgb(56, 187, 223);float:left">
+    <div style="width:25%; height:100%; background-color:rgb(56, 187, 223);float:left;">
+    <div class="mota1" style="font-size:20px;margin-bottom: 1%;padding:80px; margin-top:100px">EXPLORE LOTUS SPA</div>
+        <div style="font-size:40px;margin-left:30px">PHOTO GALLERY</div>
     </div>
-    <div style="text-align:center; position:relative; left:-140px;padding:100px">
-        <div class="mota1" style="font-size:20px;margin-bottom: 1%;">EXPLORE LOTUS SPA</div>
-        <div style="font-size:40px">PHOTO GALLERY</div>
+    <div style="text-align:center; position:relative; left:-140px">
     </div> 
-    <div style="position: absolute; top: 65%; left: 65%; transform: translate(-50%, -50%)">
-        <button onclick="plusDivs(-1)">❮</button>
-        <img class="mySlides" src="img/dichvu/spa6.jpg" style="width:100%">
-        <img class="mySlides" src="img/dichvu/spa5.jpg" style="width:100%">
-        <img class="mySlides" src="img/dichvu/spa4.jpeg" style="width:100%">
-        <img class="mySlides" src="img/dichvu/spa3.jpg" style="width:100%">
-        <button onclick="plusDivs(1)">❯</button>
+    <div style="height:60%; display: flex; flex-wrap: wrap; justify-content: space-between">
+        <img src="img/dichvu/spa6.jpg" style="width:30%; height:250px; margin:10px;margin-top:40px">
+        <img src="img/dichvu/spa4.jpeg" style="width:30%; height:250px; margin:10px;margin-top:40px">
+        <img src="img/dichvu/spa3.jpg" style="width:30%; height:250px; margin:10px;margin-top:40px">
+        <img src="img/dichvu/spa5.jpg" style="width:30%; height:250px; margin:10px">
+        <img src="img/dichvu/spa7.jpg" style="width:30%; height:250px; margin:10px">
+        <img src="img/dichvu/spa8.jpg" style="width:30%; height:250px; margin:10px">
     </div>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 
 
    
