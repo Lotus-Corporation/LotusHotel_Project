@@ -9,7 +9,7 @@ create table CHITIETHOADON(
     GIATRI_THUC int,
     LOAI_GIAM_GIA varchar(50)
 )ENGINE= InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-insert into CHITIETHOADON values
+-- insert into CHITIETHOADON values
 -- ('CTHD01','HD01','km05','Book online'),
 -- ('CTHD02','HD01','km10','Tri ân khách hàng thân thiết',0.2,null,null),
 -- ('CTHD03','HD02','km07','Combo 3 bữa',null,100000,'DICH_VU'),

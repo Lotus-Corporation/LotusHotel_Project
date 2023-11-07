@@ -36,7 +36,6 @@
                     <div class="layout_con">
                         <img src="img/phong/<?php echo $row["ANHPHONG"]; ?>">
                         <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
-                        <div class="cart"><i class="fa fa-shopping-cart"> Booking </i></div>
                         <div class="tenphong">
                             <div><h2><?php echo $row["TENPHONG"] ?></h2></div>
                             <i class="fa fa-bed" aria-hidden="true"><?php echo $row["SOGIUONG"]?> bed</i>
