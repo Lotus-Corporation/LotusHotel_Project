@@ -76,8 +76,10 @@ $result=$link->query($sql);
         <th> Mã Khách Hàng </th>
         <th> Mã NKDP </th>
         <th> Mã Nhật Kí SDDV </th>
-        <th> Ngày Lập Hợp Đồng </th>
-        <th> Tổng Tiền </th>
+        <th> Tổng hóa đơn </th>
+        <th> Tổng khuyến mãi giảm </th>
+        <th> Thành tiền </th>
+        <th> Thời gian lập hóa đơn </th>
         <th> Sửa </th>
         <th style="border-radius: 0 10px 0 0">Xóa</th>
       
@@ -94,8 +96,10 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_KH"];?></td>
     <td> <?php echo $row["MA_NKDP"];?></td>
     <td> <?php echo $row["MA_NKSD_DICHVU"];?></td>
-    <td> <?php echo $row["NGAYLAP_HD"];?></td>
-    <td> <?php echo $row["TONGTIEN"];?></td>
+    <td> <?php echo $row["TONG_HOADON"];?></td>
+    <td> <?php echo $row["TONG_KM_GIAM"];?></td>
+    <td> <?php echo $row["THANHTIEN"];?></td>
+    <td> <?php echo $row["THOIGIAN_LAP_HD"];?></td>
     <td><a href="index_menu_admin.php?pid=48&&MA_HD=<?php echo $row['MA_HD']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_hoadon.php?MA_HD=<?php echo $row['MA_HD']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>
 <tr>

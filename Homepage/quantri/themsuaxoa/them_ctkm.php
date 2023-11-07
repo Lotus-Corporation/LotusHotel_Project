@@ -94,8 +94,12 @@
                 </select>
             </div>
             <div>
-                <label>Giá trị</label><br>
-                <input type="text" name="giatri">
+                <label>Giá trị phần trăm</label><br>
+                <input type="text" name="giatriphantram">
+            </div>
+            <div>
+                <label>Giá trị thực</label><br>
+                <input type="text" name="giatrithuc">
             </div>
             <div>
                 <label>Mã loại phòng</label><br>
