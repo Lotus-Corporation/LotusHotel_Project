@@ -80,7 +80,7 @@
         <a href="index_menu_admin.php?pid=18">Chi Tiết Khuyến Mãi</a>
         <a href="index_menu_admin.php?pid=19">Nhân viên</a>
         <a href="index_menu_admin.php?pid=20">Khách hàng</a>
-        <a href="index_menu_admin.php?pid=21">Khách hàng online</a>
+        <a href="index_menu_admin.php?pid=21">Khách hàng Account</a>
         <a href="index_menu_admin.php?pid=22">Chi nhánh</a>
         <a href="index_menu_admin.php?pid=23">Phương thức thanh toán</a>
         <a href="index_menu_admin.php?pid=24">Hóa đơn</a>

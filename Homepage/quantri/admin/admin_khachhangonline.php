@@ -12,7 +12,7 @@ $result=$link->query($sql);
         position: absolute; 
         background-color: rgb(253, 245, 233);
         right:2%; 
-        height: 300px;
+        height: 700px;
         top:10%
     }
     .danhmuc{
