@@ -1,6 +1,6 @@
 <?php 
 $link=new mysqli("localhost", "root","","khachsan");
-$sql="select * from KHACHHANG_ONLINE";
+$sql="select * from KHACHHANG_ACCOUNT";
 $result=$link->query($sql);
 ?>
 
@@ -71,7 +71,7 @@ $result=$link->query($sql);
 </style>
 
   <div class="layout_danhmuc"> 
-    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Khách hàng online</h2>
+    <div class="danhmuc"><h2 style="margin: 1% 0 0 2%"> Khách hàng account</h2>
       <a href="index_menu_admin.php?pid=37"><button>Thêm</button> </a>
       
 <table>
@@ -80,6 +80,7 @@ $result=$link->query($sql);
     <th> Họ tên</th>
     <th> Email </th>
     <th> SĐT </th>
+    <th> CCCD </th>
     <th> Mật khẩu</th>
     <th> Sửa</th>
     <th style="border-radius: 0 10px 0 0">Xóa</th>
@@ -94,6 +95,7 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["HOTEN"];?></td>
     <td> <?php echo $row["EMAIL"];?></td>
     <td> <?php echo $row["SDT"];?></td>
+    <td> <?php echo $row["CCCD"];?></td>
     <td> <?php echo $row["PASS"];?></td>
     <td><a href="index_menu_admin.php?pid=50&&USERNAME=<?php echo $row['USERNAME']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_khachhangonline.php?USERNAME=<?php echo $row['USERNAME']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>

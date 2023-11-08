@@ -84,6 +84,9 @@
                 <label>SĐT</label><br>
                 <input type="text" name="sdt">
             </div>
+            <label>CCCD</label><br>
+                <input type="text" name="cccd">
+            </div>
             <div>
                 <label>Password</label><br>
                 <input type="text" name="password">

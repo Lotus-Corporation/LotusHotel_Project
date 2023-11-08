@@ -223,15 +223,27 @@ ul{
         </div>
    </div>
 
-   <div style="height:600px;background-color:white" >
-        <div style="width:25%; height:100%; background-color:rgb(56, 187, 223);float:left">
-        </div>
-        <div  style="text-align:center; position:relative; left:-140px;padding:100px">
-          <div class="mota1" style="font-size:20px;margin-bottom: 1%;">EXPLORE LOTUS SPA</div>
-          <div style="font-size:40px">PHOTO GALLERY</div>
-        </div> 
+
+   <div style="height:600px;background-color:white; position: relative;">
+    <div style="width:25%; height:100%; background-color:rgb(56, 187, 223);float:left;">
+    <div class="mota1" style="font-size:20px;margin-bottom: 1%;padding:80px; margin-top:100px">EXPLORE LOTUS SPA</div>
+        <div style="font-size:40px;margin-left:30px">PHOTO GALLERY</div>
     </div>
-       
+    <div style="text-align:center; position:relative; left:-140px">
+    </div> 
+    <div style="height:60%; display: flex; flex-wrap: wrap; justify-content: space-between">
+        <img src="img/dichvu/spa6.jpg" style="width:30%; height:250px; margin:10px;margin-top:40px">
+        <img src="img/dichvu/spa4.jpeg" style="width:30%; height:250px; margin:10px;margin-top:40px">
+        <img src="img/dichvu/spa3.jpg" style="width:30%; height:250px; margin:10px;margin-top:40px">
+        <img src="img/dichvu/spa5.jpg" style="width:30%; height:250px; margin:10px">
+        <img src="img/dichvu/spa7.jpg" style="width:30%; height:250px; margin:10px">
+        <img src="img/dichvu/spa8.jpg" style="width:30%; height:250px; margin:10px">
+    </div>
+</div>
+
+
+
+
 
    
     <div class="layout_menu">

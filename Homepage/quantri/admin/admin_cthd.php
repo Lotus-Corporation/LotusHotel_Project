@@ -79,6 +79,10 @@ $result=$link->query($sql);
     <th style="border-radius: 10px 0 0 0" >Mã chi tiết hóa đơn</th>
     <th> Mã hóa đơn</th>
     <th> Mã khuyến mãi</th>
+    <th> Tên khuyến mãi </th>
+    <th> Giá trị phần trăm </th>
+    <th> Giá trị thực </th>
+    <th> Loại giảm giá </th>
     <th> Sửa </th>
     <th style="border-radius: 0 10px 0 0">Xóa</th>
          </tr>
@@ -91,6 +95,10 @@ while ($row=$result->fetch_assoc())
     <td> <?php echo $row["MA_CTHD"];?> </td>
     <td> <?php echo $row["MA_HD"];?></td>
     <td> <?php echo $row["MA_KM"];?></td>
+    <td> <?php echo $row["TENKM"];?></td>
+    <td> <?php echo $row["GIATRI_PHANTRAM"];?></td>
+    <td> <?php echo $row["GIATRI_THUC"];?></td>
+    <td> <?php echo $row["LOAI_GIAM_GIA"];?></td>
     <td><a href="index_menu_admin.php?pid=43&&MA_CTHD=<?php echo $row['MA_CTHD']; ?>"><img src="../img/icon/edit.png"  width="10px" height="10px"> Sửa</a></td>
 
     <td><a onclick="return confirm('Bạn có chắc chắn muốn xóa?');" href="control/ctrl_xoa_cthd.php?MA_CTHD=<?php echo $row['MA_CTHD']; ?>"><img src="../img/icon/delete.png" width="10px" height="10px"> Xóa</a></td>

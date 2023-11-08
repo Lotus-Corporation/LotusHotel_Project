@@ -36,6 +36,10 @@
                     <div class="layout_con">
                         <img src="img/phong/<?php echo $row["ANHPHONG"]; ?>">
                         <div class="price">Price:<b> <?php echo $row["DONGIAPHONG"] ?>đ</b></div>
+                        <form method="POST" action="view/public_giohang.php?action=add">
+                            <input type=number value="1" name="soluongphong[<?php echo $row["MA_PHONG"]?>]">
+                            <button type=submit class="cart"><i class="fa fa-shopping-cart"> Booking</i></button>
+                        </form>
                         <div class="tenphong">
                             <div><h2><?php echo $row["TENPHONG"] ?></h2></div>
                             <i class="fa fa-bed" aria-hidden="true"><?php echo $row["SOGIUONG"]?> bed</i>

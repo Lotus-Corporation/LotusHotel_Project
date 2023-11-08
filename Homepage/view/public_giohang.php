@@ -1,3 +1,5 @@
+<title>LOTUS HOTEL</title>
+<link rel="icon" href="../img/anhphongnoibat/logo.png" type = "image/x-icon" > 
 <?php 
 session_start();
 $link=new mysqli("localhost","root","","khachsan");
@@ -203,7 +205,7 @@ if(isset($_GET["action"])){
                                         $result_km = $link->query($sql_km);
                                         while($row= $result_km->fetch_assoc()) {
                                             $sql_cthd="INSERT INTO CHITIETHOADON(MA_CTHD,MA_HD,MA_KM,TENKM,GIATRI_PHANTRAM,GIATRI_THUC,LOAI_GIAM_GIA)
-                                            VALUES (null,'".$ma_hd."','".$row["MA_KM"]."','".$row["TENKM"]."','".$row["GIATRI_PHANTRAM"]."','".$row["GIATRI_THUC"]."',''LOAI_PHONG'')";
+                                            VALUES (null,'".$ma_hd."','".$row["MA_KM"]."','".$row["TENKM"]."','".$row["GIATRI_PHANTRAM"]."','".$row["GIATRI_THUC"]."','LOAI_PHONG')";
                                             $result_cthd = $link->query($sql_cthd);
                                             $giatri_phantram = isset($row["GIATRI_PHANTRAM"]) ? $row["GIATRI_PHANTRAM"] : 0;
                                             $giatri_thuc = isset($row["GIATRI_THUC"]) ? $row["GIATRI_THUC"] : 0; 
@@ -231,13 +233,13 @@ if(isset($_GET["action"])){
                             $result = $link->query($sql);
                         }
                     } 
-                    // echo"
-                    // <script>
-                    //     alert('Đặt thành công!');
-                    //     setTimeout(function(){
-                    //         window.location.href = 'public_giohang.php';
-                    //     }, 50);
-                    // </script>";
+                    echo"
+                    <script>
+                        alert('Đặt thành công!');
+                        setTimeout(function(){
+                            window.location.href = 'public_giohang.php';
+                        }, 50);
+                    </script>";
                 }
             
             }else  echo "

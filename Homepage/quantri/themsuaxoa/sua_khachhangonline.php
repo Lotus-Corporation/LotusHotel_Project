@@ -1,7 +1,7 @@
 <?php 
     $username = $_GET['USERNAME'];
     $link=new mysqli("localhost","root","","khachsan");
-    $sql="select * from KHACHHANG_ONLINE where USERNAME='$username'";
+    $sql="select * from KHACHHANG_ACCOUNT where USERNAME='$username'";
     $result=$link->query($sql);
     $row=$result->fetch_assoc();
 ?>
@@ -91,6 +91,9 @@
          <div>
             <label>SĐT</label><br>
             <input type="text" name="sdt" value="<?php echo $row['SDT']; ?>">
+         </div>
+         <label>CCCD</label><br>
+            <input type="text" name="cccd" value="<?php echo $row['CCCD']; ?>">
          </div>
          <div>
             <label>Password</label><br>

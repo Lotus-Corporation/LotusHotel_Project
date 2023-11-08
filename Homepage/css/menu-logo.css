@@ -31,7 +31,7 @@
   width: 15%;
   height: 53px;
 }
-.thanh_logo1 img  {
+.anh{
   position: relative;
   top: -18px;
   width: 100%;
@@ -73,13 +73,18 @@
 {
   background: white;
 }
-#client > i{
+#client{
   float: left;
-  width: 2%;
+  width: 2.5%;
   height: 53px;
   cursor: pointer;
-  font-size: 30px;
-  line-height: 1.5;
+}
+#client_anh{
+  border-radius:50%;
+  height: 35px;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 5px;
 }
 #menu_client{
   width: 160px;

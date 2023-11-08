@@ -107,10 +107,13 @@
             </select>
          </div>
          <div>
-            <label>Giá trị</label><br>
-            <input type="text" name="giatri" value="<?php echo $row['GIATRI']; ?>">
+            <label>Giá trị phần trăm</label><br>
+            <input type="text" name="giatriphantram" value="<?php echo $row['GIATRI_PHANTRAM']; ?>">
          </div>
-        
+         <div>
+            <label>Giá trị thực </label><br>
+            <input type="text" name="giatrithuc" value="<?php echo $row['GIATRI_THUC']; ?>">
+         </div>
          <div>
                 <label>Mã loại phòng</label><br>
                 <select name="ma_lp">
