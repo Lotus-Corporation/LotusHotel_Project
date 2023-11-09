@@ -98,3 +98,13 @@
 }
 #client:hover #menu_client{display: block}
 #menu_client a:hover{color:rgb(0, 91, 156);}
+.sl{
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  background: red;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 15px;
+}

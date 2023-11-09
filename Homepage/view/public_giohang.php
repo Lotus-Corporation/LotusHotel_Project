@@ -95,7 +95,6 @@ if(isset($_GET["action"])){
                     if(!empty($_POST["soluong_dv"])){
                         $sql_dv="select * from DICHVU where MA_DV in (".implode(",",array_keys($_POST["soluong_dv"])).")";
                         $result_dv = $link->query($sql_dv);
-                        $thanh_tien=0;
                         $tong_tien_dv=0;
                         while($row= $result_dv->fetch_assoc()) {
                             $row_nksddv[] = $row;

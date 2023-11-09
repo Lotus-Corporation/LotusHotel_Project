@@ -10,7 +10,7 @@
 <p class="pp">  LOTUS HOTEL  </p>
 <img class='tamhinhanh' src="./img/anhphongnoibat/logo.jpeg" />
 
-<div style="position: relative;height: 500px;">
+<div style="position: relative;height: 700px;">
   <h3 class="noidung"> Sứ mệnh của khách sạn Lotus là mang đến cho người Việt Nam một trải nghiệm nghỉ dưỡng tinh khiết, cao quý và trường tồn,
             giống như hình ảnh của hoa sen - biểu tượng của Việt Nam. Lotus cam kết cung cấp dịch vụ chất lượng cao,
             tạo ra một không gian thoải mái và lịch sự cho khách hàng. Mỗi khách hàng khi đến với khách sạn Lotus sẽ được 

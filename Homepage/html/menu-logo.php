@@ -31,9 +31,6 @@
   <a class="logo1" href="index_menu.php?pid=4">Spa&Wellness</a>
   <a class="logo1" href="index_menu.php?pid=5" >Special Offers</a>
   <a class="logo1" href="index_menu.php?pid=6">Contacts</a>
-  <a style="float:left; font-size: 35px; margin-right:20px;" href="view/public_giohang.php">
-    <i class="fa fa-shopping-cart"></i>
-  </a>
   <?php 
     session_start();
     if(isset($_SESSION['user_client']))
@@ -43,7 +40,15 @@
     $sql="select * from KHACHHANG_ACCOUNT where USERNAME='$username'";
     $result=$link->query($sql);
     $row = $result->fetch_assoc();
+    if(isset($_SESSION["cart"])) {
   ?>
+  <a style="float:left; font-size: 35px; margin-right:20px;position:relative" href="view/public_giohang.php">
+    <i class="fa fa-shopping-cart">
+      <span class="sl">
+        <?php echo count($_SESSION["cart"]);}?>
+      </span>
+    </i> 
+</a> 
   <div id="client">
     <div id="client_anh" style=" background-image: url('img/khachhang/<?php echo $row["ANHKH"]?>')">
     <div id="menu_client">
@@ -55,6 +60,9 @@
   <?php 
   } else{
   ?>
+  <a style="float:left; font-size: 35px; margin-right:20px;" href="view/public_giohang.php">
+    <i class="fa fa-shopping-cart"></i>
+  </a>
     <a  style="float:left; font-size: 30px; margin-right:20px;" href="view/login.php">
     <i class="fa fa-user"></i>
     </a>
