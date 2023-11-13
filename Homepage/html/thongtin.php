@@ -58,25 +58,27 @@ window.onload = function() {
 }
 </script>
 
-        <div class="thong_tin" style="margin: 5% 2% 0 8%">
+        <div class="thong_tin" style="margin: 5% 2% 0 8%; text-align:justify;word-spacing:2.5px">
           <h1>LOTUS</h1>
-          ......................................................
-          ......................................................
-          ......................................................
+          Khách sạn của chúng tôi - LOTUS HOTEL, nơi mang đến cho bạn trải nghiệm lưu trú đẳng cấp và thoải mái. Khách sạn của chúng tôi tọa lạc tại vị trí thuận lợi, giúp bạn dễ dàng tiếp cận các điểm du lịch nổi tiếng và trung tâm mua sắm.
         </div>
       
         <div class="thong_tin" style="margin: 5% 2% 0 0">
-          <h1>Lien He</h1>
-          0316546156 <br>
-          ......................................................
-          ......................................................
-          ......................................................
+          <h1>Contact Info</h1>
+          <h3 style="margin-bottom:2%"><i class="fa fa-phone" aria-hidden="true" style="color: black;"></i> Phone</h3>0316546156
+          <h3 style="margin-bottom:2%"><i class="fa fa-map-marker" aria-hidden="true" style="color: black;"></i> Address</h3>47B Đường Nguyễn Trãi 11, Quận 1, TP. Hồ Chí Minh
+          <h3 style="margin-bottom:2%"><i class="fa fa-envelope-o" aria-hidden="true"style="color: black;"></i> Email</h3>lotushotel@gmail.com
         </div>
         <div class="thong_tin" style="margin: 5% 2% 0 0">
           <h1>Quick Links</h1>
-          ......................................................
-          ......................................................
-          ......................................................
+          <ul style="list-style-type: none; margin-left:-10%; font-size: 18px;">
+            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black" href="#">Our Room</a></li>
+            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Restaurant & Bar</a></li>
+            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Spa & Wellness</a></li>
+            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Service</a></li>
+            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Special Offers</a></li>
+            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Contact</a></li>
+          <ul>
         </div>
         <div class="thong_tin" style="margin: 5% 0 0 0">
           <h1>Get The Apps</h1><br>

@@ -17,6 +17,14 @@
         background-position: center center;
         background-attachment: fixed;
     }   
+    .layout_anh_opacity{
+        width: 100%;
+        height: 850px; 
+        position:absolute; 
+        top:0;
+        background-color: black;
+        opacity:0.5;
+    }
     .loigoi{
         text-align: center; 
         position:absolute; 
@@ -74,6 +82,7 @@
 </style>
 
 <div class="layout_anh">
+    <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%">ENJOY THE VALUES</div>
         <div style="font-size:45px">SPECIAL OFFERS</div>

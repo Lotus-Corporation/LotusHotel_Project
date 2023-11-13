@@ -9,7 +9,7 @@
         margin: 0;
     }
     .layout_anh{
-        height: 700px; 
+        height: 850px; 
         background-color:rgb(40, 129, 143); 
         position:relative; 
         background-attachment: fixed;
@@ -17,14 +17,6 @@
         background-position: center center;
         margin-bottom: 7%;
     }   
-    .layout_anh_opacity{
-        width: 100%;
-        height: 700px; 
-        position:absolute; 
-        top:0;
-        background-color: black;
-        opacity:0.4;
-    }
     .loigoi{
         text-align: center; 
         position:absolute; 
