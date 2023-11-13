@@ -263,19 +263,19 @@ if(isset($_SESSION['user_client']))
                 <div class="group">
                     <label for="name">Họ tên</label>
                     <input type="text" name="name">
-                    <lable style="color:red"><?php echo $_SESSION["error_name"];$_SESSION["error_name"]="";?></lable>
+                    
                 </div>
 
                 <div class="group">
                     <label for="phone">Số điện thoại</label>
                     <input type="text" name="phone">
-                    <lable style="color:red"><?php echo $_SESSION["error_phone"];$_SESSION["error_phone"]=""; ?></lable>
+                    
                 </div>
 
                 <div class="group">
                     <label for="address">CCCD</label>
                     <input type="text" name="cccd">
-                    <lable style="color:red"><?php echo $_SESSION["error_cccd"];$_SESSION["error_cccd"]=""; ?></lable>
+                    
                 </div>
 <?php } ?>
                 <div class="group">

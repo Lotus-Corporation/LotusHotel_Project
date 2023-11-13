@@ -72,12 +72,12 @@ window.onload = function() {
         <div class="thong_tin" style="margin: 5% 2% 0 0">
           <h1>Quick Links</h1>
           <ul style="list-style-type: none; margin-left:-10%; font-size: 18px;">
-            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black" href="#">Our Room</a></li>
-            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Restaurant & Bar</a></li>
-            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Spa & Wellness</a></li>
-            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Service</a></li>
-            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Special Offers</a></li>
-            <li style="padding-bottom:5%"><a style="text-decoration:none; color:black"href="#">Contact</a></li>
+            <li style="padding-bottom:5%;border-bottom: none;"><a style="text-decoration:none; color:black" href="#">Our Room</a></li>
+            <li style="padding-bottom:5%;border-bottom: none;"><a style="text-decoration:none; color:black"href="#">Restaurant & Bar</a></li>
+            <li style="padding-bottom:5%;border-bottom: none;"><a style="text-decoration:none; color:black"href="#">Spa & Wellness</a></li>
+            <li style="padding-bottom:5%;border-bottom: none;"><a style="text-decoration:none; color:black"href="#">Service</a></li>
+            <li style="padding-bottom:5%;border-bottom: none;"><a style="text-decoration:none; color:black"href="#">Special Offers</a></li>
+            <li style="padding-bottom:5%;border-bottom: none;"><a style="text-decoration:none; color:black"href="#">Contact</a></li>
           <ul>
         </div>
         <div class="thong_tin" style="margin: 5% 0 0 0">

@@ -52,7 +52,7 @@
          background-color: #bbb;
          border-radius: 50%;
          display: inline-block;
-         transition: background-color 0.6s ease;
+         transition: 0.6s ease;
       }
       .active, .navigation-dot:hover {
          background-color: #717171;
@@ -63,7 +63,7 @@
 <body>
    <div class="carousel-container">
    <div style=" text-align: center; position:absolute; top:40%;left:37.3%;color: #fff;z-index:2">
-        <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%;" >DISCOVER YOUR VIETNAM</div>
+        <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%;" >DISCOVER VIETNAM</div>
         <div style="font-size:50px">Plan Your Trip with <br> Local Experts</div>
     </div>
     <div class="images">

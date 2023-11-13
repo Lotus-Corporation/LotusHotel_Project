@@ -3,7 +3,7 @@
 
 <style>
      body{
-        margin: 0
+        margin: 0;
     }
     .layout_anh{
         width: 100%;
@@ -56,11 +56,7 @@
     p{
         margin-top: -13px;
     }
-    .anh {
-        float:right; 
-        width:100%;
-        height: 90px;
-    }
+    
     
     p {
         font-size:25px;
@@ -136,8 +132,7 @@ ul{
         font-size:25px; 
     }
 .layout_menu{
-        width: 100%;
-        height: 700px;
+        height: 800px;
         text-align:center;
         background-color:rgb(212, 227, 237);
         padding: 40px;
@@ -155,7 +150,7 @@ ul{
 </style>
 
 
-<div class="layout_anh" style="">
+<div class="layout_anh">
     <div class="layout_anh_opacity"></div>
     <div class="loigoi">
         <div style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px; margin-bottom:5%; margin-left:20px">RELAX WITH LOTUS SPA</div>
@@ -179,7 +174,7 @@ ul{
     <p> Open daily: 6:30 AM - 8.30 PM </p>
     </div>
     <div class="anh">
-       <img src="img/dichvu/spa1.jpg" style=" height: 400px;width:85%;box-shadow: 50px 50px lightgray;">
+       <img src="img/dichvu/spa1.jpg" style=" height: 400px;width:650px;box-shadow: 50px 50px lightgray;float:left; ">
     </div>
 </div>
 
@@ -226,9 +221,9 @@ ul{
 
    
     <div class="layout_menu">
-    <div class="mota1" style="font-size:20px;margin-bottom: 1%;margin-left:-90px">LOTUS SPA</div>
-    <div style="font-size:40px;margin-left:-70px">SERVICES OFFERINGS</div>
-    <div style="position: relative;top:7%;width:80%;left:10%">
+    <div class="mota1" style="font-size:20px;margin-bottom: 1%">LOTUS SPA</div>
+    <div style="font-size:40px">SERVICES OFFERINGS</div>
+    <div style="position: relative;top:7%;width:80%;left:15%">
 
         <div  style="float:left">
             <input type="radio" name="spa" id="Facial" checked class="chon">
