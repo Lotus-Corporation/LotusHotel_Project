@@ -20,19 +20,19 @@
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb7.jpg">
-    <<span>....</span>
+    <span>CÀ MAU</span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb8.jpg">
-    <span>....</span>
+    <span>KON TUM</span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb9.jpg">
-    <span>....</span>
+    <span>PHỐ CỔ HỘI AN</span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb10.jpg">
-    <span>....</span>
+    <span>LẠNG SƠN</span>
   </div>
 </div>
       </div>
