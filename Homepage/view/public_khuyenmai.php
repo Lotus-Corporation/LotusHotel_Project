@@ -12,7 +12,7 @@
         width: 100%;
         height: 850px; 
         position:relative; 
-        background-image: url('https://template67976.motopreview.com/mt-demo/67900/67976/mt-content/uploads/2018/04/mt-1431-content-bg01.jpg');
+        background-image: url('https://templates.envytheme.com/ecorik/default/assets/img/home-one/slider/slider-img-1.jpg');
         margin-bottom: 7%;
         background-position: center center;
         background-attachment: fixed;

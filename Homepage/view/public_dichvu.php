@@ -13,7 +13,7 @@
         background-color:rgb(40, 129, 143); 
         position:relative; 
         background-attachment: fixed;
-        background-image: url('https://hiltonbyplaya.honeymoonwishes.com/images/registry_images/popup_138584.jpg');
+        background-image: url('https://demo2.themelexus.com/erios/wp-content/uploads/2022/09/rev_home06.jpg');
         background-position: center center;
         margin-bottom: 7%;
     }   

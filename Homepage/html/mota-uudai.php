@@ -1,9 +1,7 @@
 <link rel="stylesheet" href="./css/checkphong.css"> 
 <link rel="stylesheet" href="css/mota-uudai.css"> 
 <div style="width: 100%; height: auto; position:relative;">
-<video autoplay muted loop width="100%" height="100%">
-    <source src="img/clip.mp4" type="video/mp4">
-</video>
+<?php include('nen.php');?>
 <?php include ('checkphong.php');?>
 </div>
 <div class="layout_mota-uudai">

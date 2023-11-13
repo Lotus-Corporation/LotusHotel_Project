@@ -33,28 +33,7 @@
     .layout:nth-child(n){
         margin-left: 12%;
     }
-    .layout_con{
-        float: left; 
-        width:40%;
-        height:330px;
-        margin: 2%;
-        text-decoration: none;
-        border-radius: 5px;
-        position: relative;
-        overflow: hidden;
-        transition: 0.25s
-    }
-    .layout_con:hover{
-        transform: scale(1);
-        opacity: 0.9
-    }
-    .layout_con > img{
-        transition: 0.7s;
-    }
-    .layout_con > img:hover{
-        transform: scale(1.07);
-        opacity: 0.93
-    }
+   
     .mota{
         height: 110px;
         position: absolute;
