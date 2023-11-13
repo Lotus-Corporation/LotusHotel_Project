@@ -60,23 +60,23 @@ window.onload = function() {
 
         <div class="thong_tin" style="margin: 5% 2% 0 8%">
           <h1>LOTUS</h1>
-          klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
-          lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
-          jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
+          ......................................................
+          ......................................................
+          ......................................................
         </div>
       
         <div class="thong_tin" style="margin: 5% 2% 0 0">
           <h1>Lien He</h1>
           0316546156 <br>
-          klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
-          lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
-          jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
+          ......................................................
+          ......................................................
+          ......................................................
         </div>
         <div class="thong_tin" style="margin: 5% 2% 0 0">
           <h1>Quick Links</h1>
-          klrh uiahvna ;onakwe jhhF HVMNLK AWkesjrghrj vknak vknak jnk;jna; knjn
-          lkfqnlwk lawnli lksjf vknak jnk;jna; knjn lkfqnlwk lawnli lksjf
-          jnk;jna; knjn lkfqnlwk lawnli lksjfalw liawjj roanwnr onoiEH[ OISH;I
+          ......................................................
+          ......................................................
+          ......................................................
         </div>
         <div class="thong_tin" style="margin: 5% 0 0 0">
           <h1>Get The Apps</h1><br>
