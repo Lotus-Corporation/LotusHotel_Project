@@ -4,35 +4,35 @@
         <div class="container">
   <div class="box">
     <img src="img/diadiemnoibat/dnb1.jpg">
-    <span>SAPA</span>
+    <span> SAPA </span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb2.jpg">
-    <span> ĐÀ NẴNG</span>
+    <span> ĐÀ NẴNG </span>
   </div>
   <div class="box">
-    <img src="img/diadiemnoibat/dnb5.jpg" >
+    <img src="img/diadiemnoibat/dnb4.jpg" >
+    <span> ĐÀ LẠT </span>
+  </div>
+  <div class="box">
+    <img src="img/diadiemnoibat/dnb5.jpg">
     <span> HỒ CHÍ MINH </span>
   </div>
   <div class="box">
-    <img src="img/diadiemnoibat/dnb6.jpg">
-    <span>ĐÀ LẠT</span>
-  </div>
-  <div class="box">
     <img src="img/diadiemnoibat/dnb7.jpg">
-    <<span>....</span>
+    <span> CÀ MAU </span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb8.jpg">
-    <span>....</span>
+    <span> KON TUM </span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb9.jpg">
-    <span>....</span>
+    <span> PHỐ CỔ HỘI AN </span>
   </div>
   <div class="box">
     <img src="img/diadiemnoibat/dnb10.jpg">
-    <span>....</span>
+    <span> LẠNG SƠN </span>
   </div>
 </div>
       </div>
