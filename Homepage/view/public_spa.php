@@ -79,8 +79,8 @@
     }
     .anh {
         float:right; 
-        width:50%;
-        height: 600px;
+        width:100%;
+        height: 90px;
     }
     
     p {
